@@ -1,5 +1,6 @@
 ---
 title: 陈发祥
+slug: "faxiang-chen"
 role: 博士研究生
 superuser: false
 organizations:

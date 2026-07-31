@@ -1,5 +1,6 @@
 ---
 title: 耿家伟
+slug: "jiawei-geng"
 role: 特任副研究员
 superuser: false
 organizations:

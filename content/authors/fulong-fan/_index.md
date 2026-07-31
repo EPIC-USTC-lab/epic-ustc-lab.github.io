@@ -1,5 +1,6 @@
 ---
 title: 樊富龙
+slug: "fulong-fan"
 role: 硕士研究生
 superuser: false
 organizations:

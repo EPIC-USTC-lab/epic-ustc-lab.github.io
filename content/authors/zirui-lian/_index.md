@@ -1,5 +1,6 @@
 ---
 title: 连子锐
+slug: "zirui-lian"
 role: 博士
 superuser: false
 organizations:

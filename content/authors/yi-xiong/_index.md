@@ -1,5 +1,6 @@
 ---
 title: 熊屹
+slug: "yi-xiong"
 role: 博士
 superuser: false
 organizations:

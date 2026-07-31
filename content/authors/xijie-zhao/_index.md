@@ -1,5 +1,6 @@
 ---
 title: 赵希珏
+slug: "xijie-zhao"
 role: 硕士研究生
 superuser: false
 organizations:

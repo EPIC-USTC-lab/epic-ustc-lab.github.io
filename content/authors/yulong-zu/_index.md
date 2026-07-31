@@ -1,5 +1,6 @@
 ---
 title: 祖玉龙
+slug: "yulong-zu"
 role: 博士研究生
 superuser: false
 organizations:

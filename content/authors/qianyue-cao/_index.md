@@ -1,5 +1,6 @@
 ---
 title: 曹前越
+slug: "qianyue-cao"
 role: 博士研究生
 superuser: false
 organizations:

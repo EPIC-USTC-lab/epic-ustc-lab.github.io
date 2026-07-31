@@ -1,5 +1,6 @@
 ---
 title: 揭景怀
+slug: "jinghuai-jie"
 role: 博士研究生
 superuser: false
 organizations:

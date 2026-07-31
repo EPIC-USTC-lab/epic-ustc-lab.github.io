@@ -1,5 +1,6 @@
 ---
 title: 项莉棋
+slug: "liqi-xiang"
 role: 硕士
 superuser: false
 organizations:

@@ -1,5 +1,6 @@
 ---
 title: 吴杨
+slug: "yang-wu"
 role: 硕士
 superuser: false
 organizations:

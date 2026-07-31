@@ -1,5 +1,6 @@
 ---
 title: 朱宗卫
+slug: "zongwei-zhu"
 role: 研究员、博士生导师
 superuser: true
 organizations:

@@ -1,5 +1,6 @@
 ---
 title: 刘伟鸿
+slug: "weihong-liu"
 role: 博士
 superuser: false
 organizations:

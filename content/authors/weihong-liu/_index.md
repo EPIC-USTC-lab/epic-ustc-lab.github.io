@@ -12,19 +12,19 @@ summary: 2025届博士，现就职于华为
 social:
   - icon: envelope
     icon_pack: fas
-    link: #
+    link: "#"
   - icon: github
     icon_pack: fab
-    link: #
+    link: "#"
   - icon: graduation-cap
     icon_pack: fas
-    link: #
+    link: "#"
   - icon: orcid
     icon_pack: fab
-    link: #
+    link: "#"
   - icon: globe
     icon_pack: fas
-    link: #
+    link: "#"
 weight: 40
 ---
 

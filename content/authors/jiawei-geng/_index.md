@@ -26,16 +26,16 @@ social:
     link: mailto:jwgeng@ustc.edu.cn
   - icon: github
     icon_pack: fab
-    link: #
+    link: "#"
   - icon: graduation-cap
     icon_pack: fas
-    link: #
+    link: "#"
   - icon: orcid
     icon_pack: fab
-    link: #
+    link: "#"
   - icon: globe
     icon_pack: fas
-    link: #
+    link: "#"
 weight: 10
 ---
 

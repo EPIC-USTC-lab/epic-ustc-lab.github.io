@@ -53,6 +53,41 @@
 }
 .people-person:hover img.avatar { transform: scale(1.05); }
 
+/* 无照片：首字母渐变头像 */
+.people-person .avatar-letter {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px; font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent, #3172B4), var(--warm, #C17F3B));
+  border: 3px solid var(--card-bg, #fff);
+  box-shadow: 0 0 0 3px var(--accent, #3172B4);
+  margin: 0 auto 14px;
+  transition: transform .25s, box-shadow .25s;
+  user-select: none;
+}
+.people-person:hover .avatar-letter {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px var(--accent, #3172B4), 0 8px 20px rgba(49,114,180,.25);
+}
+
+/* 深色模式：卡片背景/边框 */
+[data-theme="dark"] .people-person {
+  background: #182130;
+  border-color: #2a3648;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+[data-theme="dark"] .people-person:hover {
+  border-color: #6fa8dc;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+}
+[data-theme="dark"] .people-summary { color: #9aa7b6; }
+[data-theme="dark"] .people-tag {
+  background: rgba(111,168,220,.12); color: #6fa8dc;
+  border-color: rgba(111,168,220,.25);
+}
+
 /* 名字 / 角色 层级 */
 .portrait-title {
   width: 100%;
@@ -205,7 +240,8 @@
           {{ if $src }}
           <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $src }}" alt="{{ .Title }}">
           {{ else }}
-          <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="/author/{{ path.Base .File.Dir | urlize }}/avatar.jpg" alt="{{ .Title }}">
+          {{/* 无照片：首字母渐变头像（避免破图） */}}
+          <div class="avatar avatar-letter {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" aria-hidden="true">{{ substr .Title 0 1 }}</div>
           {{ end }}
         </a>
 

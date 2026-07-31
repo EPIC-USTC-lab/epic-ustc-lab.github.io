@@ -20,27 +20,22 @@ education:
       year: 2026
 email: jwgeng@ustc.edu.cn
 office: 中国科大苏州高等研究院仁爱路西区敏学楼202
-profiles:
+social:
   - icon: envelope
     icon_pack: fas
-    label: 邮箱
-    url: jwgeng@ustc.edu.cn
+    link: mailto:jwgeng@ustc.edu.cn
   - icon: github
     icon_pack: fab
-    label: GitHub
-    url: "#"
+    link: #
   - icon: graduation-cap
     icon_pack: fas
-    label: Google Scholar
-    url: "#"
+    link: #
   - icon: orcid
     icon_pack: fab
-    label: ORCID
-    url: "#"
+    link: #
   - icon: globe
     icon_pack: fas
-    label: 个人主页
-    url: "#"
+    link: #
 weight: 10
 ---
 

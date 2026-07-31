@@ -13,27 +13,22 @@ interests:
   - LLM 推理优化
   - 任务规划
 email: fanfl9922@mail.ustc.edu.cn
-profiles:
+social:
   - icon: envelope
     icon_pack: fas
-    label: 邮箱
-    url: fanfl9922@mail.ustc.edu.cn
+    link: mailto:fanfl9922@mail.ustc.edu.cn
   - icon: github
     icon_pack: fab
-    label: GitHub
-    url: "#"
+    link: #
   - icon: graduation-cap
     icon_pack: fas
-    label: Google Scholar
-    url: "#"
+    link: #
   - icon: orcid
     icon_pack: fab
-    label: ORCID
-    url: "#"
+    link: #
   - icon: globe
     icon_pack: fas
-    label: 个人主页
-    url: "#"
+    link: #
 weight: 30
 ---
 

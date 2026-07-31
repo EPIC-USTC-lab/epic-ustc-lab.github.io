@@ -8,27 +8,22 @@ organizations:
 slug: zirui-lian
 user_groups:
   - 已毕业校友
-profiles:
+social:
   - icon: envelope
     icon_pack: fas
-    label: 邮箱
-    url: "#"
+    link: #
   - icon: github
     icon_pack: fab
-    label: GitHub
-    url: "#"
+    link: #
   - icon: graduation-cap
     icon_pack: fas
-    label: Google Scholar
-    url: "#"
+    link: #
   - icon: orcid
     icon_pack: fab
-    label: ORCID
-    url: "#"
+    link: #
   - icon: globe
     icon_pack: fas
-    label: 个人主页
-    url: "#"
+    link: #
 weight: 40
 ---
 

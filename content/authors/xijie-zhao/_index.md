@@ -12,27 +12,22 @@ bio: 中科大软件工程2026级硕士生，本科毕业于安徽大学互联�
 interests:
   - 具身智能
 email: zhaoxijie2@mail.ustc.edu.cn
-profiles:
+social:
   - icon: envelope
     icon_pack: fas
-    label: 邮箱
-    url: zhaoxijie2@mail.ustc.edu.cn
+    link: mailto:zhaoxijie2@mail.ustc.edu.cn
   - icon: github
     icon_pack: fab
-    label: GitHub
-    url: "#"
+    link: #
   - icon: graduation-cap
     icon_pack: fas
-    label: Google Scholar
-    url: "#"
+    link: #
   - icon: orcid
     icon_pack: fab
-    label: ORCID
-    url: "#"
+    link: #
   - icon: globe
     icon_pack: fas
-    label: 个人主页
-    url: "#"
+    link: #
 weight: 30
 ---
 

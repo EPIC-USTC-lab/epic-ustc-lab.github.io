@@ -9,6 +9,7 @@ slug: xijie-zhao
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于安徽大学互联网学院网络空间安全专业。
+summary: 中科大软件工程2026级硕士生，研究方向具身智能。
 interests:
   - 具身智能
 email: zhaoxijie2@mail.ustc.edu.cn

@@ -8,6 +8,7 @@ organizations:
 slug: liqi-xiang
 user_groups:
   - 已毕业校友
+summary: 2026届硕士，现就职于字节跳动
 social:
   - icon: envelope
     icon_pack: fas

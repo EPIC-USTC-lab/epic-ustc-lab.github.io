@@ -107,12 +107,13 @@
   margin: 0 !important;
 }
 
-/* 社交图标：圆形按钮 + hover 上浮变色 */
+/* 社交图标：圆形按钮 + hover 上浮变色（含 disabled 空链接） */
 .people-person ul.network-icon {
   display: flex; gap: 6px; justify-content: center; align-items: center;
   margin: 8px 0 2px; padding: 0; list-style: none;
 }
-.people-person ul.network-icon li a {
+.people-person ul.network-icon li a,
+.people-person ul.network-icon li .epic-social {
   font-size: 14px !important;
   width: 28px; height: 28px;
   display: inline-flex !important; align-items: center; justify-content: center;
@@ -120,11 +121,22 @@
   color: var(--muted, #6a7280) !important;
   background: transparent;
   transition: all .2s;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 .people-person ul.network-icon li a:hover {
   color: var(--accent, #3172B4) !important;
   background: rgba(49,114,180,.08);
   transform: translateY(-2px);
+}
+.people-person ul.network-icon li .epic-social.disabled {
+  opacity: .38;
+  cursor: default;
+}
+.people-person ul.network-icon li .epic-social.disabled:hover {
+  color: var(--muted, #6a7280) !important;
+  background: transparent;
+  transform: none;
 }
 
 /* summary：一句话，限 2 行 */
@@ -299,7 +311,30 @@
           <h2><a href="{{ if $link }}{{ $link }}{{ else }}/author/{{ path.Base .File.Dir | urlize }}/{{ end }}">{{ .Title }}</a></h2>
           {{ if and $show_organizations .Params.organizations }}{{ range .Params.organizations }}<h3>{{ .name }}</h3>{{ end }}{{ end }}
           {{ if and $show_role .Params.role }}<h3>{{ .Params.role | markdownify | emojify }}</h3>{{ end }}
-          {{ if $show_social }}{{ partial "social_links" . }}{{ end }}
+          {{ if $show_social }}
+            <ul class="network-icon" aria-hidden="true">
+              {{ range .Params.social }}
+                {{ $pack := or .icon_pack "fas" }}
+                {{ $pack_prefix := $pack }}
+                {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                  {{ $pack_prefix = "fa" }}
+                {{ end }}
+                {{ $link := .link }}
+                {{ $scheme := (urls.Parse $link).Scheme }}
+                {{ $target := "" }}
+                {{ if in (slice "http" "https") $scheme }}
+                  {{ $target = "target="_blank" rel="noopener"" }}
+                {{ end }}
+                <li>
+                  {{ if eq $link "#" }}
+                    <span class="epic-social disabled" title="{{ with .label }}{{ . }}{{ else }}链接{{ end }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i></span>
+                  {{ else }}
+                    <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} title="{{ with .label }}{{ . }}{{ end }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i></a>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
           {{/* 卡片只显示一句话 summary；interests 作为标签 chips */}}
           {{ if .Params.summary }}
             <p class="people-summary">{{ .Params.summary }}</p>

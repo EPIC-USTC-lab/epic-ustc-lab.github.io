@@ -8,6 +8,7 @@ organizations:
 slug: yi-xiong
 user_groups:
   - 已毕业校友
+summary: 2026届博士，现就职于腾讯
 social:
   - icon: envelope
     icon_pack: fas

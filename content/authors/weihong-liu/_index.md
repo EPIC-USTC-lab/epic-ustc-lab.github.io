@@ -8,6 +8,7 @@ organizations:
 slug: weihong-liu
 user_groups:
   - 已毕业校友
+summary: 2025届博士，现就职于华为
 social:
   - icon: envelope
     icon_pack: fas

@@ -8,6 +8,7 @@ organizations:
 slug: yang-wu
 user_groups:
   - 已毕业校友
+summary: 2025届硕士，现就职于腾讯
 social:
   - icon: envelope
     icon_pack: fas

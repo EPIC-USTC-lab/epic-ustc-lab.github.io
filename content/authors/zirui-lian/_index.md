@@ -8,6 +8,7 @@ organizations:
 slug: zirui-lian
 user_groups:
   - 已毕业校友
+summary: 2025届博士，现就职于阿里巴巴
 social:
   - icon: envelope
     icon_pack: fas

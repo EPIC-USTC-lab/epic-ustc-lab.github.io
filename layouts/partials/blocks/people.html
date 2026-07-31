@@ -321,15 +321,11 @@
                 {{ end }}
                 {{ $link := .link }}
                 {{ $scheme := (urls.Parse $link).Scheme }}
-                {{ $target := "" }}
-                {{ if in (slice "http" "https") $scheme }}
-                  {{ $target = "target="_blank" rel="noopener"" }}
-                {{ end }}
                 <li>
                   {{ if eq $link "#" }}
                     <span class="epic-social disabled" title="{{ with .label }}{{ . }}{{ else }}链接{{ end }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i></span>
                   {{ else }}
-                    <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} title="{{ with .label }}{{ . }}{{ end }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i></a>
+                    <a href="{{ $link | safeURL }}" {{ if in (slice "http" "https") $scheme }}target="_blank" rel="noopener"{{ end }} title="{{ with .label }}{{ . }}{{ end }}"><i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i></a>
                   {{ end }}
                 </li>
               {{ end }}

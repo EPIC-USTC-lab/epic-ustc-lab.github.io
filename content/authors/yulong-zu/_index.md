@@ -5,7 +5,6 @@ superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
-avatar_filename: avatar.jpg
 user_groups:
   - 博士研究生
 bio: 【待提交个人介绍 doc】研究方向：面向LLM推理的agent系统参数调优。

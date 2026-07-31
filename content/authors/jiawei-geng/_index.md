@@ -5,6 +5,7 @@ superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
+slug: jiawei-geng
 user_groups:
   - 教师
 bio: 耿家伟，特任副研究员，2026年6月于中国科学技术大学计算机科学与技术学院获博士学位，导师为周学海教授与朱宗卫研究员。主要研究方向为高能效智能计算，以软硬件协同为主线，致力于构建面向大模型与智能体（LLM/Agent Infra）、星载智能计算及系统级推理优化的高能效智能计算系统，服务于智能计算在云、边、端与在轨环境下的高效部署。作为研究骨干参与国家自然科学基金面上项目、国家重点研发计划、中国科学院战略性先导科技专项（C类）、中科院XX专项等多项国家级课题。近年来，在 DAC、IEEE TCAD、IEEE TITS 等计算机系统结构领域国际知名会议与期刊发表多篇论文，论文曾入选 DAC 会议 Hot-interest Topic。长期担任 IEEE TC、IEEE TCAD 等CCF A类期刊审稿人。

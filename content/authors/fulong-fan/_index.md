@@ -5,6 +5,7 @@ superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
+slug: fulong-fan
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院软件工程专业。以第一作者在 ACL 2026 Findings 发表推理框架论文（SABA 框架）。目前专注于 LLM 推理优化与任务规划方向。

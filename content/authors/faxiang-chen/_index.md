@@ -5,6 +5,7 @@ superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
+slug: faxiang-chen
 user_groups:
   - 博士研究生
 bio: 中科大软件工程2026级直博生。

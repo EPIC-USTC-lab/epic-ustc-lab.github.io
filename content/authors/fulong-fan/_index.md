@@ -1,12 +1,10 @@
 ---
 title: 樊富龙
-slug: "fulong-fan"
 role: 硕士研究生
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
-avatar_filename: avatar.png
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院软件工程专业。以第一作者在 ACL 2026 Findings 发表推理框架论文（SABA 框架）。目前专注于 LLM 推理优化与任务规划方向。
@@ -14,7 +12,41 @@ interests:
   - LLM 推理优化
   - 任务规划
 email: fanfl9922@mail.ustc.edu.cn
+profiles:
+  - icon: envelope
+    icon_pack: fas
+    label: 邮箱
+    url: fanfl9922@mail.ustc.edu.cn
+  - icon: github
+    icon_pack: fab
+    label: GitHub
+    url: "#"
+  - icon: graduation-cap
+    icon_pack: fas
+    label: Google Scholar
+    url: "#"
+  - icon: orcid
+    icon_pack: fab
+    label: ORCID
+    url: "#"
+  - icon: globe
+    icon_pack: fas
+    label: 个人主页
+    url: "#"
+weight: 30
 ---
+
+## 个人简介
+
+中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院软件工程专业。以第一作者在 ACL 2026 Findings 发表推理框架论文（SABA 框架）。目前专注于 LLM 推理优化与任务规划方向。
+
+
+## 研究方向
+
+- LLM 推理优化
+
+- 任务规划
+
 
 **导师：**朱宗卫
 

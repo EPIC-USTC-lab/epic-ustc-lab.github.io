@@ -1,19 +1,49 @@
 ---
 title: 赵希珏
-slug: "xijie-zhao"
 role: 硕士研究生
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
-avatar_filename: avatar.png
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于安徽大学互联网学院网络空间安全专业。
 interests:
   - 具身智能
 email: zhaoxijie2@mail.ustc.edu.cn
+profiles:
+  - icon: envelope
+    icon_pack: fas
+    label: 邮箱
+    url: zhaoxijie2@mail.ustc.edu.cn
+  - icon: github
+    icon_pack: fab
+    label: GitHub
+    url: "#"
+  - icon: graduation-cap
+    icon_pack: fas
+    label: Google Scholar
+    url: "#"
+  - icon: orcid
+    icon_pack: fab
+    label: ORCID
+    url: "#"
+  - icon: globe
+    icon_pack: fas
+    label: 个人主页
+    url: "#"
+weight: 30
 ---
+
+## 个人简介
+
+中科大软件工程2026级硕士生，本科毕业于安徽大学互联网学院网络空间安全专业。
+
+
+## 研究方向
+
+- 具身智能
+
 
 **导师：**朱宗卫
 

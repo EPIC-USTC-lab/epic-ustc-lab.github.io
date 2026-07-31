@@ -1,6 +1,5 @@
 ---
 title: 项莉棋
-slug: "liqi-xiang"
 role: 硕士
 superuser: false
 organizations:
@@ -8,6 +7,28 @@ organizations:
     url: https://sz.ustc.edu.cn/
 user_groups:
   - 已毕业校友
+profiles:
+  - icon: envelope
+    icon_pack: fas
+    label: 邮箱
+    url: "#"
+  - icon: github
+    icon_pack: fab
+    label: GitHub
+    url: "#"
+  - icon: graduation-cap
+    icon_pack: fas
+    label: Google Scholar
+    url: "#"
+  - icon: orcid
+    icon_pack: fab
+    label: ORCID
+    url: "#"
+  - icon: globe
+    icon_pack: fas
+    label: 个人主页
+    url: "#"
+weight: 40
 ---
 
 **毕业去向：**字节跳动

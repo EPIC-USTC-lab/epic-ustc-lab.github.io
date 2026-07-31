@@ -1,6 +1,5 @@
 ---
 title: 朱宗卫
-slug: "zongwei-zhu"
 role: 研究员、博士生导师
 superuser: true
 organizations:
@@ -19,11 +18,46 @@ education:
       year: 2014
 email: zzw1988@ustc.edu.cn
 office: 中国科学技术大学苏州高等研究院敏学楼202
+profiles:
+  - icon: envelope
+    icon_pack: fas
+    label: 邮箱
+    url: zzw1988@ustc.edu.cn
+  - icon: github
+    icon_pack: fab
+    label: GitHub
+    url: "#"
+  - icon: graduation-cap
+    icon_pack: fas
+    label: Google Scholar
+    url: "#"
+  - icon: orcid
+    icon_pack: fab
+    label: ORCID
+    url: "#"
+  - icon: globe
+    icon_pack: fas
+    label: 个人主页
+    url: "#"
+weight: 10
 ---
+
+## 个人简介
+
+朱宗卫，研究员，博士生导师，中国科学技术大学软件学院实验教学中心（苏州）主任。2014年博士毕业于中国科学技术大学计算机学院；2014-2018年先后工作于中国矿业大学、华为；2018年加入中科大苏州研究院。近年来，个人主持了国自然面上基金、重点研发计划子课题、中科院XX子课题、中科院先导C子课题、国自然青年基金、中国博士后面上基金、江苏省青年基金、江苏省海洋科技创新项目等多项国家级或省部级课题，个人主持竞争性项目合同经费近4000万元。以第一作者或通信作者在DAC、FAST、ICCAD、TOCS、TCAD、ToS、TSC等高水平学术期刊和会议上发表论文30余篇，第一发明人授权发明专利9项。期间形成的多项研究成果已实际应用于多家知名企事业单位。
+
+
+## 研究方向
+
+- 边缘智能计算（联邦学习+功耗优化）
+
+- 天基智能计算系统（具身智能卫星+星座分布式计算）
+
 
 ## 教育背景
 
 - 2014，博士，中国科学技术大学，计算机科学与技术
+
 
 ## 工作经历
 

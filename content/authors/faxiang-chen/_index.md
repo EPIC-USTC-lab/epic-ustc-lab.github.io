@@ -1,12 +1,10 @@
 ---
 title: 陈发祥
-slug: "faxiang-chen"
 role: 博士研究生
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
-avatar_filename: avatar.png
 user_groups:
   - 博士研究生
 bio: 中科大软件工程2026级直博生。
@@ -14,7 +12,41 @@ interests:
   - LLM 推理优化
   - 内存优化
 email: chenfx04@mail.ustc.edu.cn
+profiles:
+  - icon: envelope
+    icon_pack: fas
+    label: 邮箱
+    url: chenfx04@mail.ustc.edu.cn
+  - icon: github
+    icon_pack: fab
+    label: GitHub
+    url: "#"
+  - icon: graduation-cap
+    icon_pack: fas
+    label: Google Scholar
+    url: "#"
+  - icon: orcid
+    icon_pack: fab
+    label: ORCID
+    url: "#"
+  - icon: globe
+    icon_pack: fas
+    label: 个人主页
+    url: "#"
+weight: 20
 ---
+
+## 个人简介
+
+中科大软件工程2026级直博生。
+
+
+## 研究方向
+
+- LLM 推理优化
+
+- 内存优化
+
 
 **导师：**朱宗卫
 

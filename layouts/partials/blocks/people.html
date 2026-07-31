@@ -1,55 +1,104 @@
-{{/* Hugo Blox: People (EPIC实验室 v2 修复版) - 卡片只显示一句话 + interests tag */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
-{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+{{/* Hugo Blox: People (EPIC 第1轮迭代版) - 卡片化设计 */}}
+{{/* 参考：Quackit team card / USC lab stacking cards / Charlotte people-card */}}
+{{/* 设计亮点：白卡+圆角+柔和阴影；头像主题色 ring；名字/角色层级；社交图标 hover 上浮；响应式 4/3/2/1 列 */}}
 
 <style>
-/* EPIC people 卡片修复版：等高对齐 + 内容限行 */
-.people-widget .row { align-items: stretch; }
-.people-widget .col-sm-auto {
-  display: flex; align-items: stretch;
+/* ===== EPIC people 卡片化（第1轮） ===== */
+.people-widget {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 20px;
 }
 
+/* 分组标题整行 */
+.people-widget > .col-md-12 {
+  flex: 0 0 100%; max-width: 100%;
+  text-align: center;
+}
+.people-widget > .col-md-12 h2 {
+  display: inline-block;
+  font-size: 20px; font-weight: 700;
+  color: var(--ink, #2C3E50);
+  padding: 8px 26px; margin: 10px 0 4px;
+  border-bottom: 3px solid var(--accent, #3172B4);
+}
+
+/* 成员卡片容器 */
 .people-person {
-  width: 100%;
+  flex: 0 0 calc(25% - 16px);
+  max-width: calc(25% - 16px);
+  min-width: 220px;
   display: flex; flex-direction: column; align-items: center;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--line, #e7ebf1);
+  border-radius: 14px;
+  padding: 22px 16px 18px;
+  box-shadow: 0 4px 12px rgba(44,62,80,.06);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s;
+}
+.people-person:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(44,62,80,.12);
+  border-color: var(--accent, #3172B4);
 }
 
+/* 头像：圆形 + 主题色 ring */
 .people-person img.avatar {
-  display: block;
-  margin-left: auto; margin-right: auto;
+  width: 120px !important; height: 120px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 3px solid var(--card-bg, #fff);
+  box-shadow: 0 0 0 3px var(--accent, #3172B4);
+  margin-bottom: 14px;
+  transition: transform .25s;
 }
+.people-person:hover img.avatar { transform: scale(1.05); }
 
+/* 名字 / 角色 层级 */
 .portrait-title {
   width: 100%;
   text-align: center;
-  display: flex; flex-direction: column;
-  align-items: center; gap: 6px;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.portrait-title h2 {
+  font-size: 16.5px !important; font-weight: 700 !important;
+  color: var(--ink, #2C3E50) !important;
+  margin: 0 !important; line-height: 1.3 !important;
+}
+.portrait-title h2 a { color: inherit !important; text-decoration: none !important; }
+.portrait-title h2 a:hover { color: var(--accent, #3172B4) !important; }
+.portrait-title h3 {
+  font-size: 12.5px !important; font-weight: 500 !important;
+  color: var(--accent, #3172B4) !important;
+  margin: 0 !important;
 }
 
-/* 社交图标：缩小+间距，更紧凑 */
+/* 社交图标：圆形按钮 + hover 上浮变色 */
 .people-person ul.network-icon {
-  display: flex; gap: 8px; justify-content: center; align-items: center;
-  margin: 4px 0 2px; padding: 0; list-style: none;
+  display: flex; gap: 6px; justify-content: center; align-items: center;
+  margin: 8px 0 2px; padding: 0; list-style: none;
 }
 .people-person ul.network-icon li a {
-  font-size: 15px;
-  width: 30px; height: 30px;
-  display: inline-flex; align-items: center; justify-content: center;
-  border-radius: 50%; color: var(--ink);
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  font-size: 14px !important;
+  width: 28px; height: 28px;
+  display: inline-flex !important; align-items: center; justify-content: center;
+  border-radius: 50% !important;
+  color: var(--muted, #6a7280) !important;
+  background: transparent;
   transition: all .2s;
 }
 .people-person ul.network-icon li a:hover {
-  color: var(--accent); transform: translateY(-2px);
+  color: var(--accent, #3172B4) !important;
+  background: rgba(49,114,180,.08);
+  transform: translateY(-2px);
 }
 
-/* summary：限两行 + min-height 保证同组卡片对齐 */
+/* summary：一句话，限 2 行 */
 .people-summary {
-  font-size: 13px;
-  color: #495260;
-  line-height: 1.45;
-  margin: 4px 0 6px;
-  padding: 0 4px;
+  font-size: 12.5px;
+  color: var(--muted, #6a7280);
+  line-height: 1.5;
+  margin: 6px 0 4px;
+  padding: 0 2px;
   width: 100%;
   min-height: 38px;
   display: -webkit-box;
@@ -58,39 +107,37 @@
   overflow: hidden;
   word-break: break-word;
 }
-[data-theme="dark"] .people-summary { color: #b6c2cf; }
 
-/* interests 标签：单行不换行，超长省略 */
+/* interests 标签 chips */
 .people-tags {
-  display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;
-  margin-top: 4px;
-  width: 100%;
+  display: flex; flex-wrap: wrap; gap: 4px; justify-content: center;
+  margin-top: 4px; width: 100%;
 }
 .people-tag {
   display: inline-block;
-  font-size: 11px; font-weight: 600;
-  padding: 3px 9px; border-radius: 10px;
-  background: #eef3fa; color: #3172B4;
-  border: 1px solid #dbe6f2;
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 10.5px; font-weight: 600;
+  padding: 2px 8px; border-radius: 8px;
+  background: rgba(49,114,180,.08); color: var(--accent, #3172B4);
+  border: 1px solid rgba(49,114,180,.18);
+  max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   line-height: 1.4;
 }
-[data-theme="dark"] .people-tag {
-  background: #1e2c40; color: #6fa8dc; border-color: #2a3b56;
-}
 
+/* 校友 fallback */
 .people-interests {
-  font-size: 13px; color: #6a7280;
-  margin-top: 8px; line-height: 1.5;
+  font-size: 12.5px; color: var(--muted, #6a7280);
+  margin-top: 6px; line-height: 1.5;
 }
-[data-theme="dark"] .people-interests { color: #9aa7b6; }
 
-/* 移动端收紧 */
-@media (max-width: 576px) {
-  .people-widget .col-sm-auto { flex: 0 0 100%; max-width: 100%; }
+/* 响应式：4→3→2→1 列 */
+@media (max-width: 992px) {
+  .people-person { flex: 0 0 calc(33.33% - 14px); max-width: calc(33.33% - 14px); }
+}
+@media (max-width: 768px) {
+  .people-person { flex: 0 0 calc(50% - 10px); max-width: calc(50% - 10px); }
+}
+@media (max-width: 480px) {
+  .people-person { flex: 0 0 100%; max-width: 100%; }
 }
 </style>
 
@@ -104,9 +151,9 @@
 {{ $show_avatar := $block.design.show_avatar | default true }}
 {{ $text_align := $block.design.text_align | default "center" }}
 
-<div class="row justify-content-center people-widget">
+<div class="people-widget">
   {{ with $block.content.title }}
-    <div class="section-heading col-12 mb-3 text-center">
+    <div class="col-md-12 section-heading mb-2 text-center">
       <h1 class="mb-0">{{ . | markdownify | emojify }}</h1>
       {{ with $block.content.subtitle }}<p class="mt-1">{{ . | markdownify | emojify }}</p>{{ end }}
     </div>
@@ -145,7 +192,7 @@
         {{ $link = .RelPermalink }}
       {{ end }}
 
-      <div class="col-12 col-sm-auto people-person">
+      <div class="people-person">
         {{ $src := "" }}
         {{ if site.Params.features.avatar.gravatar }}
           {{ $src = printf "https://s.gravatar.com/avatar/%s?s=150" (md5 .Params.email) }}
@@ -154,11 +201,11 @@
           {{ $src = $avatar_image.RelPermalink }}
         {{ end }}
         {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
-        <a href="{{ if $link }}{{ $link }}{{ else }}/author/{{ path.Base .File.Dir | urlize }}/{{ end }}">
+        <a href="{{ if $link }}{{ $link }}{{ else }}/author/{{ path.Base .File.Dir | urlize }}/{{ end }}" aria-label="{{ .Title }}">
           {{ if $src }}
-          <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $src }}" alt="Avatar">
+          <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $src }}" alt="{{ .Title }}">
           {{ else }}
-          <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="/author/{{ path.Base .File.Dir | urlize }}/avatar.jpg" alt="Avatar">
+          <img width="270" height="270" loading="lazy" class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="/author/{{ path.Base .File.Dir | urlize }}/avatar.jpg" alt="{{ .Title }}">
           {{ end }}
         </a>
 
@@ -167,7 +214,7 @@
           {{ if and $show_organizations .Params.organizations }}{{ range .Params.organizations }}<h3>{{ .name }}</h3>{{ end }}{{ end }}
           {{ if and $show_role .Params.role }}<h3>{{ .Params.role | markdownify | emojify }}</h3>{{ end }}
           {{ if $show_social }}{{ partial "social_links" . }}{{ end }}
-          {{/* FIX 3: 卡片只显示一句话 summary；interests 作为标签 chips */}}
+          {{/* 卡片只显示一句话 summary；interests 作为标签 chips */}}
           {{ if .Params.summary }}
             <p class="people-summary">{{ .Params.summary }}</p>
           {{ else if and $show_interests .Params.interests }}

@@ -6,7 +6,7 @@ superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
     url: https://sz.ustc.edu.cn/
-slug: xijie-zhao
+slug: xijue-zhao
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于安徽大学互联网学院网络空间安全专业。

@@ -1,6 +1,7 @@
 ---
 title: 耿家伟
 role: 特任副研究员
+name_en: Jiawei Geng
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院

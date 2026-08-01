@@ -1,6 +1,7 @@
 ---
 title: 樊富龙
 role: 硕士研究生
+name_en: Fulong Fan
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
@@ -13,6 +14,14 @@ summary: 中科大软件工程2026级硕士生，ACL 2026 Findings 一作，研�
 interests:
   - LLM 推理优化
   - 任务规划
+education:
+  courses:
+    - course: 硕士研究生（在读）, 中国科学技术大学苏州高等研究院 软件工程, 2026
+      institution: 中国科学技术大学苏州高等研究院
+      year: 2026
+    - course: 学士, 吉林大学 软件工程, 2022
+      institution: 吉林大学
+      year: 2022
 email: fanfl9922@mail.ustc.edu.cn
 social:
   - icon: envelope
@@ -45,11 +54,17 @@ weight: 30
 - 任务规划
 
 
-**导师：**朱宗卫
+## 教育背景
 
-**入学年份：**2026
+- 2026，硕士研究生（在读），中国科学技术大学苏州高等研究院，软件工程
+- 2022，学士，吉林大学，软件工程
 
-**本科：**吉林大学，软件学院，软件工程 (2022-2026)
+
+**导师**：朱宗卫
+
+**入学年份**：2026
+
+**本科**：吉林大学，软件学院，软件工程 (2022-2026)
 
 ## 代表论文
 

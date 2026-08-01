@@ -1,6 +1,7 @@
 ---
 title: 朱宗卫
 role: 研究员、博士生导师
+name_en: Zongwei Zhu
 superuser: true
 organizations:
   - name: 中国科学技术大学 苏州高等研究院

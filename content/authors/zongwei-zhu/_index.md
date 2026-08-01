@@ -38,6 +38,59 @@ social:
     icon_pack: fas
     link: "#"
 weight: 10
+grants:
+  - 国家自然科学基金面上项目 — 主持
+  - 国家重点研发计划子课题 — 主持
+  - 中科院战略性先导科技专项(C类)子课题 — 主持
+  - 国自然青年基金 — 主持
+  - 中国博士后面上基金 — 主持
+  - 江苏省青年基金 — 主持
+  - 江苏省海洋科技创新项目 — 主持
+  - 个人主持竞争性项目合同经费近 4,000 万元
+recruitment: 招收博士研究生、硕士研究生，研究方向为边缘智能计算与天基智能计算系统。欢迎对智能计算系统方向感兴趣的同学联系。
+work_experience:
+  - years: 2018-至今
+    position: 研究员
+    org: 中国科学技术大学苏州高等研究院
+  - years: 2014-2018
+    position: 先后任职
+    org: 中国矿业大学、华为
+papers:
+  - title: "MP3: Mixed-Precision Pipeline Parallelism Framework for Heterogeneous Edge Devices"
+    authors: Yi Xiong, Weihong Liu, Boyu Li, Qianyue Cao, Zongwei Zhu*, Jiawei Geng, Rui Zhang, Yulong Zu, Xuehai Zhou
+    venue: IEEE TCAD
+    year: 2026
+    level: CCF-A期刊
+  - title: "eLLM: Elastic Memory Management Framework for Efficient LLM Serving"
+    authors: Jiale Xu, Yi Xiong, Rui Zhang, Cong Guo*, Zihan Liu, Yangjie Zhou, Weiming Hu, Hao Wu, Boyu Li, Junping Zhao, Minyi Guo, Zongwei Zhu*, Xuehai Zhou, Jingwen Leng
+    venue: DAC
+    year: 2026
+    level: CCF-A会议
+  - title: "PPFL: A Parameter Behavior-Driven Plug-in Personalization Engine for Federated Learning"
+    authors: Qianyue Cao, Zongwei Zhu*, Zirui Lian, Rui Zhang, Boyu Li, Yi Xiong, Xuehai Zhou
+    venue: AAAI
+    year: 2026
+    level: CCF-A会议
+  - title: "MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference"
+    authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou
+    venue: IEEE TCAD
+    year: 2025
+    level: CCF-A期刊
+  - title: "AsyncGrid: An Intra- and Inter-Layer Asynchronous Hybrid Parallelism System for Responsive Edge LLM Inference"
+    authors: Yi Xiong, Rui Zhang, Yulong Zu, Weihong Liu, Zongwei Zhu*, Jiawei Geng, Boyu Li, Qianyue Cao, Xuehai Zhou
+    venue: IEEE TCAD
+    year: 2025
+    level: CCF-A期刊
+  - title: "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices"
+    authors: Changlong Li, Zongwei Zhu*, Chao Wang, Fangming Liu, Fei Xu, Edwin Sha, Xuehai Zhou
+    venue: USENIX FAST
+    year: 2025
+    level: CCF-A会议
+  - title: "PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks"
+    authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li
+    venue: DAC
+    year: 2024
+    level: CCF-A会议
 ---
 
 ## 个人简介

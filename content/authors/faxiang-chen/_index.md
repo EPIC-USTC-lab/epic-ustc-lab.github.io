@@ -37,6 +37,8 @@ social:
     icon_pack: fas
     link: "#"
 weight: 20
+advisor: 朱宗卫
+enrollment: 2026
 ---
 
 ## 个人简介

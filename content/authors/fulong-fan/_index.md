@@ -40,6 +40,16 @@ social:
     icon_pack: fas
     link: "#"
 weight: 30
+advisor: 朱宗卫
+enrollment: 2026
+undergrad: 吉林大学，软件学院，软件工程 (2022-2026)
+papers:
+  - title: "Self-Awareness before Action: Mitigating Logical Inertia via Proactive Cognitive Awareness"
+    authors: Fulong Fan, Peilin Liu, Liu FengZhe, Shuyan Yang, Gang Yan
+    venue: Findings of ACL
+    year: 2026
+    level: CCF-A
+    url: "https://aclanthology.org/2026.findings-acl.793/"
 ---
 
 ## 个人简介

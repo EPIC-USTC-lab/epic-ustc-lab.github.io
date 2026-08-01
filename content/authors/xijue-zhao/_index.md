@@ -39,6 +39,18 @@ social:
     icon_pack: fas
     link: "#"
 weight: 30
+advisor: 朱宗卫
+enrollment: 2026
+undergrad: 安徽大学，互联网学院，网络空间安全 (2022-2026)
+papers:
+  - title: Real-time bit-level encryption of full high-definition video without pixel diffusion
+    authors: Dong Jiang, Hui-ran Luo, Zi-jian Cui, Xi-Jue Zhao, Liang-liang Lu
+    venue: Journal of Information Security and Applications
+    year: 2026
+  - title: Chaotic video encryption based on DNA coding, confusion, and diffusion
+    authors: Li-Xun Zhi, Yuan Du, Xi-Jue Zhao, Tao Chen, Ke-Yin Cao, Dong Jiang
+    venue: International Journal of Bifurcation and Chaos
+    year: 2024
 ---
 
 ## 个人简介

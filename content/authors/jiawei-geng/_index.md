@@ -38,6 +38,38 @@ social:
     icon_pack: fas
     link: "#"
 weight: 10
+awards:
+  - 2026年 安徽省高等学校优秀毕业生
+  - 2025年 博士生国家奖学金
+service:
+  - 长期担任 IEEE TC (CCF-A) 审稿人
+  - 长期担任 IEEE TCAD (CCF-A) 审稿人
+papers:
+  - title: "MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference"
+    authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou
+    venue: IEEE TCAD
+    year: 2026
+    level: CCF-A期刊
+  - title: "PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks"
+    authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li
+    venue: DAC
+    year: 2024
+    level: CCF-A会议
+  - title: "Sniper: Cloud-Edge Collaborative Inference Scheduling with Neural Network Similarity Modeling"
+    authors: Weihong Liu, Jiawei Geng (co-first), Zongwei Zhu*, Jing Cao, Zirui Lian
+    venue: DAC
+    year: 2022
+    level: CCF-A会议 (Hot-interest Topic)
+  - title: "Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems"
+    authors: Jiawei Geng, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.
+    venue: IEEE TITS
+    year: 2024
+    level: CCF-B期刊 (交通TOP)
+  - title: "Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices"
+    authors: Weihong Liu, Jiawei Geng, Zongwei Zhu*, et al.
+    venue: IEEE TCAD
+    year: 2024
+    level: CCF-A期刊
 ---
 
 ## 个人简介

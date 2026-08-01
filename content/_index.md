@@ -8,15 +8,33 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        EPIC Lab
       image:
         filename: welcome.jpg
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        **EPIC 实验室**隶属于中国科学技术大学，致力于高能效智能计算、端侧智能与分布式计算等方向的研究。
+
+        我们关注模型、系统与网络的协同设计，探索低时延、低能耗的智能计算方法。
   
+  - block: markdown
+    content:
+      title: 研究方向
+      subtitle: Research Directions
+      text: |
+        ### 高能效智能计算
+
+        面向 AI 基础设施中的算子、单机和多机系统，研究软硬件协同设计、AI 编译器、模型轻量化、运行时优化以及高效通信，重点解决计算、访存与通信瓶颈。
+
+        ### 基于 LLM 的端侧智能与分布式计算
+
+        将模型、上下文与网络视为可调度资源，围绕低比特模型、预算感知的长上下文系统和低轨卫星协同训推，在动态资源约束下持续提供可信、低时延、低能耗的智能能力。
+
+        {{% cta cta_link=./research/ cta_text=查看研究方向详情 %}}
+    design:
+      columns: '1'
+
   - block: collection
     content:
       title: Latest News

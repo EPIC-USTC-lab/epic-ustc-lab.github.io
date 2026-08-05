@@ -8,6 +8,36 @@
   justify-content: center;
 }
 
+// EPIC Lab's approved horizontal logo is the primary navbar signature.
+#navbar-main .navbar-brand img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 56px;
+  object-fit: contain;
+}
+
+// Preserve the original navy/cyan artwork when a dark theme is enabled.
+.dark #navbar-main .navbar-brand img {
+  box-sizing: border-box;
+  max-height: 56px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 6px;
+}
+
+@media (max-width: 991.98px) {
+  #navbar-main .navbar-brand img {
+    max-height: 40px;
+  }
+
+  .dark #navbar-main .navbar-brand img {
+    max-height: 40px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+}
+
 .research-shell {
   padding-top: 2rem;
   padding-bottom: 3rem;

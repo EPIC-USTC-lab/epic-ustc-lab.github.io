@@ -18,6 +18,8 @@
 {{- $papers := .Params.papers | default slice -}}
 {{- $awards := .Params.awards | default slice -}}
 {{- $projects := .Params.projects | default slice -}}
+{{- $grants := .Params.grants | default slice -}}
+{{- range $grants }}{{ $projects = $projects | append . }}{{ end -}}
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
@@ -460,19 +462,15 @@ document.documentElement.classList.add('js');
     {{ else }}<p class="empty-tip">（暂无论文信息，待补充）</p>{{ end }}
   </section>
 
-  {{ if $projects }}
   <section class="cell reveal" id="projects">
     <h2><span class="bar"></span> 项目经历</h2>
-    {{ range $projects }}<p>· {{ . }}</p>{{ end }}
+    {{ if $projects }}{{ range $projects }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
   </section>
-  {{ end }}
 
-  {{ if $awards }}
   <section class="cell reveal" id="awards">
     <h2><span class="bar"></span> 获奖与荣誉</h2>
-    {{ range $awards }}<p>· {{ . }}</p>{{ end }}
+    {{ if $awards }}{{ range $awards }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无获奖信息）</p>{{ end }}
   </section>
-  {{ end }}
 
   <section class="cell wide reveal">
     <h2><span class="bar"></span> 技能</h2>

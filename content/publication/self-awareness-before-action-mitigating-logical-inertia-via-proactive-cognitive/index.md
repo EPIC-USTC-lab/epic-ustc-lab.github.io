@@ -9,7 +9,7 @@ authors_display:
   - Shuyan Yang
   - Gang Yan*
 date: "2026-01-01T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["paper-conference"]
 publication: Findings of ACL
 level: CCF-A
 url_source: "https://aclanthology.org/2026.findings-acl.793/"

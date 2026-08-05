@@ -9,7 +9,7 @@ authors_display:
   - Zongwei Zhu
   - Xuehai Zhou
 date: "2022-01-01T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["paper-conference"]
 publication: ICCD 2022
 level: CCF-B
 featured: false

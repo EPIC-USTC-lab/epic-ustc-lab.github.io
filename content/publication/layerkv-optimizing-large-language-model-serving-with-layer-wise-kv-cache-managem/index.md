@@ -13,7 +13,7 @@ authors_display:
   - Ke Zhang
   - Zhenxuan Pan
 date: "2024-01-01T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["preprint"]
 publication: arXiv
 url_source: "https://arxiv.org/abs/2410.00428"
 featured: false

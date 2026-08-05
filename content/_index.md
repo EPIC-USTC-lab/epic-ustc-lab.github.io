@@ -9,14 +9,23 @@ sections:
     content:
       title: |
         EPIC Lab
-      image:
-        filename: welcome.jpg
       text: |
-        <br>
-        
-        **EPIC 实验室**隶属于中国科学技术大学，致力于高能效智能计算、端侧智能与分布式计算等方向的研究。
+        **EPIC 实验室**隶属于中国科学技术大学，致力于<span class="epic-hero-accent">高能效智能计算</span>、<span class="epic-hero-accent">端侧智能与分布式计算</span>等方向的研究。
 
         我们关注模型、系统与网络的协同设计，探索低时延、低能耗的智能计算方法。
+    design:
+      css_class: epic-ai-hero
+      background:
+        image:
+          filename: epic-ai-hero.png
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['112px', '0', '112px', '0']
   
   - block: markdown
     content:

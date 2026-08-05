@@ -38,6 +38,107 @@
   }
 }
 
+// Full-width EPIC Lab homepage hero. The copy remains live HTML so it stays
+// sharp, searchable, and responsive over the generated research backdrop.
+.epic-ai-hero {
+  position: relative;
+  display: flex;
+  min-height: clamp(620px, 62vw, 780px);
+  align-items: center;
+  overflow: hidden;
+}
+
+.epic-ai-hero .home-section-bg::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background:
+    linear-gradient(180deg, rgba(2, 8, 23, 0.1), rgba(2, 8, 23, 0.34)),
+    radial-gradient(circle at center, rgba(2, 17, 38, 0.08), rgba(2, 8, 23, 0.34) 82%);
+}
+
+.epic-ai-hero .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1220px;
+  text-align: center;
+}
+
+.epic-ai-hero .row {
+  justify-content: center;
+}
+
+.epic-ai-hero .row > div {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center !important;
+}
+
+.epic-ai-hero .hero-title {
+  margin: 0 0 clamp(2rem, 4vw, 3.25rem);
+  color: #fff;
+  font-size: clamp(3rem, 6.2vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.36);
+}
+
+.epic-ai-hero .hero-lead {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: clamp(1.12rem, 1.75vw, 1.62rem);
+  line-height: 1.9;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.64);
+}
+
+.epic-ai-hero .hero-lead p {
+  margin: 0 0 1.35rem;
+}
+
+.epic-ai-hero .hero-lead strong {
+  color: #fff;
+  font-weight: 750;
+}
+
+.epic-ai-hero .epic-hero-accent {
+  color: #15c1ff;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .epic-ai-hero {
+    min-height: 640px;
+  }
+
+  .epic-ai-hero .home-section-bg {
+    background-position: center center !important;
+  }
+
+  .epic-ai-hero .container {
+    width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .epic-ai-hero .hero-title {
+    margin-bottom: 2rem;
+  }
+
+  .epic-ai-hero .hero-lead {
+    max-width: 100%;
+    font-size: clamp(1.05rem, 5vw, 1.25rem);
+    line-height: 1.8;
+  }
+}
+
 .research-shell {
   padding-top: 2rem;
   padding-bottom: 3rem;

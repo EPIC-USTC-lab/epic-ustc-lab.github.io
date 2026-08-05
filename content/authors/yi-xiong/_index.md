@@ -9,9 +9,7 @@ organizations:
 slug: yi-xiong
 user_groups:
   - 已毕业校友
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为边缘智能计算与 LLM 推理优化，
-在 ICCAD、TCAD 等会议期刊发表多篇论文（EPipe、LayerKV 等），现就职于腾讯。
-
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为边缘智能计算与 LLM 推理优化， 在 ICCAD、TCAD 等会议期刊发表多篇论文（EPipe、LayerKV 等），现就职于腾讯。
 summary: 2026届，现就职于腾讯
 interests:
   - 边缘智能计算

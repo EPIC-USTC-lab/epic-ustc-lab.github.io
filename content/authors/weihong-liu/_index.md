@@ -9,9 +9,7 @@ organizations:
 slug: weihong-liu
 user_groups:
   - 已毕业校友
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能，
-在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为。
-
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能， 在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为。
 summary: 2025届，现就职于华为
 interests:
   - 云边协同计算

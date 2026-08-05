@@ -9,9 +9,7 @@ organizations:
 slug: fulong-fan
 user_groups:
   - 硕士研究生
-bio: 中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院。研究方向为 LLM 推理优化与任务规划，
-曾以第一作者在 ACL Findings 发表论文。
-
+bio: 中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院。研究方向为 LLM 推理优化与任务规划， 曾以第一作者在 ACL Findings 发表论文。
 interests:
   - LLM 推理优化
   - 任务规划

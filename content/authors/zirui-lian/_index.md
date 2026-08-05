@@ -9,9 +9,7 @@ organizations:
 slug: zirui-lian
 user_groups:
   - 已毕业校友
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能，
-在 ICCD、TCAD、AAAI 等会议期刊发表多篇论文（FedNorm、HaloFL 等），现就职于阿里巴巴。
-
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能， 在 ICCD、TCAD、AAAI 等会议期刊发表多篇论文（FedNorm、HaloFL 等），现就职于阿里巴巴。
 summary: 2025届，现就职于阿里巴巴
 interests:
   - 联邦学习

@@ -10,7 +10,6 @@ slug: xijue-zhao
 user_groups:
   - 硕士研究生
 bio: 中科大软件工程2026级硕士生，本科毕业于安徽大学网络空间安全专业。研究方向为具身智能。
-
 interests:
   - 具身智能
 education:

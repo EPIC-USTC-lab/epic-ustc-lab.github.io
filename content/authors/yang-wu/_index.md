@@ -10,7 +10,6 @@ slug: yang-wu
 user_groups:
   - 已毕业校友
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯。
-
 summary: 2025届，现就职于腾讯
 education:
   courses:

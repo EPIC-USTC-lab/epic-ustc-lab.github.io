@@ -10,7 +10,6 @@ slug: faxiang-chen
 user_groups:
   - 博士研究生
 bio: 中科大软件工程2026级直博生，研究方向为 LLM 推理优化与内存优化。
-
 interests:
   - LLM 推理优化
   - 内存优化

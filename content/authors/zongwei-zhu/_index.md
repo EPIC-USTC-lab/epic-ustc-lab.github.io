@@ -40,7 +40,7 @@ social:
 weight: 10
 homepage: "http://staff.ustc.edu.cn/~zzw1988/"
 awards:
-  - 2019年 江苏省\"双创博士\"称号
+  - "2019年 江苏省\"双创博士\"称号"
   - 2019年 国家级科技竞赛一等奖（两项）
 grants:
   - 国家自然科学基金面上项目 — 主持

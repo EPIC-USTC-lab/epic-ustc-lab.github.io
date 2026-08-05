@@ -10,7 +10,6 @@ slug: liqi-xiang
 user_groups:
   - 已毕业校友
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于字节跳动。
-
 summary: 2026届，现就职于字节跳动
 education:
   courses:

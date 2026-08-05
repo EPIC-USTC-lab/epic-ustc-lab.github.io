@@ -14,6 +14,9 @@
 {{- $orcid := .Params.orcid | default "" -}}
 {{- $office := .Params.office | default "" -}}
 {{- $recruitment := .Params.recruitment | default "" -}}
+{{- $is_teacher := .Params.is_teacher | default false -}}
+{{- $academic_position := .Params.academic_position | default "" -}}
+{{- $supervision := .Params.supervision | default "" -}}
 {{- $avatar := "" }}{{ with .Resources.GetMatch "avatar*" }}{{ $avatar = .RelPermalink }}{{ end -}}
 {{- $papers := .Params.papers | default slice -}}
 {{- $awards := .Params.awards | default slice -}}
@@ -406,6 +409,17 @@ document.documentElement.classList.add('js');
 
   <section class="cell reveal" id="info">
     <h2><span class="bar"></span> 基本信息</h2>
+    {{ if $is_teacher }}
+    <!-- ══ 教师版基本信息（7 行） ══ -->
+    <div class="kv"><span class="k">姓名</span><span class="v">{{ if $name_en }}{{ $name_cn }}（{{ $name_en }}）{{ else }}{{ $name_cn }}{{ end }}</span></div>
+    <div class="kv"><span class="k">职称</span><span class="v">{{ $role | default "（未填写）" }}</span></div>
+    <div class="kv"><span class="k">学术职务</span><span class="v{{ if not $academic_position }} empty{{ end }}">{{ $academic_position | default "（未填写）" }}</span></div>
+    <div class="kv"><span class="k">研究生指导</span><span class="v{{ if not $supervision }} empty{{ end }}">{{ $supervision | default "（未填写）" }}</span></div>
+    <div class="kv"><span class="k">机构</span><span class="v">{{ $org }}</span></div>
+    <div class="kv"><span class="k">研究方向</span><span class="v">{{ delimit $interests "、" | default "（未填写）" }}</span></div>
+    {{ if $office }}<div class="kv"><span class="k">办公室</span><span class="v">{{ $office }}</span></div>{{ end }}
+    {{ else }}
+    <!-- ══ 学生版基本信息（7 行） ══ -->
     <div class="kv"><span class="k">姓名</span><span class="v">{{ if $name_en }}{{ $name_cn }}（{{ $name_en }}）{{ else }}{{ $name_cn }}{{ end }}</span></div>
     <div class="kv"><span class="k">身份</span><span class="v">{{ $role | default "（未填写）" }}</span></div>
     <div class="kv"><span class="k">专业</span><span class="v">{{ $major | default "（未填写）" }}</span></div>
@@ -414,8 +428,59 @@ document.documentElement.classList.add('js');
     <div class="kv"><span class="k">入学年份</span><span class="v">{{ $enrollment | default "（未填写）" }}</span></div>
     {{ if $office }}<div class="kv"><span class="k">办公室</span><span class="v">{{ $office }}</span></div>{{ end }}
     <div class="kv"><span class="k">研究方向</span><span class="v">{{ delimit $interests "、" | default "（未填写）" }}</span></div>
+    {{ end }}
   </section>
 
+  {{ if $is_teacher }}
+  <!-- ══ 教师布局：获奖与基本信息同行（右列） ══ -->
+  <section class="cell reveal" id="awards">
+    <h2><span class="bar"></span> 获奖与荣誉</h2>
+    {{ if $awards }}{{ range $awards }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无获奖信息）</p>{{ end }}
+  </section>
+
+  <section class="cell wide reveal" id="projects">
+    <h2><span class="bar"></span> 在研项目</h2>
+    {{ if $projects }}
+    <div class="timeline">
+      {{ range $projects }}
+      <div class="edu">
+        <div class="top"><span class="school">{{ .name }}</span><span class="time">{{ .years }}</span></div>
+        {{ if .detail }}<div class="detail">{{ .detail }}</div>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
+  </section>
+
+  <section class="cell wide reveal" id="papers">
+    <h2><span class="bar"></span> 发表论文</h2>
+    {{ if $papers }}
+    <div class="papers-list">
+      {{ range $papers }}
+      <div class="paper">
+        <div class="idx"></div>
+        <div class="body">
+          <div class="pt">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .title }}</a>{{ end }}</div>
+          <div class="pa">{{ if $name_en }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) .authors | safeHTML }}{{ else }}{{ .authors }}{{ end }}</div>
+          <div class="pv">
+            {{ if .venue }}<span class="venue">{{ .venue }}</span>{{ end }}
+            {{ if .year }}<span class="yr">{{ .year }}</span>{{ end }}
+            {{ if .level }}<span class="lvl">{{ .level }}</span>{{ end }}
+          </div>
+          {{ if .abstract }}
+          <details class="paper-abs" aria-label="论文摘要">
+            <summary class="abs-toggle">查看摘要</summary>
+            <p style="margin-top:6px">{{ .abstract }}</p>
+          </details>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}<p class="empty-tip">（暂无论文信息，待补充）</p>{{ end }}
+  </section>
+  {{ else }}
+  <!-- ══ 学生布局 ══ -->
   <section class="cell reveal" id="edu">
     <h2><span class="bar"></span> 教育经历</h2>
     {{ with .Params.education }}{{ with .courses }}
@@ -464,7 +529,7 @@ document.documentElement.classList.add('js');
 
   <section class="cell reveal" id="projects">
     <h2><span class="bar"></span> 项目经历</h2>
-    {{ if $projects }}{{ range $projects }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
+    {{ if $projects }}{{ range $projects }}<p>· {{ if .name }}{{ .name }}{{ else }}{{ . }}{{ end }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
   </section>
 
   <section class="cell reveal" id="awards">
@@ -480,6 +545,7 @@ document.documentElement.classList.add('js');
     </div>
     {{ else }}<p class="empty-tip">（未填写）</p>{{ end }}
   </section>
+  {{ end }}
 
   {{ if $recruitment }}
   <section class="cell wide reveal">

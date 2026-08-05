@@ -9,11 +9,13 @@ organizations:
 slug: jiawei-geng
 user_groups:
   - 教师
-bio: 耿家伟，特任副研究员，2026年6月于中国科学技术大学计算机科学与技术学院获博士学位，导师为周学海教授与朱宗卫研究员。主要研究方向为高能效智能计算，以软硬件协同为主线，致力于构建面向大模型与智能体（LLM/Agent Infra）、星载智能计算及系统级推理优化的高能效智能计算系统，服务于智能计算在云、边、端与在轨环境下的高效部署。作为研究骨干参与国家自然科学基金面上项目、国家重点研发计划、中国科学院战略性先导科技专项（C类）、中科院XX专项等多项国家级课题。近年来，在 DAC、IEEE TCAD、IEEE TITS 等计算机系统结构领域国际知名会议与期刊发表多篇论文，论文曾入选 DAC 会议 Hot-interest Topic。长期担任 IEEE TC、IEEE TCAD 等CCF A类期刊审稿人。
-summary: 中科大苏州研究院特任副研究员，研究方向高能效智能计算（LLM/Agent 系统基础设施）。
+is_teacher: true
+academic_position: 长期担任 IEEE TC、IEEE TCAD 等 CCF-A 期刊审稿人
+supervision: 参与指导博士、硕士研究生
+bio: 耿家伟，特任副研究员，2026年6月于中国科学技术大学计算机科学与技术学院获博士学位，导师为周学海教授与朱宗卫研究员。主要研究方向为高能效智能计算，以软硬件协同为主线，致力于构建面向大模型与智能体（LLM/Agent Infra）、星载智能计算及系统级推理优化的高能效智能计算系统，服务于智能计算在云、边、端与在轨环境下的高效部署。作为研究骨干参与国家自然科学基金面上项目、国家重点研发计划、中国科学院战略性先导科技专项（C类）等多项国家级课题。近年来，在 DAC、IEEE TCAD、IEEE TITS 等计算机系统结构领域国际知名会议与期刊发表多篇论文，论文曾入选 DAC 会议 Hot-interest Topic。
 interests:
-  - 高能效智能计算：面向大模型与智能体系统的高能…
-  - 星载智能计算：面向卫星平台的在轨具身智能、星…
+  - 高能效智能计算（LLM/Agent 基础设施…
+  - 星载智能计算（在轨具身智能、星座分布式训推）
 education:
   courses:
     - degree: 博士
@@ -23,7 +25,7 @@ education:
       year_end: 2026
       advisor: 周学海教授、朱宗卫研究员
 email: jwgeng@ustc.edu.cn
-office: 中国科大苏州高等研究院仁爱路西区敏学楼202
+office: 仁爱路西区敏学楼202
 social:
   - icon: envelope
     icon_pack: fas
@@ -44,60 +46,67 @@ weight: 10
 awards:
   - 2026年 安徽省高等学校优秀毕业生
   - 2025年 博士生国家奖学金
-grants:
-  - 国家自然科学基金面上项目（研究骨干）
-  - 国家重点研发计划（研究骨干）
-  - 中国科学院战略性先导科技专项（C类）（研究骨干）
-service:
-  - 长期担任 IEEE TC (CCF-A) 审稿人
-  - 长期担任 IEEE TCAD (CCF-A) 审稿人
-work_experience:
-  - years: 2026-至今
-    position: 特任副研究员
-    org: 中国科学技术大学苏州高等研究院
 papers:
   - title: "MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference"
     authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou
-    venue: IEEE TCAD
-    year: 2026
-    level: CCF-A期刊
+    venue: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+    year: 2025
+    level: CCF-A 期刊
+    url: "https://doi.org/10.1109/TCAD.2025.3597236"
+    abstract: "To tackle power management challenges in deep neural networks (DNNs), dynamic voltage and frequency scaling (DVFS) has gained attention for its ability to enhance energy efficiency without modifying DNN structures. This article presents MultiLens (MTL), a multiobjective adaptive DVFS framework: we propose a power-sensitive feature extraction method along with multiobjective constraint modeling to characterize DNN inference behavior, identify critical power blocks through clustering based on inference behavior similarity, and integrate a complete deployment process to enhance adaptability across platforms and scenarios. Experimental results demonstrate the effectiveness of MTL in optimizing energy efficiency across different hardware platforms and deployment scenarios."
   - title: "PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks"
     authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li
-    venue: DAC
+    venue: The 61st ACM/IEEE Design Automation Conference (DAC 2024)
     year: 2024
-    level: CCF-A会议
+    level: CCF-A 会议
+    url: "https://doi.org/10.1145/3649329.3655956"
+    abstract: "To address the power management challenges in deep neural networks (DNNs), dynamic voltage and frequency scaling (DVFS) technology is garnering attention for its ability to enhance energy efficiency without modifying the structure of DNNs. This paper introduces PowerLens, an adaptive DVFS framework: we develop a power-sensitive feature extraction method for DNNs and identify critical power blocks through clustering based on power behavior similarity, thereby achieving adaptive DVFS instrumentation point settings. Then the framework adaptively presets the target frequency for each power block through a decision model. Experimental results confirm the effectiveness of the framework in energy efficiency optimization."
   - title: "Sniper: Cloud-Edge Collaborative Inference Scheduling with Neural Network Similarity Modeling"
-    authors: Weihong Liu, Jiawei Geng (co-first), Zongwei Zhu*, Jing Cao, Zirui Lian
-    venue: DAC
+    authors: Weihong Liu, Jiawei Geng, Zongwei Zhu*, Jing Cao, Zirui Lian
+    venue: The 59th ACM/IEEE Design Automation Conference (DAC 2022)
     year: 2022
-    level: CCF-A会议 (Hot-interest Topic)
+    level: CCF-A 会议（Hot-interest Topic）
     url: "https://doi.org/10.1145/3489517.3530474"
-    abstract: 云边协同推理需要将 AI 任务高效调度到合适的边缘智能设备。针对持续迭代的深度神经网络与异构设备带来的调度挑战，提出具有时间感知能力的自更新云边协同推理调度系统 Sniper。基于相似网络具有相似行为的观察，构建基于神经网络相似性 (NNS) 的非侵入式性能表征网络 (PCN) 精确预测 DNN 推理时间，PCN 与基于时间的调度算法可灵活组合进 Sniper 调度模块。实验表明网络推理时间预测平均相对误差约 8.06%；与传统无时间感知方法相比，Sniper 平均降低等待时间 52% 且吞吐稳定提升。
+    abstract: 面向云边协同推理的调度框架，通过神经网络相似性建模估计推理延迟，在异构设备间智能分配 DNN 请求，显著提升端到端推理性能并降低响应延迟。
   - title: "Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems"
-    authors: Jiawei Geng, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.
-    venue: IEEE TITS
+    authors: Jiawei Geng, Jing Cao, Haipeng Jia, Zongwei Zhu*, et al.
+    venue: IEEE Transactions on Intelligent Transportation Systems (TITS)
     year: 2024
-    level: CCF-B期刊 (交通TOP)
-  - title: "Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices"
-    authors: Weihong Liu, Jiawei Geng, Zongwei Zhu*, et al.
-    venue: IEEE TCAD
+    level: CCF-B 期刊
+    url: "https://doi.org/10.1109/TITS.2023.3286400"
+    abstract: Transportation big data (TBD) are increasingly combined with artificial intelligence to mine novel patterns due to the powerful representational capabilities of deep neural networks (DNNs). We introduce a distributed training framework, Heter-Train. First, a communication-efficient semi-asynchronous parallel mechanism (SAP-SGD) is proposed, which can take full advantage of the acceleration effect of asynchronous strategy on heterogeneous training and constrain the straggler problem by using global interval synchronization. Second, considering the difference in node bandwidth, we design a solution for heterogeneous communication. Moreover, a novel weighted aggregation strategy is proposed to aggregate model parameters with different versions. Experimental results show that our proposed strategy can achieve up to 6.74x speedups on training time, with almost no accuracy decrease.
+  - title: "Ace-Sniper: Cloud–Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices"
+    authors: Weihong Liu, Jiawei Geng, Zongwei Zhu*, Yang Zhao, Cheng Ji, Changlong Li, Zirui Lian, Xuehai Zhou
+    venue: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
     year: 2024
-    level: CCF-A期刊
-    url: "https://doi.org/10.1109/TCAD.2023.3324764"
+    level: CCF-A 期刊
+    url: "https://doi.org/10.1109/TCAD.2023.3314388"
+    abstract: "The cloud-edge collaborative inference requires efficient scheduling of AI tasks to the appropriate edge intelligence devices. We propose Ace-Sniper, a scheduling framework with DNN inference latency modeling on heterogeneous devices: a unified hardware resource modeling (HRM) treats platforms as black-box functions, neural network similarity (NNS) extracts features of diverse DNNs, and a performance characterization network predicts latencies of unseen DNNs on heterogeneous devices. Experimental results show the average relative error of latency prediction is 11.11%, prediction accuracy reaches 93.2%, average waiting time is reduced by 82.95%, and platform throughput improves by 63% on average."
+projects:
+  - name: 国家自然科学基金面上项目
+    years: 在研
+    detail: 研究骨干
+  - name: 国家重点研发计划
+    years: 在研
+    detail: 研究骨干
+  - name: 中国科学院战略性先导科技专项（C类）
+    years: 在研
+    detail: 研究骨干
 ---
 
 ## 个人简介
 
-耿家伟，特任副研究员，2026年6月于中国科学技术大学计算机科学与技术学院获博士学位，导师为周学海教授与朱宗卫研究员。主要研究方向为高能效智能计算，以软硬件协同为主线，致力于构建面向大模型与智能体（LLM/Agent Infra）、星载智能计算及系统级推理优化的高能效智能计算系统，服务于智能计算在云、边、端与在轨环境下的高效部署。作为研究骨干参与国家自然科学基金面上项目、国家重点研发计划、中国科学院战略性先导科技专项（C类）、中科院XX专项等多项国家级课题。近年来，在 DAC、IEEE TCAD、IEEE TITS 等计算机系统结构领域国际知名会议与期刊发表多篇论文，论文曾入选 DAC 会议 Hot-interest Topic。长期担任 IEEE TC、IEEE TCAD 等CCF A类期刊审稿人。
+耿家伟，特任副研究员，2026年6月于中国科学技术大学计算机科学与技术学院获博士学位，导师为周学海教授与朱宗卫研究员。主要研究方向为高能效智能计算，以软硬件协同为主线，致力于构建面向大模型与智能体（LLM/Agent Infra）、星载智能计算及系统级推理优化的高能效智能计算系统，服务于智能计算在云、边、端与在轨环境下的高效部署。作为研究骨干参与国家自然科学基金面上项目、国家重点研发计划、中国科学院战略性先导科技专项（C类）等多项国家级课题。近年来，在 DAC、IEEE TCAD、IEEE TITS 等计算机系统结构领域国际知名会议与期刊发表多篇论文，论文曾入选 DAC 会议 Hot-interest Topic。
+
 
 
 ## 研究方向
 
-- 高能效智能计算：面向大模型与智能体系统的高能效基础设施（LLM/Agent Infrastructure）
+- 高能效智能计算（LLM/Agent 基础设施）
 
-- 星载智能计算：面向卫星平台的在轨具身智能、星座协同的分布式训推系统
+- 星载智能计算（在轨具身智能、星座分布式训推）
 
-- 系统级推理优化：软硬件协同的功耗-性能建模、系统资源调度协同优化
+- 系统级推理优化（软硬件协同功耗-性能建模）
 
 
 ## 教育背景
@@ -105,20 +114,18 @@ papers:
 - 2026，博士，中国科学技术大学，计算机科学与技术，导师：周学海教授、朱宗卫研究员
 
 
-## 工作经历
-
-- 2026-至今，特任副研究员，中国科学技术大学苏州高等研究院
-
-
 ## 代表论文
 
-- 1. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou. *MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference*. IEEE TCAD, 2026。CCF-A期刊
-- 2. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li. *PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks*. DAC, 2024。CCF-A会议
-- 3. Weihong Liu, **Jiawei Geng (co-first)**, Zongwei Zhu*, Jing Cao, Zirui Lian. *Sniper: Cloud-Edge Collaborative Inference Scheduling with Neural Network Similarity Modeling*. DAC, 2022。CCF-A会议 (Hot-interest Topic)
+- 1. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou. *MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference*. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025。CCF-A 期刊
+  [链接](https://doi.org/10.1109/TCAD.2025.3597236)
+- 2. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li. *PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks*. The 61st ACM/IEEE Design Automation Conference (DAC 2024), 2024。CCF-A 会议
+  [链接](https://doi.org/10.1145/3649329.3655956)
+- 3. Weihong Liu, **Jiawei Geng**, Zongwei Zhu*, Jing Cao, Zirui Lian. *Sniper: Cloud-Edge Collaborative Inference Scheduling with Neural Network Similarity Modeling*. The 59th ACM/IEEE Design Automation Conference (DAC 2022), 2022。CCF-A 会议（Hot-interest Topic）
   [链接](https://doi.org/10.1145/3489517.3530474)
-- 4. **Jiawei Geng**, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.. *Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems*. IEEE TITS, 2024。CCF-B期刊 (交通TOP)
-- 5. Weihong Liu, **Jiawei Geng**, Zongwei Zhu*, et al.. *Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices*. IEEE TCAD, 2024。CCF-A期刊
-  [链接](https://doi.org/10.1109/TCAD.2023.3324764)
+- 4. **Jiawei Geng**, Jing Cao, Haipeng Jia, Zongwei Zhu*, et al.. *Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems*. IEEE Transactions on Intelligent Transportation Systems (TITS), 2024。CCF-B 期刊
+  [链接](https://doi.org/10.1109/TITS.2023.3286400)
+- 5. Weihong Liu, **Jiawei Geng**, Zongwei Zhu*, Yang Zhao, Cheng Ji, Changlong Li, Zirui Lian, Xuehai Zhou. *Ace-Sniper: Cloud–Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices*. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2024。CCF-A 期刊
+  [链接](https://doi.org/10.1109/TCAD.2023.3314388)
 
 
 ## 获奖与荣誉
@@ -126,20 +133,4 @@ papers:
 - 2026年 安徽省高等学校优秀毕业生
 
 - 2025年 博士生国家奖学金
-
-
-## 科研项目
-
-- 国家自然科学基金面上项目（研究骨干）
-
-- 国家重点研发计划（研究骨干）
-
-- 中国科学院战略性先导科技专项（C类）（研究骨干）
-
-
-## 学术服务
-
-- 长期担任 IEEE TC (CCF-A) 审稿人
-
-- 长期担任 IEEE TCAD (CCF-A) 审稿人
 

@@ -434,3 +434,20 @@
     height: auto;
   }
 }
+
+/* Keep the supplied partner board legible without turning it into a decorative card. */
+.epic-partners .section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.epic-partners .col-12.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.epic-partners img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

@@ -98,6 +98,16 @@ sections:
 
   - block: markdown
     content:
+      title: 合作伙伴
+      subtitle: Partners
+      text: |
+        ![EPIC 实验室合作伙伴](partners.png)
+    design:
+      columns: '1'
+      css_class: epic-partners
+
+  - block: markdown
+    content:
       title:
       subtitle:
       text: |

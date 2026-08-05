@@ -36,8 +36,12 @@ social:
     link: "#"
   - icon: globe
     icon_pack: fas
-    link: "#"
+    link: http://staff.ustc.edu.cn/~zzw1988/
 weight: 10
+homepage: "http://staff.ustc.edu.cn/~zzw1988/"
+awards:
+  - 2019年 江苏省\"双创博士\"称号
+  - 2019年 国家级科技竞赛一等奖（两项）
 grants:
   - 国家自然科学基金面上项目 — 主持
   - 国家重点研发计划子课题 — 主持
@@ -61,11 +65,13 @@ papers:
     venue: IEEE TCAD
     year: 2026
     level: CCF-A期刊
+    url: "https://doi.org/10.1109/TCAD.2026.3663279"
   - title: "eLLM: Elastic Memory Management Framework for Efficient LLM Serving"
     authors: Jiale Xu, Yi Xiong, Rui Zhang, Cong Guo*, Zihan Liu, Yangjie Zhou, Weiming Hu, Hao Wu, Boyu Li, Junping Zhao, Minyi Guo, Zongwei Zhu*, Xuehai Zhou, Jingwen Leng
     venue: DAC
     year: 2026
     level: CCF-A会议
+    url: "https://doi.org/10.1145/3770743.3804144"
   - title: "PPFL: A Parameter Behavior-Driven Plug-in Personalization Engine for Federated Learning"
     authors: Qianyue Cao, Zongwei Zhu*, Zirui Lian, Rui Zhang, Boyu Li, Yi Xiong, Xuehai Zhou
     venue: AAAI
@@ -76,11 +82,13 @@ papers:
     venue: IEEE TCAD
     year: 2025
     level: CCF-A期刊
+    url: "https://doi.org/10.1109/TCAD.2025.3597236"
   - title: "AsyncGrid: An Intra- and Inter-Layer Asynchronous Hybrid Parallelism System for Responsive Edge LLM Inference"
     authors: Yi Xiong, Rui Zhang, Yulong Zu, Weihong Liu, Zongwei Zhu*, Jiawei Geng, Boyu Li, Qianyue Cao, Xuehai Zhou
     venue: IEEE TCAD
     year: 2025
     level: CCF-A期刊
+    url: "https://doi.org/10.1109/TCAD.2025.3624135"
   - title: "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices"
     authors: Changlong Li, Zongwei Zhu*, Chao Wang, Fangming Liu, Fei Xu, Edwin Sha, Xuehai Zhou
     venue: USENIX FAST
@@ -120,12 +128,23 @@ papers:
 ## 代表论文
 
 - 1. Yi Xiong, Weihong Liu, Boyu Li, Qianyue Cao, **Zongwei Zhu***, Jiawei Geng, Rui Zhang, Yulong Zu, Xuehai Zhou. *MP3: Mixed-Precision Pipeline Parallelism Framework for Heterogeneous Edge Devices*. IEEE TCAD, 2026。CCF-A期刊
+  [链接](https://doi.org/10.1109/TCAD.2026.3663279)
 - 2. Jiale Xu, Yi Xiong, Rui Zhang, Cong Guo*, Zihan Liu, Yangjie Zhou, Weiming Hu, Hao Wu, Boyu Li, Junping Zhao, Minyi Guo, **Zongwei Zhu***, Xuehai Zhou, Jingwen Leng. *eLLM: Elastic Memory Management Framework for Efficient LLM Serving*. DAC, 2026。CCF-A会议
+  [链接](https://doi.org/10.1145/3770743.3804144)
 - 3. Qianyue Cao, **Zongwei Zhu***, Zirui Lian, Rui Zhang, Boyu Li, Yi Xiong, Xuehai Zhou. *PPFL: A Parameter Behavior-Driven Plug-in Personalization Engine for Federated Learning*. AAAI, 2026。CCF-A会议
 - 4. Jiawei Geng, **Zongwei Zhu***, Weihong Liu, Xuehai Zhou. *MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference*. IEEE TCAD, 2025。CCF-A期刊
+  [链接](https://doi.org/10.1109/TCAD.2025.3597236)
 - 5. Yi Xiong, Rui Zhang, Yulong Zu, Weihong Liu, **Zongwei Zhu***, Jiawei Geng, Boyu Li, Qianyue Cao, Xuehai Zhou. *AsyncGrid: An Intra- and Inter-Layer Asynchronous Hybrid Parallelism System for Responsive Edge LLM Inference*. IEEE TCAD, 2025。CCF-A期刊
+  [链接](https://doi.org/10.1109/TCAD.2025.3624135)
 - 6. Changlong Li, **Zongwei Zhu***, Chao Wang, Fangming Liu, Fei Xu, Edwin Sha, Xuehai Zhou. *Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices*. USENIX FAST, 2025。CCF-A会议
 - 7. Jiawei Geng, **Zongwei Zhu***, Weihong Liu, Xuehai Zhou, Boyu Li. *PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks*. DAC, 2024。CCF-A会议
+
+
+## 获奖与荣誉
+
+- 2019年 江苏省"双创博士"称号
+
+- 2019年 国家级科技竞赛一等奖（两项）
 
 
 ## 科研项目

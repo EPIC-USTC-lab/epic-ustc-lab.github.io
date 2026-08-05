@@ -41,9 +41,17 @@ weight: 10
 awards:
   - 2026年 安徽省高等学校优秀毕业生
   - 2025年 博士生国家奖学金
+grants:
+  - 国家自然科学基金面上项目（研究骨干）
+  - 国家重点研发计划（研究骨干）
+  - 中国科学院战略性先导科技专项（C类）（研究骨干）
 service:
   - 长期担任 IEEE TC (CCF-A) 审稿人
   - 长期担任 IEEE TCAD (CCF-A) 审稿人
+work_experience:
+  - years: 2026-至今
+    position: 特任副研究员
+    org: 中国科学技术大学苏州高等研究院
 papers:
   - title: "MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference"
     authors: Jiawei Geng, Zongwei Zhu*, Weihong Liu, Xuehai Zhou
@@ -60,6 +68,7 @@ papers:
     venue: DAC
     year: 2022
     level: CCF-A会议 (Hot-interest Topic)
+    url: "https://doi.org/10.1145/3489517.3530474"
   - title: "Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems"
     authors: Jiawei Geng, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.
     venue: IEEE TITS
@@ -70,6 +79,7 @@ papers:
     venue: IEEE TCAD
     year: 2024
     level: CCF-A期刊
+    url: "https://doi.org/10.1109/TCAD.2023.3324764"
 ---
 
 ## 个人简介
@@ -91,13 +101,20 @@ papers:
 - 2026，博士，中国科学技术大学，计算机科学与技术，导师：周学海教授、朱宗卫研究员
 
 
+## 工作经历
+
+- 2026-至今，特任副研究员，中国科学技术大学苏州高等研究院
+
+
 ## 代表论文
 
 - 1. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou. *MultiLens: A Multi-Objective Adaptive DVFS Framework for Energy-Efficient DNN Inference*. IEEE TCAD, 2026。CCF-A期刊
 - 2. **Jiawei Geng**, Zongwei Zhu*, Weihong Liu, Xuehai Zhou, Boyu Li. *PowerLens: An Adaptive DVFS Framework for Optimizing Energy Efficiency in Deep Neural Networks*. DAC, 2024。CCF-A会议
 - 3. Weihong Liu, **Jiawei Geng (co-first)**, Zongwei Zhu*, Jing Cao, Zirui Lian. *Sniper: Cloud-Edge Collaborative Inference Scheduling with Neural Network Similarity Modeling*. DAC, 2022。CCF-A会议 (Hot-interest Topic)
+  [链接](https://doi.org/10.1145/3489517.3530474)
 - 4. **Jiawei Geng**, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.. *Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems*. IEEE TITS, 2024。CCF-B期刊 (交通TOP)
 - 5. Weihong Liu, **Jiawei Geng**, Zongwei Zhu*, et al.. *Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices*. IEEE TCAD, 2024。CCF-A期刊
+  [链接](https://doi.org/10.1109/TCAD.2023.3324764)
 
 
 ## 获奖与荣誉
@@ -105,6 +122,15 @@ papers:
 - 2026年 安徽省高等学校优秀毕业生
 
 - 2025年 博士生国家奖学金
+
+
+## 科研项目
+
+- 国家自然科学基金面上项目（研究骨干）
+
+- 国家重点研发计划（研究骨干）
+
+- 中国科学院战略性先导科技专项（C类）（研究骨干）
 
 
 ## 学术服务

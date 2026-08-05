@@ -1,6 +1,7 @@
 ---
 title: 项莉棋
-role: 硕士
+role: 硕士（已毕业）
+name_en: Liqi Xiang
 superuser: false
 organizations:
   - name: 中国科学技术大学 苏州高等研究院
@@ -8,7 +9,14 @@ organizations:
 slug: liqi-xiang
 user_groups:
   - 已毕业校友
-summary: 2026届硕士，现就职于字节跳动
+bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于字节跳动。
+
+summary: 2026届，现就职于字节跳动
+education:
+  courses:
+    - course: 硕士, 中国科学技术大学苏州高等研究院 软件工程, 2023（导师：朱宗卫）
+      institution: 中国科学技术大学苏州高等研究院
+      year: 2023
 social:
   - icon: envelope
     icon_pack: fas
@@ -26,8 +34,25 @@ social:
     icon_pack: fas
     link: "#"
 weight: 40
+advisor: 朱宗卫
+enrollment: 2023
 ---
+
+## 个人简介
+
+硕士毕业于中国科学技术大学苏州高等研究院，现就职于字节跳动。
+
+
+
+## 教育背景
+
+- 2023，硕士，中国科学技术大学苏州高等研究院，软件工程，导师：朱宗卫
+
+
+**导师**：朱宗卫
+
+**入学年份**：2023
 
 **毕业去向**：字节跳动
 
-**2026届硕士**
+**2026届**

@@ -67,7 +67,7 @@ papers:
     year: 2022
     level: CCF-A 会议（Hot-interest Topic）
     url: "https://doi.org/10.1145/3489517.3530474"
-    abstract: 面向云边协同推理的调度框架，通过神经网络相似性建模估计推理延迟，在异构设备间智能分配 DNN 请求，显著提升端到端推理性能并降低响应延迟。
+    abstract: The cloud-edge collaborative inference demands scheduling the artificial intelligence (AI) tasks efficiently to the appropriate edge smart device. However, the continuously iterative deep neural networks (DNNs) and heterogeneous devices pose great challenges for inference tasks scheduling. In this paper, we propose a self-update cloud-edge collaborative inference scheduling system (Sniper) with time awareness. At first, considering that similar networks exhibit similar behaviors, we develop a non-invasive performance characterization network (PCN) based on neural network similarity (NNS) to accurately predict the inference time of DNNs. Moreover, PCN and time-based scheduling algorithms can be flexibly combined into the scheduling module of Sniper. Experimental results show that the average relative error of network inference time prediction is about 8.06%. Compared with the traditional method without time awareness, Sniper can reduce the waiting time by 52% on average while achieving a stable increase in throughput.
   - title: "Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems"
     authors: Jiawei Geng, Jing Cao, Haipeng Jia, Zongwei Zhu*, et al.
     venue: IEEE Transactions on Intelligent Transportation Systems (TITS)

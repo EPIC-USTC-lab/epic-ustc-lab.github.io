@@ -19,6 +19,9 @@
 {{- $supervision := .Params.supervision | default "" -}}
 {{- $avatar := "" }}{{ with .Resources.GetMatch "avatar*" }}{{ $avatar = .RelPermalink }}{{ end -}}
 {{- $papers := .Params.papers | default slice -}}
+{{- $my_slug := "" }}{{ with .Params.slug }}{{ $my_slug = . }}{{ end -}}
+{{- $pubs := where site.RegularPages "Type" "publication" -}}
+{{- $my_pubs := where $pubs "Params.authors" "intersect" (slice $my_slug) -}}
 {{- $awards := .Params.awards | default slice -}}
 {{- $projects := .Params.projects | default slice -}}
 {{- $grants := .Params.grants | default slice -}}
@@ -454,23 +457,24 @@ document.documentElement.classList.add('js');
 
   <section class="cell wide reveal" id="papers">
     <h2><span class="bar"></span> 发表论文</h2>
-    {{ if $papers }}
+    {{ if $my_pubs }}
     <div class="papers-list">
-      {{ range $papers }}
+      {{ range $my_pubs }}
+      {{- $pd := delimit .Params.authors_display ", " | default "" -}}
       <div class="paper">
         <div class="idx"></div>
         <div class="body">
-          <div class="pt">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .title }}</a>{{ end }}</div>
-          <div class="pa">{{ if $name_en }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) .authors | safeHTML }}{{ else }}{{ .authors }}{{ end }}</div>
+          <div class="pt">{{ if .Params.url_source }}<a href="{{ .Params.url_source }}" target="_blank" rel="noopener">{{ .Title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .Title }}</a>{{ end }}</div>
+          <div class="pa">{{ if and $name_en $pd }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) $pd | safeHTML }}{{ else }}{{ $pd }}{{ end }}</div>
           <div class="pv">
-            {{ if .venue }}<span class="venue">{{ .venue }}</span>{{ end }}
-            {{ if .year }}<span class="yr">{{ .year }}</span>{{ end }}
-            {{ if .level }}<span class="lvl">{{ .level }}</span>{{ end }}
+            {{ if .Params.publication }}<span class="venue">{{ .Params.publication }}</span>{{ end }}
+            {{ if .Params.date }}<span class="yr">{{ .Params.date.Year }}</span>{{ end }}
+            {{ if .Params.level }}<span class="lvl">{{ .Params.level }}</span>{{ end }}
           </div>
-          {{ if .abstract }}
+          {{ if .Params.abstract }}
           <details class="paper-abs" aria-label="论文摘要">
             <summary class="abs-toggle">查看摘要</summary>
-            <p style="margin-top:6px">{{ .abstract }}</p>
+            <p style="margin-top:6px">{{ .Params.abstract }}</p>
           </details>
           {{ end }}
         </div>
@@ -501,23 +505,24 @@ document.documentElement.classList.add('js');
 
   <section class="cell wide reveal" id="papers">
     <h2><span class="bar"></span> 发表论文</h2>
-    {{ if $papers }}
+    {{ if $my_pubs }}
     <div class="papers-list">
-      {{ range $papers }}
+      {{ range $my_pubs }}
+      {{- $pd := delimit .Params.authors_display ", " | default "" -}}
       <div class="paper">
         <div class="idx"></div>
         <div class="body">
-          <div class="pt">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .title }}</a>{{ end }}</div>
-          <div class="pa">{{ if $name_en }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) .authors | safeHTML }}{{ else }}{{ .authors }}{{ end }}</div>
+          <div class="pt">{{ if .Params.url_source }}<a href="{{ .Params.url_source }}" target="_blank" rel="noopener">{{ .Title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .Title }}</a>{{ end }}</div>
+          <div class="pa">{{ if and $name_en $pd }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) $pd | safeHTML }}{{ else }}{{ $pd }}{{ end }}</div>
           <div class="pv">
-            {{ if .venue }}<span class="venue">{{ .venue }}</span>{{ end }}
-            {{ if .year }}<span class="yr">{{ .year }}</span>{{ end }}
-            {{ if .level }}<span class="lvl">{{ .level }}</span>{{ end }}
+            {{ if .Params.publication }}<span class="venue">{{ .Params.publication }}</span>{{ end }}
+            {{ if .Params.date }}<span class="yr">{{ .Params.date.Year }}</span>{{ end }}
+            {{ if .Params.level }}<span class="lvl">{{ .Params.level }}</span>{{ end }}
           </div>
-          {{ if .abstract }}
+          {{ if .Params.abstract }}
           <details class="paper-abs" aria-label="论文摘要">
             <summary class="abs-toggle">查看摘要</summary>
-            <p style="margin-top:6px">{{ .abstract }}</p>
+            <p style="margin-top:6px">{{ .Params.abstract }}</p>
           </details>
           {{ end }}
         </div>

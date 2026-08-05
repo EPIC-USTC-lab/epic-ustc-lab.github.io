@@ -16,9 +16,11 @@ interests:
   - 天基智能计算系统（具身智能卫星+星座分布式计…
 education:
   courses:
-    - course: 博士, 中国科学技术大学 计算机科学与技术, 2014
+    - degree: 博士
       institution: 中国科学技术大学
+      major: 计算机科学与技术
       year: 2014
+      year_end: 2014
 email: zzw1988@ustc.edu.cn
 office: 中国科学技术大学苏州高等研究院敏学楼202
 social:
@@ -66,12 +68,14 @@ papers:
     year: 2026
     level: CCF-A期刊
     url: "https://doi.org/10.1109/TCAD.2026.3663279"
+    abstract: 针对边缘设备资源受限下大 DNN 部署难题，提出 MP3：面向异构边缘环境的 PP-PTQ 联合优化框架。包含三部分：(1) 任务-设备协同分析器 (TDC) 精确建模计算与通信延迟；(2) 信息融合精度代理 (FAP) 结合层内层间信息刻画量化精度；(3) 流水线量化协同优化器 (PQC) 将联合优化空间建模为约束规划 (CP) 问题。实验表明 MP3 位于更优 Pareto 曲线，吞吐最高提升 3.2 倍且精度损失不超过 1%。
   - title: "eLLM: Elastic Memory Management Framework for Efficient LLM Serving"
     authors: Jiale Xu, Yi Xiong, Rui Zhang, Cong Guo*, Zihan Liu, Yangjie Zhou, Weiming Hu, Hao Wu, Boyu Li, Junping Zhao, Minyi Guo, Zongwei Zhu*, Xuehai Zhou, Jingwen Leng
     venue: DAC
     year: 2026
     level: CCF-A会议
     url: "https://doi.org/10.1145/3770743.3804144"
+    abstract: GPU 内存管理对高效 LLM 服务至关重要。针对激活与 KV 缓存管理隔离导致内存利用率低下、吞吐下降约 20% 的问题，提出 eLLM 弹性内存管理框架：(1) 虚拟张量抽象，将张量虚拟地址空间与物理 GPU 内存解耦，构建统一灵活的内存池；(2) 弹性内存机制，通过运行时内存膨胀与收缩动态调整分配，利用 CPU 内存作扩展缓冲；(3) 轻量调度策略，采用 SLO 感知策略优化内存利用。评估表明 eLLM 吞吐最高提升 2.32 倍。
   - title: "PPFL: A Parameter Behavior-Driven Plug-in Personalization Engine for Federated Learning"
     authors: Qianyue Cao, Zongwei Zhu*, Zirui Lian, Rui Zhang, Boyu Li, Yi Xiong, Xuehai Zhou
     venue: AAAI
@@ -89,6 +93,7 @@ papers:
     year: 2025
     level: CCF-A期刊
     url: "https://doi.org/10.1109/TCAD.2025.3624135"
+    abstract: 边缘部署大语言模型 (LLM) 日益受到关注，但边缘环境在降低首 Token 时间 (TTFT) 方面面临重大挑战。TTFT 由排队延迟与预填充延迟组成，二者都因边缘资源受限而加剧。提出 AsyncGrid：面向响应式边缘 LLM 推理的层内与层间异步混合并行系统，通过异步并行机制有效缓解边缘资源约束下的推理延迟。
   - title: "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices"
     authors: Changlong Li, Zongwei Zhu*, Chao Wang, Fangming Liu, Fei Xu, Edwin Sha, Xuehai Zhou
     venue: USENIX FAST

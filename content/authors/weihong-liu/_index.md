@@ -16,9 +16,12 @@ interests:
   - 边缘智能
 education:
   courses:
-    - course: 博士, 中国科学技术大学苏州高等研究院 软件工程, 2021（导师：朱宗卫）
+    - degree: 博士
       institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
       year: 2021
+      year_end: 2025
+      advisor: 朱宗卫
 social:
   - icon: envelope
     icon_pack: fas
@@ -50,6 +53,8 @@ papers:
     venue: IEEE TCAD
     year: 2024
     level: CCF-A
+graduation_year: 2025
+current_position: 华为
 ---
 
 ## 个人简介

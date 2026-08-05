@@ -16,9 +16,12 @@ interests:
   - 星载智能计算：面向卫星平台的在轨具身智能、星…
 education:
   courses:
-    - course: 博士, 中国科学技术大学 计算机科学与技术, 2026（导师：周学海教授、朱宗卫研究员）
+    - degree: 博士
       institution: 中国科学技术大学
+      major: 计算机科学与技术
       year: 2026
+      year_end: 2026
+      advisor: 周学海教授、朱宗卫研究员
 email: jwgeng@ustc.edu.cn
 office: 中国科大苏州高等研究院仁爱路西区敏学楼202
 social:
@@ -69,6 +72,7 @@ papers:
     year: 2022
     level: CCF-A会议 (Hot-interest Topic)
     url: "https://doi.org/10.1145/3489517.3530474"
+    abstract: 云边协同推理需要将 AI 任务高效调度到合适的边缘智能设备。针对持续迭代的深度神经网络与异构设备带来的调度挑战，提出具有时间感知能力的自更新云边协同推理调度系统 Sniper。基于相似网络具有相似行为的观察，构建基于神经网络相似性 (NNS) 的非侵入式性能表征网络 (PCN) 精确预测 DNN 推理时间，PCN 与基于时间的调度算法可灵活组合进 Sniper 调度模块。实验表明网络推理时间预测平均相对误差约 8.06%；与传统无时间感知方法相比，Sniper 平均降低等待时间 52% 且吞吐稳定提升。
   - title: "Heter-Train: A Distributed Training Framework Based on Semi-Asynchronous Parallel Mechanism for Heterogeneous Intelligent Transportation Systems"
     authors: Jiawei Geng, Jing Cao (co-first), Haipeng Jia, Zongwei Zhu*, et al.
     venue: IEEE TITS

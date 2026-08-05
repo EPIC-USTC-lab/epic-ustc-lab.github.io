@@ -13,9 +13,12 @@ bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于
 summary: 2025届，现就职于腾讯
 education:
   courses:
-    - course: 硕士, 中国科学技术大学苏州高等研究院 软件工程, 2022（导师：朱宗卫）
+    - degree: 硕士
       institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
       year: 2022
+      year_end: 2025
+      advisor: 朱宗卫
 social:
   - icon: envelope
     icon_pack: fas
@@ -35,6 +38,8 @@ social:
 weight: 40
 advisor: 朱宗卫
 enrollment: 2022
+graduation_year: 2025
+current_position: 腾讯
 ---
 
 ## 个人简介

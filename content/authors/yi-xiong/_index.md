@@ -16,9 +16,12 @@ interests:
   - LLM 推理优化
 education:
   courses:
-    - course: 博士, 中国科学技术大学苏州高等研究院 软件工程, 2023（导师：朱宗卫）
+    - degree: 博士
       institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
       year: 2023
+      year_end: 2026
+      advisor: 朱宗卫
 social:
   - icon: envelope
     icon_pack: fas
@@ -49,6 +52,8 @@ papers:
     venue: arXiv
     year: 2024
     url: "https://arxiv.org/abs/2410.00428"
+graduation_year: 2026
+current_position: 腾讯
 ---
 
 ## 个人简介

@@ -15,9 +15,12 @@ interests:
   - 内存优化
 education:
   courses:
-    - course: 博士研究生（在读）, 中国科学技术大学苏州高等研究院 软件工程, 2026（导师：朱宗卫）
+    - degree: 博士研究生（在读）
       institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
       year: 2026
+      year_end: 至今
+      advisor: 朱宗卫
 email: chenfx04@mail.ustc.edu.cn
 social:
   - icon: envelope

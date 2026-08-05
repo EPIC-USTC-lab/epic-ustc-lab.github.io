@@ -13,9 +13,12 @@ bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于
 summary: 2026届，现就职于字节跳动
 education:
   courses:
-    - course: 硕士, 中国科学技术大学苏州高等研究院 软件工程, 2023（导师：朱宗卫）
+    - degree: 硕士
       institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
       year: 2023
+      year_end: 2026
+      advisor: 朱宗卫
 social:
   - icon: envelope
     icon_pack: fas
@@ -35,6 +38,8 @@ social:
 weight: 40
 advisor: 朱宗卫
 enrollment: 2023
+graduation_year: 2026
+current_position: 字节跳动
 ---
 
 ## 个人简介

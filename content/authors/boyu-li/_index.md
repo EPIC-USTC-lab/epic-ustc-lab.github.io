@@ -51,6 +51,11 @@ advisor: 朱宗卫
 enrollment: 2022
 graduation_year: ""
 current_position: ""
-awards: []
-projects: []
+awards:
+  - 2025年 苏州工业园区奖学金
+  - 2023年 国家奖学金
+projects:
+  - name: 高能效智能工具链开发技术（科技部重点研发项目）
+    years: 2023–2026
+    detail: 项目成员
 ---

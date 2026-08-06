@@ -4,7 +4,7 @@
 
 # Default language
 zh:
-  locale: zh-Hans
+  languageCode: zh-Hans
   title: EPIC 实验室
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en

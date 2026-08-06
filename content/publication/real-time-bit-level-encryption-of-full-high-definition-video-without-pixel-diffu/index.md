@@ -8,7 +8,7 @@ authors_display:
   - Zi-jian Cui
   - Xi-Jue Zhao
   - Liang-liang Lu*
-date: "2026-01-01T00:00:00Z"
+date: "2026-03-25T00:00:00Z"
 publication_types: ["article-journal"]
 publication: Journal of Information Security and Applications
 url_source: "https://doi.org/10.1016/j.jisa.2026.104450"

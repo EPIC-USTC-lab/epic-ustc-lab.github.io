@@ -13,7 +13,7 @@ authors_display:
   - Cheng Ji
   - Changlong Li
   - Xuehai Zhou
-date: "2025-01-01T00:00:00Z"
+date: "2025-03-04T00:00:00Z"
 publication_types: ["article-journal"]
 publication: IEEE TCAD
 level: CCF-A

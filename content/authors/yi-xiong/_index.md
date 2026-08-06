@@ -1,6 +1,6 @@
 ---
 title: 熊屹
-role: 博士（已毕业）
+role: 博士研究生
 name_en: Yi Xiong
 superuser: false
 organizations:
@@ -10,7 +10,6 @@ slug: yi-xiong
 user_groups:
   - 已毕业校友
 bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为边缘智能计算与 LLM 推理优化， 在 ICCAD、TCAD 等会议期刊发表多篇论文（EPipe、LayerKV 等），现就职于腾讯。
-summary: 2026届，现就职于腾讯
 interests:
   - 边缘智能计算
   - LLM 推理优化
@@ -41,17 +40,6 @@ social:
 weight: 40
 advisor: 朱宗卫
 enrollment: 2023
-papers:
-  - title: "EPipe: Pipeline Inference Framework with High-quality Offline Parallelism Planning for Heterogeneous Edge Devices"
-    authors: Yi Xiong, Weihong Liu, Rui Zhang, Yulong Zu, Zongwei Zhu*, Xuehai Zhou*
-    venue: ICCAD 2024
-    year: 2024
-    level: CCF-B
-  - title: "LayerKV: Optimizing Large Language Model Serving with Layer-wise KV Cache Management"
-    authors: Yi Xiong, Hao Wu, Changxu Shao, Ziqing Wang, Rui Zhang, Yuhong Guo, Junping Zhao, Ke Zhang, Zhenxuan Pan
-    venue: arXiv
-    year: 2024
-    url: "https://arxiv.org/abs/2410.00428"
 graduation_year: 2026
 current_position: 腾讯
 ---

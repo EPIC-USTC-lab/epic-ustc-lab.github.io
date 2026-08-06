@@ -1,6 +1,6 @@
 ---
 title: 陈发祥
-role: 博士研究生（在读）
+role: 博士研究生
 name_en: Faxiang Chen
 superuser: false
 organizations:
@@ -15,7 +15,7 @@ interests:
   - 内存优化
 education:
   courses:
-    - degree: 博士研究生（在读）
+    - degree: 博士研究生
       institution: 中国科学技术大学苏州高等研究院
       major: 软件工程
       year: 2026
@@ -58,7 +58,7 @@ enrollment: 2026
 
 ## 教育背景
 
-- 2026，博士研究生（在读），中国科学技术大学苏州高等研究院，软件工程，导师：朱宗卫
+- 2026，博士研究生，中国科学技术大学苏州高等研究院，软件工程，导师：朱宗卫
 
 
 **导师**：朱宗卫

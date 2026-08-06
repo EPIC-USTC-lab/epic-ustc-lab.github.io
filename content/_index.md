@@ -10,7 +10,7 @@ sections:
       title: |
         EPIC Lab
       text: |
-        **EPIC 实验室**隶属于中国科学技术大学，致力于<span class="epic-hero-accent">高能效智能计算</span>、<span class="epic-hero-accent">端侧智能与分布式计算</span>等方向的研究。
+        **EPIC 实验室**（**E**nergy-efficient · **P**arallel · **I**ntelligent · **C**omputing）隶属于中国科学技术大学 · 苏州高等研究院，致力于<span class="epic-hero-accent">高能效智能计算</span>、<span class="epic-hero-accent">端侧智能与分布式计算</span>等方向的研究。
 
         我们关注模型、系统与网络的协同设计，探索低时延、低能耗的智能计算方法。
     design:
@@ -30,7 +30,7 @@ sections:
   - block: markdown
     content:
       title: 研究方向
-      subtitle: Research Directions
+      subtitle: 聚焦高效、可靠、可部署的智能计算系统
       text: |
         ### 高能效智能计算
 
@@ -44,9 +44,26 @@ sections:
     design:
       columns: '1'
 
+  - block: people
+    content:
+      title: 团队成员
+      subtitle: 教师团队
+      text: |
+        实验室教师团队围绕高能效智能计算、端侧智能与分布式计算开展研究与人才培养。
+      user_groups:
+        - 教师
+      sort_by: Params.weight
+      sort_ascending: true
+    design:
+      show_interests: true
+      show_role: true
+      show_social: true
+      show_avatar: true
+      text_align: center
+
   - block: collection
     content:
-      title: Latest News
+      title: 最新动态
       subtitle:
       text:
       count: 5
@@ -63,35 +80,16 @@ sections:
       view: card
       columns: '1'
   
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-
   - block: collection
     content:
-      title: Latest Preprints
+      title: 最新论文
       text: ""
       count: 5
       filters:
         folders:
           - publication
-        publication_type: 'article'
+      offset: 0
+      order: desc
     design:
       view: citation
       columns: '1'
@@ -99,19 +97,11 @@ sections:
   - block: markdown
     content:
       title: 合作伙伴
-      subtitle: Partners
+      subtitle: 产学研合作
       text: |
-        ![EPIC 实验室合作伙伴](partners.png)
+        <img src="/uploads/home/partners.png" alt="EPIC 实验室合作伙伴" loading="lazy">
     design:
       columns: '1'
       css_class: epic-partners
 
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
-      columns: '1'
 ---

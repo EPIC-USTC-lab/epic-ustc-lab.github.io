@@ -9,7 +9,7 @@ authors_display:
   - Weihong Liu
   - Xuehai Zhou
   - Boyu Li
-date: "2024-01-01T00:00:00Z"
+date: "2024-11-07T00:00:00Z"
 publication_types: ["paper-conference"]
 publication: The 61st ACM/IEEE Design Automation Conference (DAC 2024)
 level: CCF-A 会议

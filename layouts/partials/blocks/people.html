@@ -268,12 +268,30 @@
     {{ $g := . }}
     {{ $query := where $authors ".Params.user_groups" "intersect" (slice $g) }}
 
-    {{/* Sort */}}
-    {{ $sort_by := $block.content.sort_by | default "Params.weight" }}
-    {{ $sort_by = partial "blox-core/functions/get_sort_by_parameter" $sort_by }}
-    {{ $sort_ascending := $block.content.sort_ascending | default true }}
-    {{ $sort_order := cond $sort_ascending "asc" "desc" }}
-    {{ $query = sort $query $sort_by $sort_order }}
+    {{/* 教师按权重；在读学生按入学年份；校友按毕业届降序、同届按入学年份升序。 */}}
+    {{ if eq $g "已毕业校友" }}
+      {{ $graduation_years := slice }}
+      {{ range $query }}
+        {{ $graduation_years = collections.Append .Params.graduation_year $graduation_years }}
+      {{ end }}
+      {{ $graduation_years = sort (uniq $graduation_years) "value" "desc" }}
+      {{ $sorted_alumni := slice }}
+      {{ range $graduation_years }}
+        {{ $year := . }}
+        {{ $same_year := where $query ".Params.graduation_year" "eq" $year }}
+        {{ range sort $same_year "Params.enrollment" "asc" }}
+          {{ $sorted_alumni = collections.Append . $sorted_alumni }}
+        {{ end }}
+      {{ end }}
+      {{ $query = $sorted_alumni }}
+    {{ else }}
+      {{ $sort_by := $block.content.sort_by | default "Params.weight" }}
+      {{ if ne $g "教师" }}
+        {{ $sort_by = "Params.enrollment" }}
+      {{ end }}
+      {{ $sort_by = partial "blox-core/functions/get_sort_by_parameter" $sort_by }}
+      {{ $query = sort $query $sort_by "asc" }}
+    {{ end }}
 
     {{if $query | and (gt (len $block.content.user_groups) 1) }}
       <div class="col-md-12">
@@ -310,7 +328,14 @@
         <div class="portrait-title">
           <h2><a href="{{ if $link }}{{ $link }}{{ else }}/author/{{ path.Base .File.Dir | urlize }}/{{ end }}">{{ .Title }}</a></h2>
           {{ if and $show_organizations .Params.organizations }}{{ range .Params.organizations }}<h3>{{ .name }}</h3>{{ end }}{{ end }}
-          {{ if and $show_role .Params.role }}<h3>{{ .Params.role | markdownify | emojify }}</h3>{{ end }}
+          {{ if and $show_role .Params.role }}
+            <h3>
+              {{- if and (or (in (slice "博士研究生" "硕士研究生") $g) (eq $g "已毕业校友")) .Params.enrollment -}}
+                {{ .Params.enrollment }}级&nbsp;
+              {{- end -}}
+              {{- .Params.role | markdownify | emojify -}}
+            </h3>
+          {{ end }}
           {{ if $show_social }}
             <ul class="network-icon" aria-hidden="true">
               {{ range .Params.social }}
@@ -331,11 +356,11 @@
               {{ end }}
             </ul>
           {{ end }}
-          {{/* 卡片只显示一句话 summary；interests 作为标签 chips */}}
-          {{ if .Params.summary }}
+          {{/* 校友摘要由毕业年份和去向自动生成；其他成员仅显示显式 summary。 */}}
+          {{ if and (eq $g "已毕业校友") .Params.graduation_year }}
+            <p class="people-summary">{{ .Params.graduation_year }}届{{ with .Params.current_position }}，毕业就职于{{ . }}{{ end }}</p>
+          {{ else if .Params.summary }}
             <p class="people-summary">{{ .Params.summary }}</p>
-          {{ else if and $show_interests .Params.interests }}
-            <p class="people-interests">{{ delimit .Params.interests ", " | markdownify | emojify }}</p>
           {{ end }}
           {{ if and $show_interests .Params.interests }}
             <div class="people-tags">

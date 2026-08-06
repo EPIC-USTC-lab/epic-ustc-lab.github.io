@@ -10,7 +10,7 @@ authors_display:
   - Zongwei Zhu*
   - Cheng Ji
   - Xuehai Zhou
-date: "2023-01-01T00:00:00Z"
+date: "2023-12-25T00:00:00Z"
 publication_types: ["article-journal"]
 publication: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
 level: CCF-A 期刊

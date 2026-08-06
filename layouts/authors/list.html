@@ -1,3 +1,4 @@
+{{ define "main" }}
 {{- /* ═══ EPIC 作者详情页 · 新模板完整移植版（与 local_data/student/temple/student_page.html 一致）═══ */ -}}
 {{- $name_cn := .Title -}}
 {{- $name_en := .Params.name_en | default "" -}}
@@ -9,16 +10,12 @@
 {{- $enrollment := .Params.enrollment | default "" -}}
 {{- $major := "" }}{{ with .Params.education.courses }}{{ with index . 0 }}{{ $major = .major | default "" }}{{ end }}{{ end -}}
 {{- $interests := .Params.interests | default slice -}}
-{{- $github := .Params.github | default "" -}}
-{{- $scholar := .Params.google_scholar | default "" -}}
-{{- $orcid := .Params.orcid | default "" -}}
 {{- $office := .Params.office | default "" -}}
 {{- $recruitment := .Params.recruitment | default "" -}}
 {{- $is_teacher := .Params.is_teacher | default false -}}
 {{- $academic_position := .Params.academic_position | default "" -}}
 {{- $supervision := .Params.supervision | default "" -}}
 {{- $avatar := "" }}{{ with .Resources.GetMatch "avatar*" }}{{ $avatar = .RelPermalink }}{{ end -}}
-{{- $papers := .Params.papers | default slice -}}
 {{- $my_slug := "" }}{{ with .Params.slug }}{{ $my_slug = . }}{{ end -}}
 {{- $pubs := where site.RegularPages "Type" "publication" -}}
 {{- $my_pubs := where $pubs "Params.authors" "intersect" (slice $my_slug) -}}
@@ -26,48 +23,19 @@
 {{- $projects := .Params.projects | default slice -}}
 {{- $grants := .Params.grants | default slice -}}
 {{- range $grants }}{{ $projects = $projects | append . }}{{ end -}}
-<!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ $name_cn }} · USTC | {{ $role }}</title>
-<meta name="description" content="{{ substr $bio 0 80 }}">
-<meta name="author" content="{{ $name_cn }}">
-<!-- Open Graph（社交分享预览） -->
-<meta property="og:type" content="profile">
-<meta property="og:title" content="{{ $name_cn }} · USTC | {{ $role }}">
-<meta property="og:description" content="{{ substr $bio 0 80 }}">
-<!-- JSON-LD 结构化数据（SEO） -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "{{ $name_cn }}",
-  "alternateName": "{{ $name_en }}",
-  "jobTitle": "{{ $role }}",
-  "affiliation": { "@type": "Organization", "name": "{{ $org }}" },
-  "email": "{{ $email }}",
-  "knowsAbout": {{ jsonify $interests }}
-}
-</script>
-<script>
-// 防闪屏：在 CSS 生效前就设置主题（system-aware + localStorage）
-(function(){ try { var saved = localStorage.getItem('academic-theme'); var prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = saved || prefers; } catch(e){} })();
-document.documentElement.classList.add('js');
-</script>
+<script>document.documentElement.classList.add('js');</script>
 <style>
 
   :root {
     --ink: #2C3E50;
     --accent: #3172B4;
-    --warm: #C17F3B;
-    --bg: #F6F8FB;
+    --warm: #0f7c80;
+    --bg: #FFFFFF;
     --card: #FFFFFF;
     --text: #2b2f36;
     --muted: #7d8794;
     --line: #e7ebf1;
-    --shadow: 0 10px 34px rgba(44,62,80,.08);
+    --shadow: 0 6px 20px rgba(19,34,56,.06);
   }
   [data-theme="dark"] {
     --ink: #b9cce8;
@@ -96,39 +64,23 @@ document.documentElement.classList.add('js');
     z-index: 100; transition: width .1s linear;
   }
 
-  /* ===== 顶部栏 ===== */
-  nav {
-    position: sticky; top: 0; z-index: 60;
-    background: var(--bg);
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
+  .member-back {
+    display: inline-flex; align-items: center; gap: 9px;
+    margin-top: 24px; padding: 8px 13px 8px 10px;
+    color: #0f7c80; font-size: 13.5px; font-weight: 700;
+    text-decoration: none; border: 1px solid #dfe7ef; border-radius: 6px;
+    background: #fff; transition: color .2s, border-color .2s, background .2s;
   }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 13px 28px; }
-  .brand { font-weight: 800; color: var(--ink); font-size: 15px; }
-  .brand b { color: var(--warm); }
-  .nav-right { display: flex; align-items: center; gap: 20px; }
-  .nav-links { display: flex; gap: 20px; }
-  .nav-links a {
-    color: var(--muted); text-decoration: none; font-size: 13.5px; font-weight: 500;
-    transition: color .2s; position: relative; padding: 2px 0;
+  .member-back::before {
+    content: "←"; display: grid; width: 24px; height: 24px; place-items: center;
+    border-radius: 50%; background: #e9f5f5; color: #0f7c80;
   }
-  .nav-links a::after {
-    content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px;
-    background: var(--accent); border-radius: 2px; transition: width .25s;
-  }
-  .nav-links a:hover { color: var(--accent); }
-  .nav-links a.active { color: var(--accent); }
-  .nav-links a.active::after { width: 100%; }
-  .theme-btn {
-    background: none; border: 1px solid var(--line); border-radius: 8px;
-    padding: 6px 10px; cursor: pointer; font-size: 15px; color: var(--ink);
-    transition: all .2s; line-height: 1;
-  }
-  .theme-btn:hover { border-color: var(--accent); }
+  .member-back:hover { color: #132238; border-color: #0f7c80; background: #f8fbfc; }
+  [data-theme="dark"] .member-back { background: var(--card); border-color: var(--line); }
+  [data-theme="dark"] .member-back:hover { color: var(--ink); border-color: var(--accent); }
 
   /* ===== Hero ===== */
-  .hero { padding: 70px 0 44px; text-align: center; position: relative; }
+  .hero { padding: 36px 0 24px; text-align: center; position: relative; }
   .hero::before {
     content: ""; position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
     width: 520px; height: 300px; z-index: -1; pointer-events: none;
@@ -156,12 +108,13 @@ document.documentElement.classList.add('js');
     border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
   }
   .hero .org { margin-top: 10px; color: var(--muted); font-size: 14px; }
-  .hero-social { margin-top: 26px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .hero-social { margin-top: 16px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
   .hlink {
     display: inline-flex; align-items: center; gap: 8px;
     padding: 10px 20px; border-radius: 10px; font-size: 13.5px; font-weight: 600;
     text-decoration: none; border: 1px solid var(--line); background: var(--card); color: var(--ink);
     transition: all .22s;
+    max-width: 100%; overflow-wrap: anywhere;
   }
   .hlink:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(49,114,180,.14); }
 
@@ -171,10 +124,10 @@ document.documentElement.classList.add('js');
   html.js .reveal.visible { opacity: 1; transform: none; }
 
   /* ===== Bento Grid ===== */
-  .bento { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; padding: 36px 0 72px; }
+  .bento { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; padding: 14px 0 72px; }
   .cell {
     background: var(--card); border: 1px solid var(--line);
-    border-radius: 16px; padding: 26px 28px;
+    border-radius: 6px; padding: 26px 28px;
     transition: box-shadow .25s, transform .25s;
     scroll-margin-top: 70px;
   }
@@ -186,6 +139,12 @@ document.documentElement.classList.add('js');
   }
   .cell h2 .bar { width: 4px; height: 16px; border-radius: 2px; background: linear-gradient(180deg, var(--accent), var(--warm)); flex-shrink: 0; }
   .bio { font-size: 14.5px; }
+  .awards-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+  .awards-list li {
+    position: relative; padding-left: 16px; color: var(--text);
+    font-size: 13.5px; line-height: 1.65;
+  }
+  .awards-list li::before { position: absolute; left: 0; content: "·"; color: var(--accent); font-weight: 800; }
 
   .kv { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
   .kv:last-child { border-bottom: none; }
@@ -260,8 +219,6 @@ document.documentElement.classList.add('js');
   #backTop.show { opacity: .85; pointer-events: auto; transform: none; }
   #backTop:hover { opacity: 1; }
 
-  footer { text-align: center; padding: 28px 0 46px; color: var(--muted); font-size: 12.5px; }
-
   /* ===== Toast 提示（空链接拦截反馈） ===== */
   #toast {
     position: fixed; left: 50%; bottom: 32px; transform: translateX(-50%) translateY(20px);
@@ -274,10 +231,7 @@ document.documentElement.classList.add('js');
   @media (max-width: 820px) {
     .bento { grid-template-columns: 1fr; }
     .cell.wide { grid-column: span 1; }
-    .hero { padding: 48px 0 30px; }
-    .nav-links { gap: 12px; }
-    .nav-links a { font-size: 12.5px; }
-    .nav-right { gap: 12px; }
+    .hero { padding: 34px 0 20px; }
     /* 移动端重置论文负 margin，避免内容溢出（Critical #8） */
     .paper { margin: 0; padding: 14px 0; border-radius: 0; }
   }
@@ -365,27 +319,13 @@ document.documentElement.classList.add('js');
   .skip-link:focus { left: 0; }
 
 </style>
-</head>
-<body>
-
 <a class="skip-link" href="#main">跳到主要内容</a>
 
 <div id="progressBar"></div>
 
-<nav>
-  <div class="wrap">
-    <span class="brand">{{ $name_cn }} <b>·</b> {{ $name_en }}</span>
-    <div class="nav-right">
-      <div class="nav-links">
-        <a href="#bio" class="active">简介</a>
-        <a href="#info">信息</a>
-        <a href="#papers">论文</a>
-        <a href="#edu">教育</a>
-      </div>
-      <button class="theme-btn" id="themeBtn" title="切换深色/浅色模式" aria-label="切换到深色模式">🌙</button>
-    </div>
-  </div>
-</nav>
+<div class="wrap">
+  <a class="member-back" href="{{ "/people/" | relURL }}" aria-label="返回成员列表">返回成员列表</a>
+</div>
 
 <header class="hero wrap reveal">
   <div class="hero-avatar">
@@ -396,10 +336,20 @@ document.documentElement.classList.add('js');
   {{ if $role }}<div class="role">{{ $role }}</div>{{ end }}
   <div class="org">{{ $org }}</div>
   <div class="hero-social">
-    {{ if $email }}<a class="hlink" href="#" id="copyEmail" data-email="{{ $email }}" title="{{ $email }}" aria-label="复制邮箱到剪贴板">✉️ 邮箱</a>{{ end }}
-    {{ if $github }}<a class="hlink" href="{{ $github }}" target="_blank" rel="noopener" title="GitHub">🐙 GitHub</a>{{ end }}
-    {{ if $scholar }}<a class="hlink" href="{{ $scholar }}" target="_blank" rel="noopener" title="Google Scholar">🎓 Scholar</a>{{ end }}
-    {{ if $orcid }}<a class="hlink" href="{{ $orcid }}" target="_blank" rel="noopener" title="ORCID">🔬 ORCID</a>{{ end }}
+    {{ if $email }}<a class="hlink" href="#" id="copyEmail" data-email="{{ $email }}" title="点击复制邮箱" aria-label="复制邮箱 {{ $email }} 到剪贴板">✉️ {{ $email }}</a>{{ end }}
+    {{ range .Params.social }}
+      {{- $link := .link | default "#" -}}
+      {{- $icon := .icon | default "link" -}}
+      {{- if and (ne $link "#") (ne $icon "envelope") -}}
+        {{- $pack := .icon_pack | default "fas" -}}
+        {{- $label := .label | default $icon -}}
+        {{- if eq $icon "github" }}{{ $label = "GitHub" }}{{ end -}}
+        {{- if eq $icon "graduation-cap" }}{{ $label = "Google Scholar" }}{{ end -}}
+        {{- if eq $icon "orcid" }}{{ $label = "ORCID" }}{{ end -}}
+        {{- if eq $icon "globe" }}{{ $label = "个人主页" }}{{ end -}}
+        <a class="hlink" href="{{ $link | safeURL }}" target="_blank" rel="noopener" title="{{ $label }}"><i class="{{ $pack }} fa-{{ $icon }}" aria-hidden="true"></i> {{ $label }}</a>
+      {{- end -}}
+    {{ end }}
   </div>
 </header>
 
@@ -434,57 +384,7 @@ document.documentElement.classList.add('js');
     {{ end }}
   </section>
 
-  {{ if $is_teacher }}
-  <!-- ══ 教师布局：获奖与基本信息同行（右列） ══ -->
-  <section class="cell reveal" id="awards">
-    <h2><span class="bar"></span> 获奖与荣誉</h2>
-    {{ if $awards }}{{ range $awards }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无获奖信息）</p>{{ end }}
-  </section>
-
-  <section class="cell wide reveal" id="projects">
-    <h2><span class="bar"></span> 在研项目</h2>
-    {{ if $projects }}
-    <div class="timeline">
-      {{ range $projects }}
-      <div class="edu">
-        <div class="top"><span class="school">{{ .name }}</span><span class="time">{{ .years }}</span></div>
-        {{ if .detail }}<div class="detail">{{ .detail }}</div>{{ end }}
-      </div>
-      {{ end }}
-    </div>
-    {{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
-  </section>
-
-  <section class="cell wide reveal" id="papers">
-    <h2><span class="bar"></span> 发表论文</h2>
-    {{ if $my_pubs }}
-    <div class="papers-list">
-      {{ range $my_pubs }}
-      {{- $pd := delimit .Params.authors_display ", " | default "" -}}
-      <div class="paper">
-        <div class="idx"></div>
-        <div class="body">
-          <div class="pt">{{ if .Params.url_source }}<a href="{{ .Params.url_source }}" target="_blank" rel="noopener">{{ .Title }}</a>{{ else }}<a href="#" data-placeholder="paper-link" target="_blank" rel="noopener">{{ .Title }}</a>{{ end }}</div>
-          <div class="pa">{{ if and $name_en $pd }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) $pd | safeHTML }}{{ else }}{{ $pd }}{{ end }}</div>
-          <div class="pv">
-            {{ if .Params.publication }}<span class="venue">{{ .Params.publication }}</span>{{ end }}
-            {{ if .Params.date }}<span class="yr">{{ .Params.date.Year }}</span>{{ end }}
-            {{ if .Params.level }}<span class="lvl">{{ .Params.level }}</span>{{ end }}
-          </div>
-          {{ if .Params.abstract }}
-          <details class="paper-abs" aria-label="论文摘要">
-            <summary class="abs-toggle">查看摘要</summary>
-            <p style="margin-top:6px">{{ .Params.abstract }}</p>
-          </details>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-    </div>
-    {{ else }}<p class="empty-tip">（暂无论文信息，待补充）</p>{{ end }}
-  </section>
-  {{ else }}
-  <!-- ══ 学生布局 ══ -->
+  <!-- 所有成员共享同一内容顺序；教师特有字段仅保留在基本信息中。 -->
   <section class="cell reveal" id="edu">
     <h2><span class="bar"></span> 教育经历</h2>
     {{ with .Params.education }}{{ with .courses }}
@@ -503,6 +403,30 @@ document.documentElement.classList.add('js');
     {{ end }}{{ else }}<p class="empty-tip">（未填写）</p>{{ end }}
   </section>
 
+  <section class="cell wide reveal" id="projects">
+    <h2><span class="bar"></span> 项目经历</h2>
+    {{ if $projects }}
+    <div class="timeline">
+      {{ range $projects }}
+      <div class="edu">
+        <div class="top">
+          <span class="school">{{ if .name }}{{ .name }}{{ else }}{{ . }}{{ end }}</span>
+          {{ with .years }}<span class="time">{{ . }}</span>{{ end }}
+        </div>
+        {{ with .detail }}<div class="detail">{{ . }}</div>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
+  </section>
+
+  <section class="cell wide reveal" id="awards">
+    <h2><span class="bar"></span> 获奖与荣誉</h2>
+    {{ if $awards }}
+    <ul class="awards-list">{{ range $awards }}<li>{{ . }}</li>{{ end }}</ul>
+    {{ else }}<p class="empty-tip">（暂无获奖信息）</p>{{ end }}
+  </section>
+
   <section class="cell wide reveal" id="papers">
     <h2><span class="bar"></span> 发表论文</h2>
     {{ if $my_pubs }}
@@ -532,26 +456,6 @@ document.documentElement.classList.add('js');
     {{ else }}<p class="empty-tip">（暂无论文信息，待补充）</p>{{ end }}
   </section>
 
-  <section class="cell reveal" id="projects">
-    <h2><span class="bar"></span> 项目经历</h2>
-    {{ if $projects }}{{ range $projects }}<p>· {{ if .name }}{{ .name }}{{ else }}{{ . }}{{ end }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无项目信息）</p>{{ end }}
-  </section>
-
-  <section class="cell reveal" id="awards">
-    <h2><span class="bar"></span> 获奖与荣誉</h2>
-    {{ if $awards }}{{ range $awards }}<p>· {{ . }}</p>{{ end }}{{ else }}<p class="empty-tip">（暂无获奖信息）</p>{{ end }}
-  </section>
-
-  <section class="cell wide reveal">
-    <h2><span class="bar"></span> 技能</h2>
-    {{ if $interests }}
-    <div class="tags">
-      {{ range $interests }}<span class="tag">{{ . }}</span>{{ end }}
-    </div>
-    {{ else }}<p class="empty-tip">（未填写）</p>{{ end }}
-  </section>
-  {{ end }}
-
   {{ if $recruitment }}
   <section class="cell wide reveal">
     <h2><span class="bar"></span> 招生信息</h2>
@@ -561,35 +465,12 @@ document.documentElement.classList.add('js');
 
 </main>
 
-<footer>
-  © <span id="year">2026</span> {{ $name_cn }} · EPIC Lab<br>
-  <span style="opacity:.7;font-size:11px">最后更新：{{ now.Format "2006-01-02" }}</span>
-</footer>
-
 <button id="backTop" title="回到顶部" aria-label="回到顶部">↑</button>
 <div id="toast" role="status" aria-live="polite"></div>
 
 <script>
 
 
-
-// 主题切换（按钮 + localStorage + aria-label 同步）
-(function(){
-  var btn = document.getElementById('themeBtn');
-  var updateBtn = function(){
-    var dark = document.documentElement.dataset.theme === 'dark';
-    btn.textContent = dark ? '☀️' : '🌙';
-    btn.setAttribute('aria-label', dark ? '切换到浅色模式' : '切换到深色模式');
-    btn.setAttribute('title', dark ? '切换到浅色模式' : '切换到深色模式');
-  };
-  updateBtn();
-  btn.addEventListener('click', function(){
-    var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = next;
-    try { localStorage.setItem('academic-theme', next); } catch(e) {}
-    updateBtn();
-  });
-})();
 
 // Toast 提示
 function showToast(msg){
@@ -707,12 +588,5 @@ document.addEventListener('click', function(e){
   });
 })();
 
-// 页脚年份动态生成（Minor #30），无需每年手动改
-(function(){
-  var y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
-})();
-
 </script>
-</body>
-</html>
+{{ end }}

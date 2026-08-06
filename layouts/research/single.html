@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main class="research-page">
+  <article class="research-page__container research-detail">
+    <header class="research-detail__header">
+      <h1>{{ .Params.direction }}：{{ .Title }}</h1>
+      <p class="research-detail__lead">{{ .Params.lead }}</p>
+      {{ with .Params.keywords }}
+      <div class="research-directory__tags research-detail__keywords">{{ range . }}<span>{{ . }}</span>{{ end }}</div>
+      {{ end }}
+    </header>
+
+    <section id="overview" class="research-detail__section">
+      <h2>方向概览</h2>
+      <p>{{ .Params.overview }}</p>
+      {{ with .Params.highlights }}
+      <div class="research-detail__grid research-detail__grid--questions">
+        {{ range $index, $item := . }}
+        <section><span class="research-detail__number">{{ printf "%02d" (add $index 1) }}</span><h3>{{ $item.title }}</h3><p>{{ $item.text }}</p></section>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+
+    {{ range .Params.sections }}
+    <section id="{{ .id }}" class="research-detail__section">
+      <h2>{{ .title }}</h2>
+      <p>{{ .text }}</p>
+      {{ with .images }}
+      <div class="research-detail__figures{{ if eq (len .) 1 }} research-detail__figures--single{{ end }}">
+        {{ range . }}
+        <figure class="research-detail__figure">
+          <a class="research-detail__zoom" href="{{ .src }}" title="点击查看大图"><img src="{{ .src }}" alt="{{ .alt }}"></a>
+          {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+        </figure>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  </article>
+</main>
+{{ end }}

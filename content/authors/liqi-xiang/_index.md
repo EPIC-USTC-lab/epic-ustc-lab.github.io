@@ -1,6 +1,6 @@
 ---
 title: 项莉棋
-role: 硕士（已毕业）
+role: 硕士研究生
 name_en: Liqi Xiang
 superuser: false
 organizations:
@@ -10,7 +10,6 @@ slug: liqi-xiang
 user_groups:
   - 已毕业校友
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于字节跳动。
-summary: 2026届，现就职于字节跳动
 education:
   courses:
     - degree: 硕士

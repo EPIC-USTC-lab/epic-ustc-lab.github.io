@@ -1,0 +1,38 @@
+{{ define "main" }}
+<main class="research-page">
+  <div class="research-page__container research-directory">
+    <header class="research-directory__header">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.intro | default .Summary }}</p>
+      {{ with .Params.scope }}
+      <div class="research-directory__scope" aria-label="研究关键词">
+        {{ range . }}<span>{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </header>
+
+    <section class="research-directory__list" aria-label="研究方向列表">
+      {{ range .Pages.ByWeight }}
+      <article class="research-directory__item">
+        <a class="research-directory__image" href="{{ .RelPermalink }}">
+          <img src="{{ .Params.cover }}" alt="{{ .Params.cover_alt | default .Title }}">
+        </a>
+        <div class="research-directory__body">
+          <h2><a href="{{ .RelPermalink }}"><span>{{ .Params.direction }}：</span>{{ .Title }}</a></h2>
+          <p>{{ .Params.summary }}</p>
+          {{ with .Params.keywords }}
+          <div class="research-directory__tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>
+          {{ end }}
+          <a class="research-directory__link" href="{{ .RelPermalink }}">查看方向详情</a>
+        </div>
+      </article>
+      {{ end }}
+    </section>
+
+    <aside class="research-directory__cta">
+      <div><h2>面向真实问题开展研究</h2><p>我们欢迎对智能计算系统感兴趣的同学与合作者围绕上述方向交流。</p></div>
+      <a href="{{ "/contact/" | relURL }}">了解加入方式</a>
+    </aside>
+  </div>
+</main>
+{{ end }}

@@ -8,7 +8,7 @@ authors_display:
   - Zongwei Zhu*
   - Weihong Liu
   - Xuehai Zhou
-date: "2025-01-01T00:00:00Z"
+date: "2025-08-08T00:00:00Z"
 publication_types: ["article-journal"]
 publication: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
 level: CCF-A 期刊

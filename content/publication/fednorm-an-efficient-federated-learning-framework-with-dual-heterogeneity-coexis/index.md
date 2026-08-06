@@ -8,7 +8,7 @@ authors_display:
   - Jing Cao
   - Zongwei Zhu
   - Xuehai Zhou
-date: "2022-01-01T00:00:00Z"
+date: "2022-12-19T00:00:00Z"
 publication_types: ["paper-conference"]
 publication: ICCD 2022
 level: CCF-B

@@ -17,9 +17,9 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'EPIC 实验室'
+    description: '中国科学技术大学 EPIC 实验室，致力于高能效智能计算、端侧智能与分布式计算等方向的研究。'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -45,9 +45,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} EPIC 实验室'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
@@ -55,9 +55,9 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
-  address_format: en-us
+  date_format: '2006年1月2日'
+  time_format: '15:04'
+  address_format: zh
 
 # Site features
 
@@ -72,7 +72,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/epic-ustc-lab/epic-ustc-lab.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -114,5 +114,5 @@ extensions:
 # Citation style
 
 publications:
-  date_format: January 2006
+  date_format: 2006年1月
   citation_style: apa

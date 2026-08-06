@@ -9,7 +9,7 @@ authors_display:
   - Tao Chen
   - Ke-Yin Cao
   - Dong Jiang*
-date: "2024-01-01T00:00:00Z"
+date: "2024-10-17T00:00:00Z"
 publication_types: ["article-journal"]
 publication: International Journal of Bifurcation and Chaos
 url_source: "https://doi.org/10.1142/S021812742450175X"

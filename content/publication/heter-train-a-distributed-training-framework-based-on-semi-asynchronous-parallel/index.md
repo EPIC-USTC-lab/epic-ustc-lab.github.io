@@ -8,7 +8,7 @@ authors_display:
   - Haipeng Jia
   - Zongwei Zhu*
   - et al.
-date: "2024-01-01T00:00:00Z"
+date: "2023-06-24T00:00:00Z"
 publication_types: ["article-journal"]
 publication: IEEE Transactions on Intelligent Transportation Systems (TITS)
 level: CCF-B 期刊

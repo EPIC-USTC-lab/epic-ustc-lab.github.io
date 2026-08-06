@@ -1,69 +1,35 @@
 ---
-title: Contact
-date: 2022-10-24
-
+title: 加入我们
+date: 2026-08-06
 type: landing
 
 sections:
-  - block: contact
-    content:
-      title: Contact
-      text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
-      address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
-    
-      # Automatically link email and phone or display as text?
-      autolink: true
-    
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
-    design:
-      columns: '1'
-
   - block: markdown
     content:
-      title:
-      subtitle: ''
-      text:
+      title: 加入 EPIC 实验室
+      subtitle: 与我们一起探索高能效智能计算
+      text: |
+        EPIC 实验室长期关注高能效智能计算、端侧智能与分布式计算等研究方向，欢迎对计算机系统、人工智能基础设施、大模型推理优化、联邦学习和星载智能计算感兴趣的同学加入我们。
+
+        ### 招生对象
+
+        我们欢迎具有计算机、软件工程、电子信息及相关专业背景的本科生、硕士研究生和博士研究生联系交流。对于希望提前了解科研工作的同学，也欢迎围绕实验室研究方向参与科研实践、毕业设计或学术交流。
+
+        ### 我们期待
+
+        - 对系统研究或人工智能研究具有持续兴趣；
+        - 具备良好的编程基础，愿意动手分析和解决真实问题；
+        - 保持好奇心、责任感和团队协作意识；
+        - 能够主动阅读论文、开展实验并清晰表达自己的思考。
+
+        ### 联系方式
+
+        请先浏览[研究方向](/research/)与[团队成员](/people/)，了解课题组当前工作，并通过相关教师个人页面中的邮箱联系。邮件建议包含个人简介、教育背景、研究兴趣及简历；如已有项目、论文或代码，也可一并附上。
+
+        如有其他招生、学术合作或实验室相关问题，也可发送邮件至实验室公共邮箱：[epic.ustc.lab@outlook.com](mailto:epic.ustc.lab@outlook.com)。
+
+        > 具体招生名额、申请条件和时间安排以中国科学技术大学当年度招生政策及导师通知为准。
     design:
       columns: '1'
-      background:
-        image: 
-          filename: contact.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+      css_class: recruitment-page
 ---

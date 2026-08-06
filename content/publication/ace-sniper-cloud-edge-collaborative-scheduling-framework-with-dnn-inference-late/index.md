@@ -13,7 +13,7 @@ authors_display:
   - Changlong Li
   - Zirui Lian
   - Xuehai Zhou
-date: "2024-01-01T00:00:00Z"
+date: "2023-09-12T00:00:00Z"
 publication_types: ["article-journal"]
 publication: IEEE TCAD
 level: CCF-A

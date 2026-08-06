@@ -9,6 +9,7 @@ organizations:
 slug: jiawei-geng
 user_groups:
   - 教师
+summary: ""
 is_teacher: true
 academic_position: 长期担任 IEEE TC、IEEE TCAD 等 CCF-A 期刊审稿人
 supervision: 参与指导博士、硕士研究生
@@ -26,6 +27,7 @@ education:
       advisor: 周学海教授、朱宗卫研究员
 email: jwgeng@ustc.edu.cn
 office: 仁爱路西区敏学楼202
+homepage: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -56,6 +58,7 @@ projects:
   - name: 中国科学院战略性先导科技专项（C类）
     years: 在研
     detail: 研究骨干
+recruitment: ""
 ---
 
 ## 个人简介

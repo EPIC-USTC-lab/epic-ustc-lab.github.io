@@ -9,6 +9,7 @@ organizations:
 slug: zongwei-zhu
 user_groups:
   - 教师
+summary: ""
 is_teacher: true
 academic_position: 博士生导师；中国科学技术大学软件学院实验教学中心（苏州）主任
 supervision: 指导博士、硕士研究生
@@ -62,6 +63,7 @@ projects:
   - name: 江苏省海洋科技创新项目
     years: 在研
     detail: 主持
+recruitment: ""
 ---
 
 ## 个人简介

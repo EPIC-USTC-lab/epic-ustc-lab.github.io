@@ -9,13 +9,14 @@ organizations:
 slug: fulong-fan
 user_groups:
   - 硕士研究生
+summary: ""
 bio: 中科大软件工程2026级硕士生，本科毕业于吉林大学软件学院。研究方向为 LLM 推理优化与任务规划， 曾以第一作者在 ACL Findings 发表论文。
 interests:
   - LLM 推理优化
   - 任务规划
 education:
   courses:
-    - degree: 硕士研究生
+    - degree: 硕士
       institution: 中国科学技术大学苏州高等研究院
       major: 软件工程
       year: 2026
@@ -27,6 +28,7 @@ education:
       year: 2022
       year_end: 2026
 email: fanfl9922@mail.ustc.edu.cn
+office: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -43,9 +45,12 @@ social:
   - icon: globe
     icon_pack: fas
     link: "#"
-weight: 30
 advisor: 朱宗卫
 enrollment: 2026
+graduation_year: ""
+current_position: ""
+awards: []
+projects: []
 ---
 
 ## 个人简介

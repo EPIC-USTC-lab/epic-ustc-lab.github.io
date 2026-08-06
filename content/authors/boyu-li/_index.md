@@ -9,6 +9,7 @@ organizations:
 slug: boyu-li
 user_groups:
   - 博士研究生
+summary: ""
 bio: 中国科学技术大学计算机技术2022级硕博连读，研究方向为多芯粒深度学习加速器设计。
 interests:
   - 多芯粒技术
@@ -22,13 +23,14 @@ education:
       year: 2022
       year_end: 至今
       advisor: 朱宗卫
-    - degree: 本科
+    - degree: 学士
       institution: 中国科学技术大学
       major: 计算机科学与技术
       year: 2018
       year_end: 2022
       advisor: 
 email: boyu.li.null@gmail.com
+office: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -45,7 +47,10 @@ social:
   - icon: globe
     icon_pack: fas
     link: https://lllbbbyyy.github.io/
-weight: 20
 advisor: 朱宗卫
 enrollment: 2022
+graduation_year: ""
+current_position: ""
+awards: []
+projects: []
 ---

@@ -9,6 +9,7 @@ organizations:
 slug: weihong-liu
 user_groups:
   - 已毕业校友
+summary: ""
 bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能， 在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为。
 interests:
   - 云边协同计算
@@ -21,6 +22,8 @@ education:
       year: 2021
       year_end: 2025
       advisor: 朱宗卫
+email: ""
+office: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -37,11 +40,12 @@ social:
   - icon: globe
     icon_pack: fas
     link: "#"
-weight: 40
 advisor: 朱宗卫
 enrollment: 2021
 graduation_year: 2025
 current_position: 华为
+awards: []
+projects: []
 ---
 
 ## 个人简介

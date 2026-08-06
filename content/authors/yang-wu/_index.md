@@ -9,7 +9,9 @@ organizations:
 slug: yang-wu
 user_groups:
   - 已毕业校友
+summary: ""
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯。
+interests: []
 education:
   courses:
     - degree: 硕士
@@ -18,6 +20,8 @@ education:
       year: 2022
       year_end: 2025
       advisor: 朱宗卫
+email: ""
+office: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -34,11 +38,12 @@ social:
   - icon: globe
     icon_pack: fas
     link: "#"
-weight: 40
 advisor: 朱宗卫
 enrollment: 2022
 graduation_year: 2025
 current_position: 腾讯
+awards: []
+projects: []
 ---
 
 ## 个人简介

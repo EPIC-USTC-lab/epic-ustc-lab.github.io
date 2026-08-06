@@ -9,19 +9,21 @@ organizations:
 slug: faxiang-chen
 user_groups:
   - 博士研究生
+summary: ""
 bio: 中科大软件工程2026级直博生，研究方向为 LLM 推理优化与内存优化。
 interests:
   - LLM 推理优化
   - 内存优化
 education:
   courses:
-    - degree: 博士研究生
+    - degree: 博士
       institution: 中国科学技术大学苏州高等研究院
       major: 软件工程
       year: 2026
       year_end: 至今
       advisor: 朱宗卫
 email: chenfx04@mail.ustc.edu.cn
+office: ""
 social:
   - icon: envelope
     icon_pack: fas
@@ -38,9 +40,12 @@ social:
   - icon: globe
     icon_pack: fas
     link: "#"
-weight: 20
 advisor: 朱宗卫
 enrollment: 2026
+graduation_year: ""
+current_position: ""
+awards: []
+projects: []
 ---
 
 ## 个人简介

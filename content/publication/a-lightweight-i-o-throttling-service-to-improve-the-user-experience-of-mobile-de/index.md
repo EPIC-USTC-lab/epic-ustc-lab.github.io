@@ -10,7 +10,7 @@ authors_display:
   - Xuehai Zhou
   - Edwin H.-M. Sha
 date: "2025-06-04T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE Transactions on Services Computing (TSC)
 level: CCF-A 期刊
 url_source: "https://doi.org/10.1109/TSC.2025.3576691"

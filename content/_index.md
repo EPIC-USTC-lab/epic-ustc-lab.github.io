@@ -63,6 +63,20 @@ sections:
 
   - block: collection
     content:
+      title: 最新论文
+      text: ""
+      count: 5
+      filters:
+        folders:
+          - publication
+      offset: 0
+      order: desc
+    design:
+      view: citation
+      columns: '1'
+
+  - block: collection
+    content:
       title: 最新动态
       subtitle:
       text:
@@ -79,22 +93,9 @@ sections:
     design:
       view: card
       columns: '1'
-  
-  - block: collection
-    content:
-      title: 最新论文
-      text: ""
-      count: 5
-      filters:
-        folders:
-          - publication
-      offset: 0
-      order: desc
-    design:
-      view: citation
-      columns: '1'
 
   - block: markdown
+    enabled: false  # 涉及合作信息，确认可公开后改为 true
     content:
       title: 合作伙伴
       subtitle: 产学研合作

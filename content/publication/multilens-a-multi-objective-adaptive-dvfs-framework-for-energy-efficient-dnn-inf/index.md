@@ -9,7 +9,7 @@ authors_display:
   - Weihong Liu
   - Xuehai Zhou
 date: "2025-08-08T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
 level: CCF-A 期刊
 url_source: "https://doi.org/10.1109/TCAD.2025.3597236"

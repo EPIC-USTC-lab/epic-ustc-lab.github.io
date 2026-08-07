@@ -2,7 +2,6 @@
 title: "Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices"
 authors:
   - weihong-liu
-  - jiawei-geng
   - zongwei-zhu
 authors_display:
   - Weihong Liu
@@ -14,7 +13,7 @@ authors_display:
   - Zirui Lian
   - Xuehai Zhou
 date: "2023-09-12T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE TCAD
 level: CCF-A
 url_source: "https://doi.org/10.1109/TCAD.2023.3314388"

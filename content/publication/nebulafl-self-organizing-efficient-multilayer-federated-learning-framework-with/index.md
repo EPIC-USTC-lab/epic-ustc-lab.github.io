@@ -1,6 +1,7 @@
 ---
 title: "NebulaFL: Self-Organizing Efficient Multilayer Federated Learning Framework with Adaptive Load Tuning in Heterogeneous Edge Systems"
 authors:
+  - zirui-lian
   - zongwei-zhu
 authors_display:
   - Zirui Lian
@@ -10,7 +11,7 @@ authors_display:
   - Zongwei Zhu*
   - Xuehai Zhou
 date: "2024-11-06T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
 level: CCF-A 期刊
 url_source: "https://doi.org/10.1109/TCAD.2024.3443715"

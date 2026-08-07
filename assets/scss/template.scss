@@ -3,6 +3,28 @@
   text-align: center;
 }
 
+/* Publication level badge used by homepage and publication citation lists. */
+.view-citation .publication-level {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.08rem 0.48rem;
+  border: 1px solid rgba(49, 114, 180, 0.24);
+  border-radius: 999px;
+  background: rgba(49, 114, 180, 0.08);
+  color: #285f94;
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1.45;
+  white-space: nowrap;
+  vertical-align: 0.08em;
+}
+
+[data-theme="dark"] .view-citation .publication-level {
+  border-color: rgba(111, 168, 220, 0.35);
+  background: rgba(111, 168, 220, 0.13);
+  color: #a8c9e8;
+}
+
 // Center the CTA shortcode button
 .cta-group {
   justify-content: center;

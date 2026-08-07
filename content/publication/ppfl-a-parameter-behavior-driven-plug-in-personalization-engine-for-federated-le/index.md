@@ -1,6 +1,7 @@
 ---
 title: "PPFL: A Parameter Behavior-Driven Plug-in Personalization Engine for Federated Learning"
 authors:
+  - qianyue-cao
   - zongwei-zhu
 authors_display:
   - Qianyue Cao
@@ -11,7 +12,7 @@ authors_display:
   - Yi Xiong
   - Xuehai Zhou
 date: "2026-01-20T00:00:00Z"
-publication_types: ["paper-conference"]
+publication_types: ["conference"]
 publication: The 40th AAAI Conference on Artificial Intelligence (AAAI 2026)
 level: CCF-A 会议
 url_source: "https://ojs.aaai.org/index.php/AAAI/article/view/39073"

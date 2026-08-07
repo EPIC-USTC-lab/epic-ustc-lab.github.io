@@ -14,7 +14,7 @@ authors_display:
   - Changlong Li
   - Xuehai Zhou
 date: "2025-03-04T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE TCAD
 level: CCF-A
 url_source: "https://doi.org/10.1109/TCAD.2025.3548003"

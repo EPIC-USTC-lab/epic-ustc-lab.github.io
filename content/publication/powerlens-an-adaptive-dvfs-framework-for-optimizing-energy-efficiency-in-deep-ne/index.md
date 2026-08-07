@@ -10,7 +10,7 @@ authors_display:
   - Xuehai Zhou
   - Boyu Li
 date: "2024-11-07T00:00:00Z"
-publication_types: ["paper-conference"]
+publication_types: ["conference"]
 publication: The 61st ACM/IEEE Design Automation Conference (DAC 2024)
 level: CCF-A 会议
 url_source: "https://doi.org/10.1145/3649329.3655956"

@@ -1,0 +1,11 @@
+{{/* Notify JS that this is a widget page. */}}
+<span class="js-widget-page d-none"></span>
+
+{{/* Render enabled landing-page sections only. */}}
+{{ range $index, $block := .Params.sections }}
+  {{ if ne $block.enabled false }}
+    {{ if or (not $block.demo) (and $block.demo (eq (os.Getenv "WC_DEMO") "true")) }}
+      {{ partial "functions/parse_block_v2" (dict "page" $ "block" $block) }}
+    {{ end }}
+  {{ end }}
+{{ end }}

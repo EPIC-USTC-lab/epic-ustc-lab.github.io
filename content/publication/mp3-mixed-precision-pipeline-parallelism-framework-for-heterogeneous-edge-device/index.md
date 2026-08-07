@@ -1,6 +1,7 @@
 ---
 title: "MP3: Mixed-Precision Pipeline Parallelism Framework for Heterogeneous Edge Devices"
 authors:
+  - yi-xiong
   - zongwei-zhu
 authors_display:
   - Yi Xiong
@@ -13,7 +14,7 @@ authors_display:
   - Yulong Zu
   - Xuehai Zhou
 date: "2026-02-10T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
 level: CCF-A 期刊
 url_source: "https://doi.org/10.1109/TCAD.2026.3663279"

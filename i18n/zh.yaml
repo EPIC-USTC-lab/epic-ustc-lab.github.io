@@ -1,0 +1,8 @@
+- id: pub_journal
+  translation: 期刊论文
+
+- id: pub_conference
+  translation: 会议论文
+
+- id: pub_preprint
+  translation: 预印本

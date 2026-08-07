@@ -19,6 +19,9 @@
 {{- $my_slug := "" }}{{ with .Params.slug }}{{ $my_slug = . }}{{ end -}}
 {{- $pubs := where site.RegularPages "Type" "publication" -}}
 {{- $my_pubs := where $pubs "Params.authors" "intersect" (slice $my_slug) -}}
+{{- $my_featured_pubs := sort (where $my_pubs "Params.featured" "eq" true) "Date" "desc" -}}
+{{- $my_regular_pubs := sort (where $my_pubs "Params.featured" "ne" true) "Date" "desc" -}}
+{{- $my_pubs = union $my_featured_pubs $my_regular_pubs -}}
 {{- $awards := .Params.awards | default slice -}}
 {{- $projects := .Params.projects | default slice -}}
 {{- $grants := .Params.grants | default slice -}}

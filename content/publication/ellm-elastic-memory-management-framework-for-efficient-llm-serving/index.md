@@ -1,6 +1,7 @@
 ---
 title: "eLLM: Elastic Memory Management Framework for Efficient LLM Serving"
 authors:
+  - yi-xiong
   - zongwei-zhu
 authors_display:
   - Jiale Xu
@@ -18,7 +19,7 @@ authors_display:
   - Xuehai Zhou
   - Jingwen Leng
 date: "2025-06-18T00:00:00Z"
-publication_types: ["paper-conference"]
+publication_types: ["conference"]
 publication: The Chips to Systems Conference (DAC 2026)
 level: CCF-A 会议
 url_source: "https://arxiv.org/abs/2506.15155"

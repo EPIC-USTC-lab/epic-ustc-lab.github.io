@@ -8,7 +8,7 @@ authors_display:
   - Yu Liang
   - Xuehai Zhou
 date: "2025-04-12T00:00:00Z"
-publication_types: ["article-journal"]
+publication_types: ["journal"]
 publication: ACM Transactions on Computer Systems (TOCS)
 level: CCF-A 期刊
 url_source: "https://doi.org/10.1145/3714409"

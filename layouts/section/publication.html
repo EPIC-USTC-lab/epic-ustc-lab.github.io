@@ -1,0 +1,80 @@
+{{- define "main" -}}
+
+{{ $.Page.Store.Set "has_isotope" true }}
+{{ partial "page_header.html" . }}
+
+{{ $featured_pages := sort (where .Pages "Params.featured" "eq" true) "Date" "desc" }}
+{{ $regular_pages := sort (where .Pages "Params.featured" "ne" true) "Date" "desc" }}
+
+<div class="universal-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+
+      {{ with .Content }}
+      <div class="article-style">{{ . }}</div>
+      {{ end }}
+
+      {{ if $featured_pages }}
+      <section class="featured-publications mb-5" aria-labelledby="featured-publications-title">
+        <h2 id="featured-publications-title" class="mb-4">代表作</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            {{ range $index, $item := $featured_pages }}
+            <div class="isotope-item pubtype-{{ index .Params.publication_types 0 }} year-{{ .Date.Format "2006" }}">
+              {{ partial "functions/render_view" (dict "page" $ "item" . "view" ($.Params.view | default "compact") "index" $index) }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+      <h2 class="mb-4">全部论文</h2>
+      {{ end }}
+
+      {{ range $regular_pages }}
+        {{ $year := print (.Date.Format "2006") }}
+        {{ $.Scratch.SetInMap "years" $year $year }}
+      {{ end }}
+
+      <div class="form-row mb-4">
+        <div class="col-auto">
+          <input type="search" class="filter-search form-control form-control-sm" placeholder="{{ i18n "search_placeholder" }}" autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
+            <option value="*">{{ i18n "publication_type" }}</option>
+            {{ range $index, $taxonomy := site.Taxonomies.publication_types }}
+            <option value=".pubtype-{{ $index }}">
+              {{ i18n (printf "pub_%s" (strings.Replace $index "-" "_")) | default (strings.Title $index) }}
+            </option>
+            {{ end }}
+          </select>
+        </div>
+        <div class="col-auto">
+          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
+            <option value="*">{{ i18n "date" }}</option>
+            {{ $years_sorted := $.Scratch.GetSortedMapValues "years" }}
+            {{ if $years_sorted }}
+            {{ range $year := sort $years_sorted "" "desc" }}
+            <option value=".year-{{ $year }}">{{ $year }}</option>
+            {{ end }}
+            {{ end }}
+          </select>
+        </div>
+      </div>
+
+      <div id="container-publications">
+        {{ range $index, $item := $regular_pages }}
+        {{ $pubtype := "uncategorized" }}
+        {{ with .Params.publication_types }}{{ $pubtype = index . 0 }}{{ end }}
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-{{ $pubtype }} year-{{ .Date.Format "2006" }}">
+          {{ partial "functions/render_view" (dict "page" $ "item" . "view" ($.Params.view | default "compact") "index" $index) }}
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{- end -}}

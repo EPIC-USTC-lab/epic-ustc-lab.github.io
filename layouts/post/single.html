@@ -1,0 +1,29 @@
+{{- define "main" -}}
+
+<article class="article">
+  {{ partial "page_header" . }}
+
+  <div class="article-container">
+    <div class="article-style">
+      {{ .Content }}
+    </div>
+
+    {{/* News footer: no social sharing and no implicit default author. */}}
+    {{ partial "page_edit" . }}
+    {{ partial "tags" . }}
+    {{ if .Params.authors }}
+      {{ partial "page_author" . }}
+    {{ end }}
+    {{ partial "comments" . }}
+
+    {{ if .Params.pager }}
+    <div class="article-widget">
+      {{ partial "components/pager" . }}
+    </div>
+    {{ end }}
+
+    {{ partial "page_related" . }}
+  </div>
+</article>
+
+{{- end -}}

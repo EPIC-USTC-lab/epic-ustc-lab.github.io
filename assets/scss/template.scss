@@ -19,6 +19,14 @@
   vertical-align: 0.08em;
 }
 
+/* Preserve the spelling of paper and system names such as "Magnifier" by
+   preventing fonts from merging letter pairs such as fi and fl. */
+.view-citation > a,
+.publication-detail-header h1 {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0;
+}
+
 [data-theme="dark"] .view-citation .publication-level {
   border-color: rgba(111, 168, 220, 0.35);
   background: rgba(111, 168, 220, 0.13);
@@ -32,6 +40,13 @@
 }
 
 .article-container.publication-detail-container {
+  width: calc(100% - 48px);
+  max-width: 1040px;
+}
+
+/* Keep news titles, article copy, and linked author cards aligned with the
+   publication detail layout. */
+.news-detail > .article-container {
   width: calc(100% - 48px);
   max-width: 1040px;
 }
@@ -139,6 +154,10 @@
 
 @media (max-width: 575.98px) {
   .article-container.publication-detail-container {
+    width: calc(100% - 32px);
+  }
+
+  .news-detail > .article-container {
     width: calc(100% - 32px);
   }
 

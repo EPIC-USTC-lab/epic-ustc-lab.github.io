@@ -24,7 +24,7 @@ education:
       year_end: 至今
       advisor: 朱宗卫
     - degree: 学士
-      institution: 中国科学技术大学
+      institution: 同济大学
       major: 计算机科学与技术
       year: 2018
       year_end: 2022

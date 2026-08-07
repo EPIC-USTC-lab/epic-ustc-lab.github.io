@@ -5,8 +5,8 @@ authors:
   - weihong-liu
   - zongwei-zhu
 authors_display:
-  - Yi Xiong
-  - Weihong Liu
+  - Yi Xiong†
+  - Weihong Liu†
   - Rui Zhang
   - Yulong Zu
   - Zongwei Zhu*

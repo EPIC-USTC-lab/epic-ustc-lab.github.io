@@ -22,13 +22,13 @@ education:
       major: 计算机技术
       year: 2022
       year_end: 至今
-      advisor: 朱宗卫
+      advisor: 朱宗卫、李曦
     - degree: 学士
       institution: 同济大学
       major: 计算机科学与技术
       year: 2018
       year_end: 2022
-      advisor: 
+      advisor: ""
 email: boyu.li.null@gmail.com
 office: ""
 social:

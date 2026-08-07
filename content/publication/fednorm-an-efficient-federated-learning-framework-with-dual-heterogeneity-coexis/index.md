@@ -2,7 +2,7 @@
 title: "FedNorm: An Efficient Federated Learning Framework with Dual Heterogeneity Coexistence on Edge Intelligence Systems"
 authors:
   - zirui-lian
-  - weihong-liu
+  - zongwei-zhu
 authors_display:
   - Zirui Lian
   - Weihong Liu

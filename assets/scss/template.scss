@@ -359,17 +359,6 @@
   background: linear-gradient(135deg, #f4fafb 0%, #f8fafc 55%, #eef5fa 100%);
 }
 
-.research-directory__header::after {
-  position: absolute;
-  top: -70px;
-  right: -70px;
-  width: 220px;
-  height: 220px;
-  border: 1px solid rgba(15, 124, 128, 0.14);
-  border-radius: 50%;
-  content: '';
-}
-
 .research-directory__eyebrow,
 .research-directory__meta,
 .research-detail__meta {

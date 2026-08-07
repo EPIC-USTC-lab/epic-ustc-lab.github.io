@@ -14,15 +14,15 @@ main:
 
   - name: 最新动态
     url: post
-    weight: 30
+    weight: 50
 
   - name: 团队成员
     url: people
-    weight: 40
+    weight: 30
 
   - name: 论文成果
     url: publication
-    weight: 50
+    weight: 40
 
   - name: 加入我们
     url: contact

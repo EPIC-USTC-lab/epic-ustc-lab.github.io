@@ -25,6 +25,149 @@
   color: #a8c9e8;
 }
 
+/* Publication details use the complete display byline, while `authors` remains
+   reserved for linking lab member profiles. */
+.publication-detail-header h1 {
+  margin-bottom: 1rem;
+}
+
+.article-container.publication-detail-container {
+  width: calc(100% - 48px);
+  max-width: 1040px;
+}
+
+.publication-detail-authors {
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.publication-detail-authors__label {
+  font-weight: 650;
+}
+
+.publication-detail-authors sup,
+.publication-detail-author-note sup {
+  color: #285f94;
+  font-weight: 700;
+}
+
+.publication-detail-author-note {
+  display: flex;
+  gap: 0.45rem;
+  color: #68717d;
+  font-size: 0.82rem;
+}
+
+.publication-detail-author-note__separator {
+  color: #9aa2ac;
+}
+
+.publication-detail-actions {
+  display: flex;
+  min-height: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.publication-detail-actions .btn-links {
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+
+.publication-detail-body {
+  padding-top: 1.25rem;
+}
+
+.publication-detail-body h2 {
+  margin: 1.5rem 0 0.8rem;
+  font-size: 1.35rem;
+}
+
+.publication-detail-body .pub-abstract {
+  margin-bottom: 0;
+  line-height: 1.78;
+}
+
+.publication-detail-info {
+  margin-top: 2rem;
+}
+
+.publication-detail-info__grid {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(28, 45, 65, 0.13);
+  border-radius: 8px;
+}
+
+.publication-detail-info__row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 20%) minmax(0, 1fr);
+  margin: 0;
+  border-bottom: 1px solid rgba(28, 45, 65, 0.1);
+}
+
+.publication-detail-info__row:last-child {
+  border-bottom: 0;
+}
+
+.publication-detail-info__row dt,
+.publication-detail-info__row dd {
+  margin: 0;
+  padding: 0.82rem 1rem;
+  line-height: 1.65;
+}
+
+.publication-detail-info__row dt {
+  background: rgba(49, 114, 180, 0.055);
+  font-weight: 650;
+}
+
+[data-theme="dark"] .publication-detail-info__grid {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="dark"] .publication-detail-info__row {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .publication-detail-info__row dt {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+@media (max-width: 575.98px) {
+  .article-container.publication-detail-container {
+    width: calc(100% - 32px);
+  }
+
+  .publication-detail-info__row {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-detail-info__row dt {
+    padding-bottom: 0.3rem;
+  }
+
+  .publication-detail-info__row dd {
+    padding-top: 0.3rem;
+  }
+
+  .publication-detail-actions {
+    flex-wrap: wrap;
+  }
+}
+
+[data-theme="dark"] .publication-detail-author-note {
+  color: #abb4c0;
+}
+
+[data-theme="dark"] .publication-detail-authors sup,
+[data-theme="dark"] .publication-detail-author-note sup {
+  color: #a8c9e8;
+}
+
 // Center the CTA shortcode button
 .cta-group {
   justify-content: center;

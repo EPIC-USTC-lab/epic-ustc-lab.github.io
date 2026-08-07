@@ -5,8 +5,8 @@ authors:
   - jiawei-geng
   - zongwei-zhu
 authors_display:
-  - Weihong Liu
-  - Jiawei Geng
+  - Weihong Liu†
+  - Jiawei Geng†
   - Zongwei Zhu*
   - Jing Cao
   - Zirui Lian

@@ -10,57 +10,75 @@
 {{ end }}
 
 <div class="pub">
-  {{ partial "page_header.html" . }}
+  <div class="article-container publication-detail-container pt-3 publication-detail-header">
+    <h1>{{ .Title }}</h1>
 
-  <div class="article-container">
+    {{ $has_corresponding := false }}
+    {{ $has_equal_contribution := false }}
+    {{ with .Params.authors_display }}
+    <div class="publication-detail-authors">
+      <span class="publication-detail-authors__label">作者：</span>
+      {{- range $index, $author := . -}}
+        {{- if $index }}, {{ end -}}
+        {{- $is_corresponding := in $author "*" -}}
+        {{- $is_equal_contribution := in $author "†" -}}
+        {{- if $is_corresponding }}{{ $has_corresponding = true }}{{ end -}}
+        {{- if $is_equal_contribution }}{{ $has_equal_contribution = true }}{{ end -}}
+        {{- $author_name := strings.Replace (strings.Replace $author "†" "") "*" "" -}}
+        <span>{{ $author_name }}{{ if $is_equal_contribution }}<sup>†</sup>{{ end }}{{ if $is_corresponding }}<sup>*</sup>{{ end }}</span>
+      {{- end -}}
+    </div>
+    {{ end }}
+
+    <div class="publication-detail-actions">
+      {{ partial "page_links_div.html" . }}
+      {{ if or $has_equal_contribution $has_corresponding }}
+      <div class="publication-detail-author-note">
+        {{- if $has_equal_contribution }}<span><sup>†</sup> 共同第一作者</span>{{ end -}}
+        {{- if and $has_equal_contribution $has_corresponding }}<span class="publication-detail-author-note__separator">·</span>{{ end -}}
+        {{- if $has_corresponding }}<span><sup>*</sup> 通讯作者</span>{{ end -}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="article-container publication-detail-container publication-detail-body">
     {{ if .Params.abstract }}
-    <h3>{{ i18n "abstract" }}</h3>
+    <h2>{{ i18n "abstract" }}</h2>
     <p class="pub-abstract">{{ .Params.abstract | markdownify }}</p>
     {{ end }}
 
-    {{ if $pub_type_display }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication_type" }}</div>
-          <div class="col-12 col-md-9">
-            <a href="{{ (site.GetPage "section" "publication").RelPermalink }}#{{ $pub_type_csl | anchorize }}">{{ $pub_type_display }}</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
+    <section class="publication-detail-info" aria-labelledby="publication-detail-info-heading">
+      <h2 id="publication-detail-info-heading">出版信息</h2>
 
-    {{ with .Params.publication }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication" }}</div>
-          <div class="col-12 col-md-9">{{ . | markdownify }}</div>
+      <dl class="publication-detail-info__grid">
+        <div class="publication-detail-info__row">
+          <dt>发表日期</dt>
+          <dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年1月2日" }}</time></dd>
         </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
 
-    {{ with .Params.level }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">论文等级</div>
-          <div class="col-12 col-md-9">{{ . }}</div>
+        {{ if $pub_type_display }}
+        <div class="publication-detail-info__row">
+          <dt>{{ i18n "publication_type" }}</dt>
+          <dd><a href="{{ (site.GetPage "section" "publication").RelPermalink }}#{{ $pub_type_csl | anchorize }}">{{ $pub_type_display }}</a></dd>
         </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
+        {{ end }}
+
+        {{ with .Params.publication }}
+        <div class="publication-detail-info__row">
+          <dt>{{ i18n "publication" }}</dt>
+          <dd>{{ . | markdownify }}</dd>
+        </div>
+        {{ end }}
+
+        {{ with .Params.level }}
+        <div class="publication-detail-info__row">
+          <dt>论文等级</dt>
+          <dd>{{ . }}</dd>
+        </div>
+        {{ end }}
+      </dl>
+    </section>
 
     <div class="space-below"></div>
     <div class="article-style">{{ .Content }}</div>

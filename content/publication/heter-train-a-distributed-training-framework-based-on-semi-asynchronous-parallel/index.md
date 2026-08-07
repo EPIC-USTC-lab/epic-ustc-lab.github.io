@@ -5,8 +5,8 @@ authors:
   - jing-cao
   - zongwei-zhu
 authors_display:
-  - Jiawei Geng
-  - Jing Cao
+  - Jiawei Geng†
+  - Jing Cao†
   - Haipeng Jia
   - Zongwei Zhu*
   - et al.

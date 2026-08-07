@@ -48,8 +48,8 @@ authors:
   - san-zhang
   - zongwei-zhu
 authors_display:
-  - San Zhang
-  - Si Li
+  - San Zhang†
+  - Si Li†
   - Zongwei Zhu*
 date: "2026-05-18T00:00:00Z"
 publication_types: ["conference"]
@@ -69,7 +69,7 @@ featured: false
 |---|---|---|
 | `title` | 是 | 完整论文标题，包含冒号时建议使用双引号 |
 | `authors` | 是 | 用于关联实验室成员个人页，填写成员目录对应的 `slug` |
-| `authors_display` | 是 | 按论文原始顺序填写完整作者姓名，用于网页展示 |
+| `authors_display` | 是 | 按论文原始顺序填写完整作者姓名；共同第一作者加 `†`，通讯作者加 `*` |
 | `date` | 是 | 用于展示和排序的论文日期，按下方统一口径填写完整 ISO 日期 |
 | `publication_types` | 是 | 出版物类型，见下方类型说明 |
 | `publication` | 建议 | 期刊、会议或预印本平台名称；会议年份由 `date` 自动生成，不要重复填写 |
@@ -139,9 +139,16 @@ slug: zongwei-zhu
 
 ```yaml
 authors_display:
-  - San Zhang
-  - Si Li
+  - San Zhang†
+  - Si Li†
   - Zongwei Zhu*
+```
+
+共同第一作者需要在每位共同一作姓名末尾添加 `†`：
+
+```yaml
+  - San Zhang†
+  - Si Li†
 ```
 
 通讯作者在姓名末尾添加 `*`：
@@ -149,6 +156,14 @@ authors_display:
 ```yaml
   - Zongwei Zhu*
 ```
+
+如果同一位作者既是共同第一作者又是通讯作者，写成：
+
+```yaml
+  - San Zhang†*
+```
+
+详情页会把 `†` 说明为“共同第一作者”，把 `*` 说明为“通讯作者”。没有共同第一作者时不要添加 `†`。
 
 这里填写的是展示文本，不负责关联个人页面。作者个人页会根据其 `name_en` 自动加粗该作者姓名。
 
@@ -287,7 +302,7 @@ url_source: "https://doi.org/10.xxxx/example"
 2. `title` 是完整论文标题。
 3. `authors` 只填写需要关联的实验室成员 `slug`。
 4. `authors_display` 包含全部作者且顺序正确。
-5. 通讯作者姓名末尾已添加 `*`。
+5. 共同第一作者姓名末尾已添加 `†`，通讯作者姓名末尾已添加 `*`。
 6. `date` 已按“会议召开日 / 期刊正式出版日 / 首次在线日 / 正式录用日”的优先级核实。
 7. `publication_types` 使用正确的复数列表格式。
 8. `publication`、`level` 和 `url_source` 信息准确。

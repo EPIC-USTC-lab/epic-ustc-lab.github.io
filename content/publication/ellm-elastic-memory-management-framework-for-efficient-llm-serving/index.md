@@ -4,8 +4,8 @@ authors:
   - yi-xiong
   - zongwei-zhu
 authors_display:
-  - Jiale Xu
-  - Yi Xiong
+  - Jiale Xu†
+  - Yi Xiong†
   - Rui Zhang
   - Cong Guo*
   - Zihan Liu

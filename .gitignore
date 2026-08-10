@@ -7,3 +7,7 @@ public/
 assets/jsconfig.json
 
 tmp*
+
+content/authors/*.zip
+content/publication/*.zip
+content/post/*.zip

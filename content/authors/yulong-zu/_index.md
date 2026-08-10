@@ -27,7 +27,7 @@ education:
       major: 软件工程
       year: 2019
       year_end: 2023
-      advisor: "张伟"
+      advisor: 张伟
 email: zyl1483231303@mail.ustc.edu.cn
 office: ""
 social:
@@ -45,13 +45,11 @@ social:
     link: "#"
   - icon: globe
     icon_pack: fas
-    link: #
+    link: "#"
 advisor: 朱宗卫
 enrollment: 2023
 graduation_year: ""
 current_position: ""
 awards:
-  - []
 projects:
-  - []
 ---

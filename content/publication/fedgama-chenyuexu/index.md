@@ -3,7 +3,6 @@ title: "FedGAMA: Federated Learning on Heterogeneous and Long-Tailed Data via Gr
 authors:
   - chenyue-xu
   - zongwei-zhu
-  - xuehai-zhou
 authors_display:
   - Chenyue Xu
   - Zongwei Zhu*

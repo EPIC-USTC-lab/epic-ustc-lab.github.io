@@ -38,7 +38,7 @@ social:
     link: "#"
   - icon: orcid
     icon_pack: fab
-    link: "#"
+    link: https://orcid.org/0000-0003-3607-2631
   - icon: globe
     icon_pack: fas
     link: http://staff.ustc.edu.cn/~zzw1988/

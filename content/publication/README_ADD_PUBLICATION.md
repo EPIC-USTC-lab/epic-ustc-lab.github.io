@@ -46,10 +46,12 @@ edge-inference-san-zhang
 title: "Example: Efficient Edge LLM Inference"
 authors:
   - san-zhang
+  - li-si
   - zongwei-zhu
 authors_display:
   - San Zhang†
   - Si Li†
+  - Wang Wu
   - Zongwei Zhu*
 date: "2026-05-18T00:00:00Z"
 publication_types: ["conference"]
@@ -68,7 +70,7 @@ featured: false
 | 字段 | 是否必填 | 说明 |
 |---|---|---|
 | `title` | 是 | 完整论文标题，包含冒号时建议使用双引号 |
-| `authors` | 是 | 用于关联实验室成员个人页，填写成员目录对应的 `slug` |
+| `authors` | 是 | 用于关联实验室成员个人页，填写成员目录对应的 `slug` ，一般填写论文的一作和通讯|
 | `authors_display` | 是 | 按论文原始顺序填写完整作者姓名；共同第一作者加 `†`，通讯作者加 `*` |
 | `date` | 是 | 用于展示和排序的论文日期，按下方统一口径填写完整 ISO 日期 |
 | `publication_types` | 是 | 出版物类型，见下方类型说明 |

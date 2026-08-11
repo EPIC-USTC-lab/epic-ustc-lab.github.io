@@ -50,7 +50,5 @@ enrollment: 2024
 graduation_year: ""
 current_position: ""
 awards:
-  - []
 projects:
-  - []
 ---

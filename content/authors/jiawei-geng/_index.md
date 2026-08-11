@@ -22,7 +22,7 @@ education:
     - degree: 博士
       institution: 中国科学技术大学
       major: 计算机科学与技术
-      year: 2020
+      year: 2022
       year_end: 2026
       advisor: 周学海教授、朱宗卫研究员
 email: jwgeng@ustc.edu.cn

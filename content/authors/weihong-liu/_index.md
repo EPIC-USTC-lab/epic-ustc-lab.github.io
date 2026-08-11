@@ -19,8 +19,14 @@ education:
     - degree: 博士
       institution: 中国科学技术大学苏州高等研究院
       major: 计算机技术
-      year: 2019
+      year: 2022
       year_end: 2025
+      advisor: 朱宗卫
+    - degree: 硕士（后转博）
+      institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
+      year: 2019
+      year_end: 2022
       advisor: 朱宗卫
 email: ""
 office: ""
@@ -41,7 +47,7 @@ social:
     icon_pack: fas
     link: "#"
 advisor: 朱宗卫
-enrollment: 2019
+enrollment: 2022
 graduation_year: 2025
 current_position: 华为
 awards: []

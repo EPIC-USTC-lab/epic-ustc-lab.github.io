@@ -19,9 +19,15 @@ education:
     - degree: 博士
       institution: 中国科学技术大学苏州高等研究院
       major: 计算机技术
-      year: 2021
+      year: 2023
       year_end: 2026
-      advisor: 朱宗卫
+      advisor: 朱宗卫、周学海
+    - degree: 硕士（后转博）
+      institution: 中国科学技术大学苏州高等研究院
+      major: 软件工程
+      year: 2021
+      year_end: 2023
+      advisor: 朱宗卫、周学海
 email: ""
 office: ""
 social:
@@ -41,7 +47,7 @@ social:
     icon_pack: fas
     link: "#"
 advisor: 朱宗卫
-enrollment: 2021
+enrollment: 2023
 graduation_year: 2026
 current_position: 腾讯
 awards: []

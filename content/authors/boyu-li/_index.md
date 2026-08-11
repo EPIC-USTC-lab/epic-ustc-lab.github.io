@@ -20,8 +20,14 @@ education:
     - degree: 博士
       institution: 中国科学技术大学
       major: 计算机技术
-      year: 2022
+      year: 2024
       year_end: 至今
+      advisor: 朱宗卫、李曦
+    - degree: 硕士（后转博）
+      institution: 中国科学技术大学
+      major: 软件工程
+      year: 2022
+      year_end: 2024
       advisor: 朱宗卫、李曦
     - degree: 学士
       institution: 同济大学

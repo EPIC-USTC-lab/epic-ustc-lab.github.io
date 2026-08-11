@@ -42,7 +42,7 @@ social:
     icon_pack: fas
     link: "#"
 advisor: 周学海
-enrollment: 2022
+enrollment: 2025
 graduation_year: ""
 current_position: ""
 awards: []

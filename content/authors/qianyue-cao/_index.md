@@ -22,6 +22,12 @@ education:
       year: 2022
       year_end: 至今
       advisor: 朱宗卫、周学海
+    - degree: 硕士（后转博）
+      institution: 中国科学技术大学
+      major: 软件工程
+      year: 2022
+      year_end: 2024
+      advisor: 朱宗卫
     - degree: 学士
       institution: 合肥工业大学
       major: 计算机科学与技术
@@ -47,7 +53,7 @@ social:
     icon_pack: fas
     link: "#"
 advisor: 朱宗卫
-enrollment: 2022
+enrollment: 2024
 graduation_year: ""
 current_position: ""
 awards:

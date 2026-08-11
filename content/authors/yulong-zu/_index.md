@@ -47,7 +47,7 @@ social:
     icon_pack: fas
     link: "#"
 advisor: 朱宗卫
-enrollment: 2023
+enrollment: 2026
 graduation_year: ""
 current_position: ""
 awards:

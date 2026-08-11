@@ -54,7 +54,7 @@ social:
     icon_pack: fas
     link: https://lllbbbyyy.github.io/
 advisor: 朱宗卫
-enrollment: 2022
+enrollment: 2024
 graduation_year: ""
 current_position: ""
 awards:

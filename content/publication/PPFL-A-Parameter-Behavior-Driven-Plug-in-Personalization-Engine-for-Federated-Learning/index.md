@@ -11,7 +11,7 @@ authors_display:
   - Boyu Li
   - Yi Xiong
   - Xuehai Zhou
-date: "2026-03-14T00:00:00Z"
+date: "2026-01-25T00:00:00Z"
 publication_types: ["conference"]
 publication: Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)
 level: CCF-A 会议

@@ -3,6 +3,9 @@ title: "Memory-Efficient Federated Fine-Tuning of LLMs via Block-wise Progressiv
 authors:
   - qianyue-cao
   - zongwei-zhu
+  - boyu-li
+  - yi-xiong
+  - zirui-lian
 authors_display:
   - Qianyue Cao
   - Zongwei Zhu*

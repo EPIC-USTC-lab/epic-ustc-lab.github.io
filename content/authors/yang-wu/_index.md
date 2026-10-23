@@ -10,7 +10,7 @@ slug: yang-wu
 user_groups:
   - 已毕业校友
 summary: ""
-bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯。
+bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯-微信支付。
 interests: []
 education:
   courses:
@@ -41,14 +41,17 @@ social:
 advisor: 朱宗卫
 enrollment: 2022
 graduation_year: 2025
-current_position: 腾讯
+current_position: 腾讯-微信支付
+career_directions:
+  - 跨境支付
+  - agentic engineering
 awards: []
 projects: []
 ---
 
 ## 个人简介
 
-硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯。
+硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯-微信支付。
 
 
 
@@ -61,6 +64,6 @@ projects: []
 
 **入学年份**：2022
 
-**毕业去向**：腾讯
+**毕业去向**：腾讯-微信支付
 
 **2025届**

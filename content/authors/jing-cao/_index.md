@@ -10,7 +10,7 @@ slug: jing-cao
 user_groups:
   - 已毕业校友
 summary: ""
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能， 在 DAC、TCAD 等会议期刊发表多篇论文。
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能， 在 DAC、TCAD 等会议期刊发表多篇论文，现就职于浙大城市学院。
 interests:
   - 联邦学习
   - 边缘智能
@@ -49,7 +49,10 @@ social:
 advisor: 朱宗卫
 enrollment: 2020
 graduation_year: 2024
-current_position: 
+current_position: 浙大城市学院
+career_directions:
+  - 分布式训练
+  - 智能体操作系统
 awards: []
 projects: []
 ---

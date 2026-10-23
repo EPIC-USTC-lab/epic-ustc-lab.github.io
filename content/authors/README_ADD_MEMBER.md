@@ -137,6 +137,7 @@ weight: 20
 | `projects` | 否 | 项目经历列表，无内容时使用 `[]` |
 | `graduation_year` | 校友必填 | 毕业年份；在读时保持空字符串 |
 | `current_position` | 校友建议 | 毕业去向；在读时保持空字符串 |
+| `career_directions` | 校友可选 | 毕业后的从事方向列表，与在校研究方向 `interests` 分开；卡片最多展示两项，详情页展示全部 |
 | `is_teacher` | 教师必填 | 教师设为 `true`，启用教师详情布局 |
 | `academic_position` | 教师可选 | 学术职务 |
 | `supervision` | 教师可选 | 研究生指导信息 |

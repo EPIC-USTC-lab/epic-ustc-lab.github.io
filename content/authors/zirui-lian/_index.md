@@ -10,7 +10,7 @@ slug: zirui-lian
 user_groups:
   - 已毕业校友
 summary: ""
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能， 在 ICCD、TCAD、AAAI 等会议期刊发表多篇论文（FedNorm、HaloFL 等），现就职于阿里巴巴。
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为联邦学习与边缘智能， 在 ICCD、TCAD、AAAI 等会议期刊发表多篇论文（FedNorm、HaloFL 等），现就职于阿里云智能集团。
 interests:
   - 联邦学习
   - 边缘智能
@@ -49,7 +49,11 @@ social:
 advisor: 朱宗卫
 enrollment: 2021
 graduation_year: 2025
-current_position: 阿里巴巴
+current_position: 阿里云智能集团
+career_directions:
+  - 端侧大模型训练
+  - 极致压缩
+  - 加速
 awards: []
 projects: []
 ---

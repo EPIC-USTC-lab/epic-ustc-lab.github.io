@@ -42,6 +42,9 @@ advisor: 朱宗卫
 enrollment: 2023
 graduation_year: 2026
 current_position: 字节跳动
+career_directions:
+  - 营销算法
+  - 用户增长
 awards: []
 projects: []
 ---

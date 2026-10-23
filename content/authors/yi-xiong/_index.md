@@ -50,6 +50,8 @@ advisor: 朱宗卫
 enrollment: 2023
 graduation_year: 2026
 current_position: 腾讯
+career_directions:
+  - AI Infra
 awards: []
 projects: []
 ---

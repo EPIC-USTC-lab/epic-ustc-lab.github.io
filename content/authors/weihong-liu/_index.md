@@ -10,7 +10,7 @@ slug: weihong-liu
 user_groups:
   - 已毕业校友
 summary: ""
-bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能， 在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为。
+bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能， 在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为技术有限公司。
 interests:
   - 云边协同计算
   - 边缘智能
@@ -49,7 +49,9 @@ social:
 advisor: 朱宗卫
 enrollment: 2022
 graduation_year: 2025
-current_position: 华为
+current_position: 华为技术有限公司
+career_directions:
+  - 具身agent
 awards: []
 projects: []
 ---
@@ -57,7 +59,7 @@ projects: []
 ## 个人简介
 
 博士毕业于中国科学技术大学苏州高等研究院。研究方向为云边协同计算与边缘智能，
-在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为。
+在 DAC、TCAD 等 CCF-A 会议期刊发表多篇论文（Sniper、Ace-Sniper 等），现就职于华为技术有限公司。
 
 
 
@@ -84,6 +86,6 @@ projects: []
 - 2. **Weihong Liu**, Jiawei Geng, Zongwei Zhu*, Yang Zhao, Cheng Ji, Changlong Li, Zirui Lian, Xuehai Zhou. *Ace-Sniper: Cloud-Edge Collaborative Scheduling Framework with DNN Inference Latency Modeling on Heterogeneous Devices*. IEEE TCAD, 2024。CCF-A会议
 
 
-**毕业去向**：华为
+**毕业去向**：华为技术有限公司
 
 **2025届**

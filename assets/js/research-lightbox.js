@@ -1,5 +1,5 @@
 (() => {
-  const zoomLinks = document.querySelectorAll('.research-detail__zoom');
+  const zoomLinks = document.querySelectorAll('.research-detail__zoom, .author-avatar-zoom');
 
   if (!zoomLinks.length) {
     return;

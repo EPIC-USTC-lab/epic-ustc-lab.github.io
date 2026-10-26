@@ -1,4 +1,4 @@
-{{ if eq .Section "research" }}
+{{ if in (slice "research" "authors") .Section }}
   <style>
     body.research-lightbox-open {
       overflow: hidden;

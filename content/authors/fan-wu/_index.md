@@ -11,7 +11,8 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于智身科技。
-interests: []
+interests:
+  - "世界模型/VlA 模型"
 education:
   courses:
   - degree: 硕士
@@ -44,6 +45,4 @@ graduation_year: 2021
 awards: []
 projects: []
 current_position: 智身科技
-career_directions:
-- 世界模型/VlA 模型
 ---

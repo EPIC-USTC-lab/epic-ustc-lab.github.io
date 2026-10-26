@@ -11,7 +11,9 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于山东能源。
-interests: []
+interests:
+  - "企业数字化转型"
+  - "数智化项目管理"
 education:
   courses:
   - degree: 硕士
@@ -44,7 +46,4 @@ graduation_year: 2025
 awards: []
 projects: []
 current_position: 山东能源
-career_directions:
-- 企业数字化转型
-- 数智化项目管理
 ---

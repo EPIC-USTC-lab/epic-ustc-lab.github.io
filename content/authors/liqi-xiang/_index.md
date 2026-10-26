@@ -11,7 +11,9 @@ user_groups:
   - 已毕业校友
 summary: ""
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于字节跳动。
-interests: []
+interests:
+  - "营销算法"
+  - "用户增长"
 education:
   courses:
     - degree: 硕士
@@ -42,9 +44,6 @@ advisor: 朱宗卫
 enrollment: 2023
 graduation_year: 2026
 current_position: 字节跳动
-career_directions:
-  - 营销算法
-  - 用户增长
 awards: []
 projects: []
 ---

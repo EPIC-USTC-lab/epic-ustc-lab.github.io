@@ -123,7 +123,7 @@ weight: 20
 | `organizations` | 建议 | 所属机构及机构链接 |
 | `summary` | 否 | 卡片补充说明；空值不会显示，校友摘要由模板自动生成 |
 | `bio` | 建议 | 个人详情页的完整简介 |
-| `interests` | 建议 | 研究方向，同时作为成员卡片标签 |
+| `interests` | 建议 | 研究方向列表，同时作为成员卡片标签；在读成员和校友统一使用，毕业时无需更换字段 |
 | `education.courses` | 建议 | 教育经历列表，可填写多段 |
 | `degree` | 建议 | 学位层次，统一填写`博士`、`硕士`或`学士`；`year_end: 至今` 已表示在读 |
 | `year` / `year_end` | 建议 | 教育经历起止年份 |
@@ -137,7 +137,6 @@ weight: 20
 | `projects` | 否 | 项目经历列表，无内容时使用 `[]` |
 | `graduation_year` | 校友必填 | 毕业年份；在读时保持空字符串 |
 | `current_position` | 校友建议 | 毕业去向；在读时保持空字符串 |
-| `career_directions` | 校友可选 | 毕业后的从事方向列表，与在校研究方向 `interests` 分开；卡片最多展示两项，详情页展示全部 |
 | `is_teacher` | 教师必填 | 教师设为 `true`，启用教师详情布局 |
 | `academic_position` | 教师可选 | 学术职务 |
 | `supervision` | 教师可选 | 研究生指导信息 |

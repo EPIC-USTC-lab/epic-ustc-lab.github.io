@@ -12,8 +12,9 @@ user_groups:
 summary: ""
 bio: 博士毕业于中国科学技术大学苏州高等研究院。研究方向为边缘智能计算与 LLM 推理优化， 在 ICCAD、TCAD 等会议期刊发表多篇论文（EPipe、LayerKV 等），现就职于腾讯。
 interests:
-  - 边缘智能计算
-  - LLM 推理优化
+  - "边缘智能计算"
+  - "LLM 推理优化"
+  - "AI Infra"
 education:
   courses:
     - degree: 博士
@@ -50,8 +51,6 @@ advisor: 朱宗卫
 enrollment: 2023
 graduation_year: 2026
 current_position: 腾讯
-career_directions:
-  - AI Infra
 awards: []
 projects: []
 ---

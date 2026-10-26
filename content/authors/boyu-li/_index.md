@@ -12,9 +12,9 @@ user_groups:
 summary: ""
 bio: 中国科学技术大学计算机技术2022级硕博连读，研究方向为多芯粒深度学习加速器设计。
 interests:
-  - 多芯粒技术
-  - 设计空间探索
-  - 深度学习系统
+  - AI芯片架构
+  - AI编译器
+  - Agents for system
 education:
   courses:
     - degree: 博士

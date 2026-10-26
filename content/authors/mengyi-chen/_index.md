@@ -11,7 +11,9 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于中国电信。
-interests: []
+interests:
+  - "token运营"
+  - "模型测试"
 education:
   courses:
   - degree: 硕士
@@ -44,7 +46,4 @@ graduation_year: 2025
 awards: []
 projects: []
 current_position: 中国电信
-career_directions:
-- token运营
-- 模型测试
 ---

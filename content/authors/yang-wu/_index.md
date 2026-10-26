@@ -11,7 +11,9 @@ user_groups:
   - 已毕业校友
 summary: ""
 bio: 硕士毕业于中国科学技术大学苏州高等研究院，现就职于腾讯-微信支付。
-interests: []
+interests:
+  - "跨境支付"
+  - "agentic engineering"
 education:
   courses:
     - degree: 硕士
@@ -42,9 +44,6 @@ advisor: 朱宗卫
 enrollment: 2022
 graduation_year: 2025
 current_position: 腾讯-微信支付
-career_directions:
-  - 跨境支付
-  - agentic engineering
 awards: []
 projects: []
 ---

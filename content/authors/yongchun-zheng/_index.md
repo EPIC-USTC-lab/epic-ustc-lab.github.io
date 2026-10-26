@@ -11,7 +11,8 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于淘天集团。
-interests: []
+interests:
+  - "AI Agent 应用研发"
 education:
   courses:
   - degree: 硕士
@@ -44,6 +45,4 @@ graduation_year: 2023
 awards: []
 projects: []
 current_position: 淘天集团
-career_directions:
-- AI Agent 应用研发
 ---

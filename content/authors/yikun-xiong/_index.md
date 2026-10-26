@@ -11,7 +11,8 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于华为技术有限公司。
-interests: []
+interests:
+  - "编译器"
 education:
   courses:
   - degree: 硕士
@@ -44,6 +45,4 @@ graduation_year: 2021
 awards: []
 projects: []
 current_position: 华为技术有限公司
-career_directions:
-- 编译器
 ---

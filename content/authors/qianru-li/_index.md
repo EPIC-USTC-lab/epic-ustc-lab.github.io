@@ -11,7 +11,9 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于中共国网陕西电力党校。
-interests: []
+interests:
+  - "数字化建设"
+  - "干部教育信息化"
 education:
   courses:
   - degree: 硕士
@@ -44,7 +46,4 @@ graduation_year: 2025
 awards: []
 projects: []
 current_position: 中共国网陕西电力党校
-career_directions:
-- 数字化建设
-- 干部教育信息化
 ---

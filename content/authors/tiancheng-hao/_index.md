@@ -11,7 +11,9 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于信弘天禾资产管理有限公司。
-interests: []
+interests:
+  - "量化基础架构"
+  - "机器学习平台"
 education:
   courses:
   - degree: 硕士
@@ -44,7 +46,4 @@ graduation_year: 2022
 awards: []
 projects: []
 current_position: 信弘天禾资产管理有限公司
-career_directions:
-- 量化基础架构
-- 机器学习平台
 ---

@@ -11,7 +11,9 @@ user_groups:
 - 已毕业校友
 summary: ''
 bio: 硕士毕业于中国科学技术大学，现就职于英伟达。
-interests: []
+interests:
+  - "推理优化"
+  - "TensorRT"
 education:
   courses:
   - degree: 硕士
@@ -44,7 +46,4 @@ graduation_year: 2022
 awards: []
 projects: []
 current_position: 英伟达
-career_directions:
-- 推理优化
-- TensorRT
 ---

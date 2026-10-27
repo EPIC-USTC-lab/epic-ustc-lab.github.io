@@ -66,6 +66,8 @@ authors:
 | `summary` | 建议 | 新闻摘要，显示在首页“最新动态”和动态列表中 |
 | `authors` | 否 | 关联实验室成员，填写成员目录对应的标识；不填则不显示作者卡片 |
 
+论文录用类新闻统一使用 `论文录用｜论文简称 被 会议名称 年份 接收` 的标题格式，例如 `论文录用｜PPFL 被 AAAI 2026 接收`。`summary` 和正文应使用出版物页面中的完整论文标题，并保持会议名称、年份及录用/发表状态一致。其他类型新闻可采用“获奖喜讯｜…”“实验室通知｜…”等相应前缀。
+
 日期统一使用：
 
 ```yaml
@@ -126,10 +128,10 @@ summary: "……"
 [查看朱宗卫老师的个人主页](/author/zongwei-zhu/)
 ```
 
-链接到某篇论文时，路径使用该论文的目录名：
+链接到某篇论文时，推荐使用 Hugo 的 `relref` 引用真实内容文件。它会生成页面地址，并在构建时检查目标是否存在，避免手写网址时截断、拼错目录名：
 
 ```markdown
-[查看 PPFL 论文详情](/publication/ppfl-a-parameter-behavior-driven-plug-in-personalization-engine-for-federated-le/)
+[查看 PPFL 论文详情]({{< relref "/publication/PPFL-A-Parameter-Behavior-Driven-Plug-in-Personalization-Engine-for-Federated-Learning/index.md" >}})
 ```
 
 例如，论文目录为：
@@ -141,10 +143,12 @@ content/publication/example-paper-san-zhang/
 则链接写成：
 
 ```markdown
-[查看论文详情](/publication/example-paper-san-zhang/)
+[查看论文详情]({{< relref "/publication/example-paper-san-zhang/index.md" >}})
 ```
 
-站内路径末尾建议保留 `/`。添加后应在本地预览中点击链接，确认目标页面存在。
+`relref` 中填写真实内容路径，目录名大小写也要与文件一致；不要使用编辑器显示时被省略或截断的名字。示例中的 `example-paper-san-zhang` 需要替换为实际论文目录。它只检查页面是否存在，仍须核对目标论文的标题、作者、会议和年份，避免链接到另一篇论文。
+
+若使用普通站内网址，路径末尾建议保留 `/`。添加后应在本地预览中点击链接，确认目标页面存在且内容对应。
 
 ## 添加外部链接
 
@@ -214,9 +218,9 @@ lab-award-2026/
 发布前建议确认：
 
 1. 一则新闻对应一个独立文件夹和一份 `index.md`；
-2. `title`、`date` 和 `summary` 内容准确；
+2. `title`、`date` 和 `summary` 内容准确，论文类新闻的标题前缀及论文全名、会议年份、状态保持一致；
 3. `authors` 只填写网站中已存在的成员目录标识；
-4. 站内链接以 `/` 开头，并且目标页面可以正常打开；
+4. 论文详情链接优先使用 `relref`；普通站内网址以 `/` 开头，目标页面可打开且确实对应新闻中的论文；
 5. 外部链接包含完整的 `https://`；
 6. 图片位于新闻目录中，文件名与 Markdown 引用完全一致；
 7. 图片和正文中不包含不宜公开或涉密信息；

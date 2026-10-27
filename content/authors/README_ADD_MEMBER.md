@@ -204,7 +204,7 @@ social:
 
 ## 自动关联论文
 
-作者文件不填写论文列表。只需在对应的 `content/publication/.../index.md` 中加入成员 `slug`：
+作者文件不填写论文列表。只有该成员是论文的第一作者、经确认的共同第一作者或通讯作者时，才在对应的 `content/publication/.../index.md` 的 `authors` 中加入其 `slug`：
 
 ```yaml
 authors:
@@ -212,4 +212,4 @@ authors:
   - zongwei-zhu
 ```
 
-论文便会自动出现在成员详情页。`authors_display` 只控制显示姓名和强调样式，不负责关联。
+论文便会自动出现在成员详情页。普通共同作者只写入 `authors_display`，不加入 `authors`，因此其个人页不会展示这篇论文。共同一作和通讯身份须有出版社页面、原文署名说明或作者提供的可核验材料支持。`authors_display` 保留全部作者及原始署名顺序，只控制显示姓名和强调样式，不负责关联。

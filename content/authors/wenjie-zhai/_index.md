@@ -37,7 +37,7 @@ social:
   link: '#'
 - icon: orcid
   icon_pack: fab
-  link: '#'
+  link: https://orcid.org/0000-0002-8335-0932
 - icon: globe
   icon_pack: fas
   link: '#'

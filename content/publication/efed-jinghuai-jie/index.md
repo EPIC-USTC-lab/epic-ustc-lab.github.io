@@ -17,12 +17,11 @@ publication_types: ["conference"]
 
 publication: IEEE International Joint Conference on Neural Networks (IJCNN)
 
-level: ""
+level: "CCF-C 会议"
 
 url_source: "https://doi.org/10.1109/IJCNN60899.2024.10651431"
 
-abstract: >-
-  本文针对 Transformer 边缘检测方法计算开销较高的问题，提出高效边缘检测框架 EFED。该方法以 EfficientFormerV2 为编码器，并设计 SMLA 多层聚合解码器，用于融合局部信息与全局语义特征。模型在 BSDS500 和 NYUDv2 数据集上进行了实验。结果表明，与已有 Transformer 边缘检测方法相比，EFED 显著提高了推理吞吐率，同时保持了具有竞争力的边缘检测精度。
+abstract: "Edge detection is a core component in a wide range of vision tasks, and is expected to be both efficient and accurate to identify boundaries and edges in images. And it has been a hot research field for long period. Currently, vision transformers are playing an increasingly prominent role in various downstream tasks, and the SOTA edge detector EDTER employs vision transformer as its encoder. However, ViTs are also known for their computational burden due to the large amount of parameters, leading to higher processing latency than lightweight CNNs. Recently, EfficientFormerV2, which has a novel network with low latency and high parameter efficiency, has proved that transformer-based network could outperform CNN-based network in both accuracy and efficiency. Inspired by this architecture, this paper proposes a novel edge detector EFED with EfficientFormerV2 as the encoder, and an efficient Multi-Level Aggregation decoder SMLA to extract both local and global features. Extensive experiments are conducted on two widely employed datasets, BSDS500 and NYUDv2, demonstrating that compared with EDTER, our detector not only improves the throughput by 10 times, but also achieves competitive accuracy. With single scale input on BSDS500 dataset, our EFED model achieves ODS F-measure and OIS F-measure of 82.4% and 84.2%, while for EDTER the corresponding values are 82.4% and 84.1%, respectively."
 
 featured: false
 ---

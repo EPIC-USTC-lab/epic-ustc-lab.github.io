@@ -10,9 +10,9 @@ authors_display:
   - "Cheng Ji"
 date: "2020-10-01T00:00:00Z"
 publication_types: ["journal"]
-publication: "Journal of Systems Architecture"
+publication: "Journal of Systems Architecture (JSA)"
 level: "CCF-B 期刊"
 url_source: "https://doi.org/10.1016/j.sysarc.2020.101810"
-abstract: "针对深度学习数据集中大量小文件使 HDFS 访问效率下降的问题，提出 Pile-HDFS。该方法依据文件之间的相关性将小文件聚合为 pile，并结合两层管理机制和数据块内部组织信息支持有效索引，降低小文件访问延迟，提高深度学习云计算平台的数据读取效率。"
+abstract: "For deep learning cloud computing platforms, file system is a fundamental and critical component. Hadoop distributed file system (HDFS) is widely used in large scale clusters due to its high performance and high availability. However, in deep learning datasets, the number of files is huge but the file size is small, making HDFS suffer a severe performance penalty. Although there have been many optimizing methods for addressing the small file problem, none of them take the file correlation in deep learning datasets into consideration. To address such problem, this paper proposes a Pile-HDFS (PHDFS) based on a new file aggregation approach. Pile is designed as the I/O unit merging a group of small files according to their correlation. In order to effectively access small files, we design a two-layer manager and add the inner organization information to data blocks. Experimental results demonstrate that, compared with the original HDFS, PHDFS can dramatically decrease the latency when accessing small files and improve the FPS (Frames Per Second) of typical deep learning models by 40%."
 featured: false
 ---

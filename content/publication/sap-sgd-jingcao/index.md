@@ -12,6 +12,6 @@ publication_types: ["conference"]
 publication: "IEEE International Conference on Cluster Computing (CLUSTER)"
 level: "CCF-B 会议"
 url_source: "https://doi.org/10.1109/cluster48925.2021.00023"
-abstract: "针对异构 GPU 集群中同步训练的等待开销及异步训练的参数陈旧问题，提出通信高效的半异步并行训练机制 SAP-SGD。该方法结合异步计算与间隔式全局同步，并采用带版本差异的模型参数加权聚合，在控制慢节点影响的同时提高分布式训练效率。"
+abstract: "Due to rapid product iterations and high prices, the phenomenon that GPUs in clusters have heterogeneous configurations is widespread. However, existing parallel training mechanisms perform poorly on heterogeneous clusters. The synchronous parallel mechanism can cause fast GPUs to wait for the slowest GPU for synchronization, thus wasting their computing power. The asynchronous parallel mechanism has communication bottlenecks and can exacerbate the straggler problem, causing increased training iterations and even incorrect convergence. In this paper, we introduce a communication-efficient semi-asynchronous parallel mechanism (SAP-SGD), which can take full advantage of the acceleration effect of asynchronous strategy on heterogeneous training and can constrain the straggler problem by using interval global synchronization. A novel weighted aggregation strategy is proposed to aggregate the model parameters with different versions. Experimental results show that our proposed strategy can achieve up to $6.74\\times$ speedup on training time, with almost no accuracy decrease."
 featured: false
 ---

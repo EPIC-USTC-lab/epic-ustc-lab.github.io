@@ -58,7 +58,7 @@ publication_types: ["conference"]
 publication: ACM/IEEE Design Automation Conference (DAC)
 level: CCF-A 会议
 url_source: "https://doi.org/10.xxxx/example"
-abstract: "这里填写论文摘要。可以保留英文原始摘要，也可以填写准确的中文摘要。"
+abstract: "Paste the complete original English abstract here."
 featured: false
 ---
 ```
@@ -74,10 +74,10 @@ featured: false
 | `authors_display` | 是 | 按论文原始顺序填写完整作者姓名；共同第一作者加 `†`，通讯作者加 `*` |
 | `date` | 是 | 用于展示和排序的论文日期，按下方统一口径填写完整 ISO 日期 |
 | `publication_types` | 是 | 出版物类型，见下方类型说明 |
-| `publication` | 建议 | 期刊、会议或预印本平台名称；会议年份由 `date` 自动生成，不要重复填写 |
-| `level` | 否 | CCF 等级及类型，例如 `CCF-A 会议`、`CCF-A 期刊` |
+| `publication` | 建议 | 期刊或会议的完整英文名称，可在括号中附简称；年份由 `date` 自动生成，不要重复填写 |
+| `level` | 否 | 已核实的 CCF 等级及类型，统一写成 `CCF-A 会议`、`CCF-B 期刊` 等；不要只写 `CCF-A`，不在目录内或未确认时留空，不推测等级 |
 | `url_source` | 建议 | DOI、出版社、会议论文集或 arXiv 链接 |
-| `abstract` | 建议 | 论文摘要；作者详情页支持展开查看 |
+| `abstract` | 建议 | 论文正式版本的完整原始英文摘要，保持原文，不翻译、不改写为概述；作者详情页支持展开查看 |
 | `featured` | 建议 | 是否作为代表作；`true` 表示精选，普通论文填写 `false` |
 
 ## 代表作与排序
@@ -290,6 +290,12 @@ level: CCF-A 期刊
 level: ""
 ```
 
+同一期刊或会议的名称应保持一致，使用完整英文名称，并可在末尾附上简称，例如 `Conference on Neural Information Processing Systems (NeurIPS)`；不要只写 `NeurIPS 2026` 或 `IEEE TCAD`。除正式名称中不可缺少的部分外，不重复填写年份或届次。
+
+CCF 等级须核对学会官方目录，并写全等级与类型，例如 `CCF-C 期刊`、`CCF-B 会议`。未列入 CCF 目录或无法核实的出版物不要自行指定 CCF 等级；如已提供其他体系的评级，须明确标注体系，不得把 JCR 分区当成 CCF 等级。
+
+`abstract` 使用正式论文中的完整原始英文摘要，不翻译、不概括、不自行补写。复制时只清理 PDF 换行、HTML 标签等排版痕迹，保留原有措辞、数据和公式；摘要应与同一标题、DOI 所指的论文版本对应。未取得原文摘要时宁可先留空。
+
 ## 论文链接
 
 优先填写永久且权威的链接：
@@ -325,6 +331,6 @@ url_source: "https://doi.org/10.xxxx/example"
 5. 共同第一作者姓名末尾已添加 `†`，通讯作者姓名末尾已添加 `*`。
 6. `date` 已按“会议召开日 / 期刊正式出版日 / 首次在线日 / 正式录用日”的优先级核实。
 7. `publication_types` 使用正确的复数列表格式。
-8. `publication`、`level` 和 `url_source` 信息准确。
-9. 摘要没有误删引号或破坏 YAML 格式。
+8. `publication` 使用完整英文名称、不重复年份；`level` 写全已核实的等级和“会议／期刊”，`url_source` 指向对应论文。
+9. 摘要使用完整原始英文摘要，没有翻译、概述或截断，也没有误删引号或破坏 YAML 格式。
 10. 不需要在第二个 `---` 后重复填写论文信息。

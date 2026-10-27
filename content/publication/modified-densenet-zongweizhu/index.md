@@ -9,9 +9,9 @@ authors_display:
   - "Lei Shu"
 date: "2020-10-01T00:00:00Z"
 publication_types: ["journal"]
-publication: "IEEE Internet of Things Journal"
-level: ""
+publication: "IEEE Internet of Things Journal (IoT-J)"
+level: "CCF-C 期刊"
 url_source: "https://doi.org/10.1109/jiot.2020.2983050"
-abstract: "面向纺织制造中的布匹缺陷检测，将深度学习模型部署在边缘设备以减少图像上传开销和识别延迟。通过调整 DenseNet 结构、优化损失函数以及按缺陷类别设计数据增强，适应边缘平台的资源限制，提高不同缺陷类型的识别效果。"
+abstract: "As an essential step in quality control, fabric defect detection plays an important role in the textile manufacturing industry. The traditional manual detection method is inaccurate and incurs a high cost; as a result, it is gradually being replaced by deep learning algorithms based on cloud computing. However, a high data transmission latency between end devices and the cloud has a significant impact on textile production efficiency. In contrast, edge computing, which provides services near end devices by deploying network, computing and storage facilities at the edge of the Internet, can effectively solve the above-mentioned problem. In this article, we propose a deep-learning-based fabric defect detection method for edge computing scenarios. First, this article modifies the structure of DenseNet to better suit a resource-constrained edge computing scenario. To better assess the proposed model, an optimized cross-entropy loss function is also formulated. Afterward, six feasible expansion schemes are utilized to enhance the data set according to the characteristics of various defects in fabric samples. To balance the distribution of samples, proportions of various defect types are used to determine the number of enhancements. Finally, a fabric defect detection system is established to test the performance of the optimized model used on edge devices in a real-world textile industry scenario. Experimental results demonstrate that compared with the conventional convolutional neural network (CNN), the proposed optimized model attains an average improvement of 18% in the area under the curve (AUC) metric for 11 defects. Data transmission is reduced by approximately 50% and latency is reduced by 32% in the Cambricon 1H8 platform compared with a cloud platform."
 featured: false
 ---

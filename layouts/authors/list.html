@@ -274,18 +274,26 @@
   ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
   /* v5: 论文摘要展开样式（动态箭头 + aria-expanded 无障碍） */
-  .paper-abs {
+  .paper .paper-abs {
     margin-top: 8px; font-size: 13px; color: var(--muted);
-    border-left: 3px solid var(--line);
-    padding: 2px 0 2px 12px; line-height: 1.6;
+    margin-bottom: 0; border: 0; padding: 0; line-height: 1.6;
+  }
+  .paper .paper-abs > p {
+    margin: 8px 0 0; padding: 12px 14px;
+    border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg); color: var(--text); line-height: 1.75;
+    overflow-wrap: anywhere;
   }
   .paper .abs-toggle {
-    display: inline-flex; align-items: center; gap: 4px; margin-top: 6px;
+    display: inline-flex; align-items: center; gap: 6px; margin: 0;
     font-size: 12px; font-weight: 600; color: var(--accent);
     cursor: pointer; user-select: none; background: none; border: none;
-    padding: 0; font-family: inherit;
+    padding: 2px 0; font-family: inherit; list-style: none;
   }
+  .paper .abs-toggle::marker { content: ""; }
+  .paper .abs-toggle::-webkit-details-marker { display: none; }
   .paper .abs-toggle:hover { text-decoration: underline; }
+  .paper .abs-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
   .paper .abs-toggle::before { content: "▶"; font-size: 10px; transition: transform .2s; }
   .paper-abs[open] .abs-toggle::before { transform: rotate(90deg); }
   .paper-abs[open] .abs-toggle { color: var(--ink); }
@@ -450,7 +458,7 @@
           {{ if .Params.abstract }}
           <details class="paper-abs" aria-label="论文摘要">
             <summary class="abs-toggle">查看摘要</summary>
-            <p style="margin-top:6px">{{ .Params.abstract }}</p>
+            <p>{{ .Params.abstract }}</p>
           </details>
           {{ end }}
         </div>

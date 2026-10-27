@@ -12,7 +12,7 @@ authors_display:
   - Xuehai Zhou
 date: "2026-09-25T00:00:00Z"
 publication_types: ["conference"]
-publication: "NeurIPS 2026"
+publication: "Conference on Neural Information Processing Systems (NeurIPS)"
 level: CCF-A 会议
 url_source: "https://neurips.cc/Conferences/2026/Schedule?showEvent=149884"
 abstract: >-

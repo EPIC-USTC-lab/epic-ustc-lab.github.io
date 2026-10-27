@@ -17,12 +17,11 @@ publication_types: ["conference"]
 
 publication: European Conference on Artificial Intelligence (ECAI)
 
-level: ""
+level: "CCF-B 会议"
 
 url_source: "https://doi.org/10.3233/FAIA240518"
 
-abstract: >-
-  本文提出 EdgeNAT，一种以 DiNAT 为编码器的一阶段 Transformer 边缘检测方法。该方法利用分层网络结构同时提取全局上下文信息与局部细节，并通过 SCAF-MLA 解码器建模特征图的空间关系和通道关系，以增强多层特征表示。实验在 RGB 与深度边缘检测数据集上进行，结果表明该方法在检测精度与推理效率之间取得了较好的平衡，并在 BSDS500 等基准上获得了具有竞争力的性能。
+abstract: "Transformers, renowned for their powerful feature extraction capabilities, have played an increasingly prominent role in various vision tasks. Especially, recent advancements present transformer with hierarchical structures such as Dilated Neighborhood Attention Transformer (DiNAT), demonstrating outstanding ability to efficiently capture both global and local features. However, transformers’ application in edge detection has not been fully exploited. In this paper, we propose EdgeNAT, a one-stage transformer-based edge detector with DiNAT as the encoder, capable of extracting object boundaries and meaningful edges both accurately and efficiently. On the one hand, EdgeNAT captures global contextual information and detailed local cues with DiNAT, on the other hand, it enhances feature representation with a novel SCAF-MLA decoder by utilizing both inter-spatial and inter-channel relationships of feature maps. Extensive experiments on multiple datasets show that our method achieves state-of-the-art performance on both RGB and depth images. Notably, on the widely used BSDS500 dataset, our L model achieves impressive performances, with ODS F-measure and OIS F-measure of 86.0%, 87.6% for multi-scale input,and 84.9%, and 86.3% for single-scale input, surpassing the current state-of-the-art EDTER by 1.2%, 1.1%, 1.7%, and 1.6%, respectively. Moreover, as for throughput, our approach runs at 20.87 FPS on RTX 4090 GPU with single-scale input. Code: https://github.com/jhjie/EdgeNAT."
 
 featured: false
 ---

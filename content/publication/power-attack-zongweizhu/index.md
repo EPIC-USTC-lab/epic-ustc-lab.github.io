@@ -9,9 +9,9 @@ authors_display:
   - "Bin Fang"
 date: "2022-03-15T00:00:00Z"
 publication_types: ["journal"]
-publication: "International Journal of Pattern Recognition and Artificial Intelligence"
-level: ""
+publication: "International Journal of Pattern Recognition and Artificial Intelligence (IJPRAI)"
+level: "CCF-C 期刊"
 url_source: "https://doi.org/10.1142/s0218001422500124"
-abstract: "面向宽温度范围下车载 AI 芯片的功耗攻击监测，提出结合拟合与滤波的闭环监控管理模块。通过原始功耗数据校正与温度监测识别异常状态，并将攻击监测结果转化为动态电压频率调节问题，以提高资源受限边缘设备的运行可信性。"
+abstract: "Power consumption attacks monitoring on artificial intelligence (AI) chips play a critical role in the vehicular AI systems. However, most of the current monitoring and management methods focus on the trustworthiness of industrial equipment instead of resource-constrained edge devices. To address the above problem, a closed-loop module for monitoring and management of vehicular AI chips based on fitting and filtering to resist power consumption attacks is proposed in this paper. First, considering the characteristics of power, we propose a raw data correction approach for power monitoring to monitor abnormal power consumption. Second, we address the challenging problem of precision temperature monitoring to monitor the abnormal temperature of the chip, especially in a wide temperature range. Finally, the established method is applied to attack surveillance and transformed into a power consumption management problem solved by dynamic voltage and frequency scaling (DVFS) technology. As the experimental results reveal, compared with existing methods of power and temperature monitoring and power consumption control in wide temperature, our method can achieve significantly improved monitoring and managing performance."
 featured: false
 ---

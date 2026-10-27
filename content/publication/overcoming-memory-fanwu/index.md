@@ -13,6 +13,6 @@ publication_types: ["conference"]
 publication: "IEEE International Conference on High Performance Computing and Communications (HPCC)"
 level: "CCF-C 会议"
 url_source: "https://doi.org/10.1109/hpcc-smartcity-dss50907.2020.00081"
-abstract: "面向嵌入式深度学习系统上的图像分类应用，研究模型推理时的内存占用优化。通过增量加载模型权重和重组运行时数据布局，分别从时间和空间维度提高内存利用率，使资源受限边缘设备能够以较低内存开销完成目标分类任务。"
+abstract: "Pattern recognition applications such as face recognition, detection of broken eggs, and classification of agricultural products are all using image classification in deep neural networks to improve the quality of services. However, traditional cloud inference models suffer from several problems such as network delay fluctuations and privacy leakage. In this regard, most real-time applications currently need to be deployed on edge computing devices. Constrained by the computing power and memory limitations of edge devices, the use of an efficient memory manager for model reasoning is the key to improving the quality of service. This study firstly explored the incremental loading strategy of model weights for the model reasoning. Next, the memory space at runtime is optimized through data layout reorganization from the spatial dimension. In particular, our proposed schemes are orthogonal and transparent to the model. Experimental results demonstrate that the proposed approach reduced the memory consumption by 43.74% on average without additional reasoning time overhead."
 featured: false
 ---

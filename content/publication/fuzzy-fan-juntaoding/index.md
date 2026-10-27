@@ -11,9 +11,9 @@ authors_display:
   - "Gangyong Jia"
 date: "2020-11-02T00:00:00Z"
 publication_types: ["conference"]
-publication: "International Conferences on Internet of Things (iThings), GreenCom, CPSCom, SmartData and Cybermatics"
+publication: "International Conferences on Internet of Things (iThings) and IEEE Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social Computing (CPSCom) and IEEE Smart Data (SmartData) and IEEE Congress on Cybermatics (Cybermatics)"
 level: ""
 url_source: "https://doi.org/10.1109/ithings-greencom-cpscom-smartdata-cybermatics50389.2020.00136"
-abstract: "针对 NPU 在高负载智能数据处理过程中温度快速上升的问题，提出基于模糊控制的风扇转速调节方法。通过适应性模型在散热效率和风扇功耗之间取得平衡，在保持处理器工作性能、避免过热的同时降低风扇能耗。"
+abstract: "Thanks to high computing power brought by new processor designs such as neural network processing unit (NPU), machine learning is widely used for data processing in the field of big data. However, smart data processing requires huge amount of computing, and may cause the NPU to quickly enter a working state at full load and the temperature to rapidly increase, which may lead to a crash or damage the circuit. Although reducing the frequency can prevent the temperature from rising, it will cause the loss of NPU performance. Artificial Intelligence (AI) tasks are usually computationally intensive, as a result, a high performance working mode should be provided. An external fan with suitable control algorithm can meet the above demands. However, traditional fan control algorithms usually increase the fan power consumption, which will result in a substantial increase in the total power. In this paper, we propose a fitness model based on fuzzy control to make better tradeoff between cooling efficiency and power consumption under high workload. The experimental results show that the model can effectively prevent the NPU temperature from being too high during the rapidly rising temperature and can reduce fan power consumption by 10%."
 featured: false
 ---

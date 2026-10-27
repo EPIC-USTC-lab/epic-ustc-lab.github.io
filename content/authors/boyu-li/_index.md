@@ -14,7 +14,7 @@ bio: 中国科学技术大学计算机技术2022级硕博连读，研究方向�
 interests:
   - AI芯片架构
   - AI编译器
-  - Agents for system
+  - Agents for Systems
 education:
   courses:
     - degree: 博士

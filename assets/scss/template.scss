@@ -3,8 +3,8 @@
   text-align: center;
 }
 
-/* Publication level badge used by homepage and publication citation lists. */
-.view-citation .publication-level {
+/* Publication type and level badges shared by homepage and citation lists. */
+.view-citation .publication-badge {
   display: inline-block;
   margin-left: 0.4rem;
   padding: 0.08rem 0.48rem;
@@ -27,7 +27,7 @@
   font-feature-settings: "liga" 0, "clig" 0;
 }
 
-[data-theme="dark"] .view-citation .publication-level {
+[data-theme="dark"] .view-citation .publication-badge {
   border-color: rgba(111, 168, 220, 0.35);
   background: rgba(111, 168, 220, 0.13);
   color: #a8c9e8;

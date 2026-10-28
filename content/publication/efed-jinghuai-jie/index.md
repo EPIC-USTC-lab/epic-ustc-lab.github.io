@@ -17,7 +17,7 @@ publication_types: ["conference"]
 
 publication: IEEE International Joint Conference on Neural Networks (IJCNN)
 
-level: "CCF-C 会议"
+level: "CCF-C"
 
 url_source: "https://doi.org/10.1109/IJCNN60899.2024.10651431"
 

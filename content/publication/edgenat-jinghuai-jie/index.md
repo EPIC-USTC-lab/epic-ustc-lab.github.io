@@ -17,7 +17,7 @@ publication_types: ["conference"]
 
 publication: European Conference on Artificial Intelligence (ECAI)
 
-level: "CCF-B 会议"
+level: "CCF-B"
 
 url_source: "https://doi.org/10.3233/FAIA240518"
 

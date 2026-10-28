@@ -9,7 +9,7 @@ authors_display:
   - Xi-Jue Zhao
   - Liang-liang Lu*
 date: "2026-03-25T00:00:00Z"
-level: "CCF-C 期刊"
+level: "CCF-C"
 publication_types: ["journal"]
 publication: "Journal of Information Security and Applications (JISA)"
 url_source: "https://doi.org/10.1016/j.jisa.2026.104450"

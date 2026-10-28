@@ -1,5 +1,10 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
+{{ $pub_type_label := "" }}
+{{ with $item.Params.publication_types }}
+  {{ $type_labels := dict "conference" "会议" "journal" "期刊" "preprint" "预印本" }}
+  {{ $pub_type_label = index $type_labels (index . 0) | default "" }}
+{{ end }}
 
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
@@ -16,7 +21,8 @@
   {{ else if $item.Params.publication }}
     {{- $item.Params.publication | markdownify -}}.
   {{ end }}
-  {{ with $item.Params.level }}<span class="publication-level">{{ . }}</span>{{ end }}
+  {{ with $item.Params.level }}<span class="publication-badge publication-level">{{ . }}</span>{{ end }}
+  {{ with $pub_type_label }}<span class="publication-badge publication-type">{{ . }}</span>{{ end }}
   <p>{{ partial "page_links" (dict "page" $item "is_list" 1) }}</p>
 
   {{ else }}
@@ -31,7 +37,8 @@
     {{- $item.Params.publication | markdownify -}},
   {{ end }}
   {{- $item.Date.Format "2006" -}}.
-  {{ with $item.Params.level }}<span class="publication-level">{{ . }}</span>{{ end }}
+  {{ with $item.Params.level }}<span class="publication-badge publication-level">{{ . }}</span>{{ end }}
+  {{ with $pub_type_label }}<span class="publication-badge publication-type">{{ . }}</span>{{ end }}
 
   {{ if $has_attachments }}
   <div class="btn-links">

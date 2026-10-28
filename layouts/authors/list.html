@@ -202,12 +202,16 @@
   .paper .pa b { color: var(--warm); font-weight: 700; }
   .paper .pv { font-size: 12.5px; margin-top: 5px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .paper .pv .venue { color: var(--accent); font-weight: 600; font-style: italic; }
-  .paper .pv .yr {
+  .paper .pv .paper-tags { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; max-width: 100%; }
+  .paper .pv .paper-tag {
+    display: inline-flex; align-items: center;
     background: #eef1f5;
     background: color-mix(in srgb, var(--ink) 10%, var(--card));
     color: var(--ink); padding: 1px 9px; border-radius: 12px; font-weight: 600; font-size: 11.5px;
+    line-height: 1.6; white-space: nowrap;
   }
-  .paper .pv .lvl { color: var(--warm); font-weight: 700; font-size: 11.5px; }
+  .paper .pv .lvl { color: #0f7c80; background: #e8f4f4; font-weight: 700; }
+  [data-theme="dark"] .paper .pv .lvl { color: #78d7d8; background: #153638; }
 
   .empty-tip { color: var(--muted); font-style: italic; font-size: 13.5px; }
 
@@ -251,7 +255,7 @@
     .cell.wide { grid-column: auto; }
     .reveal { opacity: 1; transform: none; }
     a { color: #000; text-decoration: none; }
-    .paper .pv .venue, .paper .pv .yr { color: #000; background: none; border-radius: 0; padding: 0; font-style: normal; }
+    .paper .pv .venue, .paper .pv .paper-tag, [data-theme="dark"] .paper .pv .paper-tag { color: #000; background: none; border-radius: 0; padding: 0; font-style: normal; }
     .kv { border-bottom: 1px dotted #ccc; }
     a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10px; color: #666; }
     /* 打印时默认展开论文摘要（Critical #7）：评审/讨论场景需要完整信息 */
@@ -445,6 +449,11 @@
     <div class="papers-list">
       {{ range $my_pubs }}
       {{- $pd := delimit .Params.authors_display ", " | default "" -}}
+      {{- $pub_type_label := "" -}}
+      {{- with .Params.publication_types -}}
+        {{- $type_labels := dict "conference" "会议" "journal" "期刊" "preprint" "预印本" -}}
+        {{- $pub_type_label = index $type_labels (index . 0) | default "" -}}
+      {{- end -}}
       <div class="paper">
         <div class="idx"></div>
         <div class="body">
@@ -452,8 +461,11 @@
           <div class="pa">{{ if and $name_en $pd }}{{ replaceRE $name_en (printf "<b>%s</b>" $name_en) $pd | safeHTML }}{{ else }}{{ $pd }}{{ end }}</div>
           <div class="pv">
             {{ if .Params.publication }}<span class="venue">{{ .Params.publication }}</span>{{ end }}
-            {{ if .Params.date }}<span class="yr">{{ .Params.date.Year }}</span>{{ end }}
-            {{ if .Params.level }}<span class="lvl">{{ .Params.level }}</span>{{ end }}
+            <span class="paper-tags">
+              {{ if .Params.date }}<span class="paper-tag yr">{{ .Params.date.Year }}</span>{{ end }}
+              {{ if .Params.level }}<span class="paper-tag lvl">{{ .Params.level }}</span>{{ end }}
+              {{ with $pub_type_label }}<span class="paper-tag pub-type">{{ . }}</span>{{ end }}
+            </span>
           </div>
           {{ if .Params.abstract }}
           <details class="paper-abs" aria-label="论文摘要">

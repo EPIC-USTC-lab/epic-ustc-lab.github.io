@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "GOFL: An Accurate and Efficient Federated Learning Framework Based on Gradient Optimization in Heterogeneous IoT Systems"
 authors:
   - zirui-lian

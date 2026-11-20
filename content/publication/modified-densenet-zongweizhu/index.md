@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Modified DenseNet for Automatic Fabric Defect Detection With Edge Computing for Minimizing Latency"
 authors:
   - zongwei-zhu

@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "A Thread-Oriented Memory Resource Management Framework for Mobile Edge Computing"
 authors:
   - zongwei-zhu

@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: Chaotic video encryption based on DNA coding, confusion, and diffusion
 authors:
   - xijue-zhao

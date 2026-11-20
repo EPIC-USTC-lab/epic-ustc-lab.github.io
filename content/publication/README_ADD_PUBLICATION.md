@@ -7,6 +7,17 @@ build:
 
 # 新增出版物
 
+网站公开展示 CCF A 类、CCF B 类、正式刊名包含 `Transactions` 的期刊论文，以及 ACL Findings 论文。会议论文按 CCF 官方目录核对正式长文的类别，ACL Findings 的 `level` 留空。 [CCF 第七版发布说明](https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml)
+
+如需在仓库留存其他论文，在该论文的 YAML 中设置以下字段，Hugo 构建时会跳过其列表条目和详情页。
+
+```yaml
+build:
+  list: never
+  render: never
+  publishResources: false
+```
+
 每篇论文必须使用一个独立文件夹，每个论文文件夹中放置一份 `index.md`。如果需要一次提交多篇论文，请把多个论文文件夹放进同一个总目录，再压缩整个总目录发送。
 
 ```text
@@ -314,7 +325,7 @@ url_source: "https://doi.org/10.xxxx/example"
 
 ## 新增后自动出现的位置
 
-配置正确后，论文会自动出现在：
+符合公开展示条件的论文配置完成后会自动出现在：
 
 - “论文成果”页面；
 - 首页“最新论文”（按日期倒序取前 5 篇）；

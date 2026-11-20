@@ -79,6 +79,6 @@ projects: []
 
 ## 代表论文
 
-- 1. **Fulong Fan**, Peilin Liu, Liu FengZhe, Shuyan Yang, Gang Yan*. *Self-Awareness before Action: Mitigating Logical Inertia via Proactive Cognitive Awareness*. Findings of ACL, 2026。CCF-A会议
+- 1. **Fulong Fan**, Peilin Liu, Liu FengZhe, Shuyan Yang, Gang Yan*. *Self-Awareness before Action: Mitigating Logical Inertia via Proactive Cognitive Awareness*. Findings of ACL, 2026。
   [链接](https://aclanthology.org/2026.findings-acl.793/)
 

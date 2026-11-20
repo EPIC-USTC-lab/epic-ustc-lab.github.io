@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Module Against Power Consumption Attacks for Trustworthiness of Vehicular AI Chips in Wide Temperature Range"
 authors:
   - zongwei-zhu

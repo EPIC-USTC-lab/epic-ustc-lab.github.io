@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: Real-time bit-level encryption of full high-definition video without pixel diffusion
 authors:
   - xijue-zhao

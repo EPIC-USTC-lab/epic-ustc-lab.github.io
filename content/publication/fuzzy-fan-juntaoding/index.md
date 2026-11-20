@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "A Fuzzy Fan Speed Controller for Smart Data Processing Device"
 authors:
   - juntao-ding

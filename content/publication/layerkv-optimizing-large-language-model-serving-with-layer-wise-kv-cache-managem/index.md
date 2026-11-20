@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "LayerKV: Optimizing Large Language Model Serving with Layer-wise KV Cache Management"
 authors:
   - yi-xiong

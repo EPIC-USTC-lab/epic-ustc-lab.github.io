@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Task‐aware swapping for efficient DNN inference on DRAM‐constrained edge systems"
 authors:
   - zongwei-zhu

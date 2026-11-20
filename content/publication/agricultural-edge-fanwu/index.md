@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Machine Learning Agricultural Application Based on the Secure Edge Computing Platform"
 authors:
   - fan-wu

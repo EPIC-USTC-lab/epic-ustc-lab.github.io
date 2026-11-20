@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Efficient Transformer-based Edge Detector"
 
 authors:

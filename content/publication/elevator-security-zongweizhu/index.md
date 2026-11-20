@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Highly secure edge-intelligent electric motorcycle management system for elevators"
 authors:
   - zongwei-zhu

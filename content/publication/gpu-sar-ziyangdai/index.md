@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "A GPU-Oriented Onboard Imaging Framework for High-Resolution Sliding Spotlight SAR on an Embedded GPU Platform"
 authors:
   - ziyang-dai

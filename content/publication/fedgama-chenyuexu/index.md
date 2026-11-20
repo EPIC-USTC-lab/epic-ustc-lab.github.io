@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "FedGAMA: Federated Learning on Heterogeneous and Long-Tailed Data via Group-Wise Asymmetric Masked Aggregation"
 authors:
   - chenyue-xu

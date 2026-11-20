@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Overcoming Memory Constraint for Improved Target Classification Performance on Embedded Deep Learning Systems"
 authors:
   - fan-wu

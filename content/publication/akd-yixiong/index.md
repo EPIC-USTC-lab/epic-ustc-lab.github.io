@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "Difference-Adaptive Knowledge Distillation for Resource-Constrained Embedded Devices"
 authors:
   - yi-xiong

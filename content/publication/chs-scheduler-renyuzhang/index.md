@@ -1,4 +1,8 @@
 ---
+build:
+  list: never
+  render: never
+  publishResources: false
 title: "CHS-Scheduler: A Hybrid Scheduler for QoS Task Scheduling in Cloud Human Service Scenarios"
 authors:
   - renyu-zhang
